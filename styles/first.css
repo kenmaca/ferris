@@ -1,0 +1,94 @@
+#first {
+  background-color: #CCE4E6;
+  background-image: radial-gradient(
+    circle,
+    #CCE4E6 0%,
+    #B3C7C9 90%,
+    #8A9A9B 100%
+  );
+}
+
+/* ferris wheel */
+#ferris {
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  height: 75vh;
+  width: 75vh;
+}
+
+#ferris path, #ferris polygon {
+  fill: #DDDDDD;
+  stroke: #000000;
+  stroke-width: 0.1px;
+}
+
+.car path, .car polygon {
+  fill: #EEEEEE !important;
+}
+
+g[class*='-rear'] path, g[class*='-rear'] polygon {
+  fill: #AAAAAA !important;
+}
+
+/* banner */
+#banner path {
+  fill: rgba(0, 0, 0, 0.6);
+  stroke: transparent;
+  stroke-width: 0.5px;
+}
+
+.banner {
+  position: absolute;
+  top: 25px;
+  right: 10vw;
+  height: 40vh;
+  width: 40vh
+}
+
+/* clouds */
+div[class*='cloud-'] {
+  background-image: url('http://media.hermes.com/skin/frontend/hos/default/medias/imgs/bg/mobile/parallax.png');
+}
+
+.cloud-1 {
+  background-position: 0 0;
+  height: 190px;
+  width: 630px;
+}
+
+.cloud-2 {
+  background-position: 0 100px;
+  height: 100px;
+  width: 300px;
+}
+
+.cloud-3 {
+  background-position: 0 250px;
+  height: 150px;
+  width: 490px;
+}
+
+div[class*='clouds-'] {
+  position: absolute;
+}
+
+.clouds-1 {
+  top: 10%;
+  left: -10%;
+}
+
+.clouds-2 {
+  top: 20%;
+  left: 10%;
+}
+
+.clouds-3 {
+  top: 20%;
+  right: 40%;
+}
+
+.clouds-4 {
+  top: 20%;
+  right: 30%;
+}
