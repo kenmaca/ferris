@@ -41,67 +41,75 @@ g[class*='-rear'] path, g[class*='-rear'] polygon {
 }
 
 /* clouds */
-div[class*='cloud-'] {
-  background-image: url('http://media.hermes.com/skin/frontend/hos/default/medias/imgs/bg/mobile/parallax.png');
-}
-
-.cloud-1 {
-  background-position: 0 0;
-  height: 190px;
-  width: 630px;
-}
-
-.cloud-2 {
-  background-position: 0 100px;
-  height: 100px;
-  width: 300px;
-}
-
-.cloud-3 {
-  background-position: 0 250px;
-  height: 150px;
-  width: 490px;
-}
-
-div[class*='clouds-'] {
+div[id*='cloud-'] {
   position: absolute;
-  transform: scale(0.5);
 }
 
-.clouds-1 {
-  top: 10%;
-  left: -10%;
+.cloud .cls-1 {
+  fill: #FFFFFF;
 }
 
-.clouds-2 {
-  top: 17%;
-  left: 5%;
+#cloud-1 {
+  z-index: 99;
+  top: 25%;
+  width: 20vw;
+  height: 20vw;
+  animation: clouds 180s linear -20s infinite;
 }
 
-.clouds-3 {
-  top: 20%;
-  right: 40%;
+#cloud-2 {
+  z-index: 99;
+  top: 34%;
+  width: 18vw;
+  height: 18vw;
+  animation: clouds 120s linear -90s infinite;
 }
 
-.clouds-4 {
-  top: 20%;
-  right: 30%;
+#cloud-3 {
+  top: 11%;
+  width: 5vw;
+  height: 5vw;
+  animation: clouds 400s linear -350s infinite;
+}
+
+#cloud-4 {
+  top: 21%;
+  width: 12vw;
+  height: 12vw;
+  animation: clouds 300s linear -100s infinite;
+}
+
+#cloud-5 {
+  top: 25%;
+  width: 5vw;
+  height: 5vw;
+  animation: clouds 350s linear -130s infinite;
+}
+
+@keyframes clouds {
+  0% { right: -10%; }
+  100% { right: 100%; }
 }
 
 /* responsive iphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #banner {
-    left: 10%;
-    right: 10%;
-    height: 80vw;
-    width: 80vw;
+    top: 7%;
+    left: 15%;
+    right: 15%;
+    height: 70vw;
+    width: 70vw;
   }
 
   #ferris {
     left: 5%;
-    right: 5z%;
+    right: 5%;
     width: 90vw;
     height: 90vw;
+  }
+
+  div[id*='cloud-'] {
+    transform: scale(1.5);
   }
 }
 
@@ -115,5 +123,9 @@ div[class*='clouds-'] {
   #ferris {
     width: 80vw;
     height: 80vw;
+  }
+
+  div[id*='cloud-'] {
+    transform: scale(1.5);
   }
 }
