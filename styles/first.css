@@ -1,20 +1,14 @@
-#first {
+#first .box {
   background-color: #CCE4E6;
-  background-image: radial-gradient(
-    circle,
-    #CCE4E6 0%,
-    #B3C7C9 90%,
-    #8A9A9B 100%
-  );
 }
 
 /* ferris wheel */
 #ferris {
   position: absolute;
-  bottom: 0px;
-  left: 10%;
-  height: 75vh;
-  width: 75vh;
+  bottom: 2%;
+  left: 0;
+  height: 60vw;
+  width: 60vw;
 }
 
 #ferris path, #ferris polygon {
@@ -33,17 +27,17 @@ g[class*='-rear'] path, g[class*='-rear'] polygon {
 
 /* banner */
 #banner path {
-  fill: rgba(0, 0, 0, 0.6);
+  fill: #FFFFFF;
   stroke: transparent;
-  stroke-width: 0.5px;
+  stroke-width: 0px;
 }
 
-.banner {
+#banner {
   position: absolute;
-  top: 25px;
-  right: 10vw;
-  height: 40vh;
-  width: 40vh
+  top: 10%;
+  right: 5%;
+  height: 40vw;
+  width: 40vw;
 }
 
 /* clouds */
@@ -71,6 +65,7 @@ div[class*='cloud-'] {
 
 div[class*='clouds-'] {
   position: absolute;
+  transform: scale(0.5);
 }
 
 .clouds-1 {
@@ -79,8 +74,8 @@ div[class*='clouds-'] {
 }
 
 .clouds-2 {
-  top: 20%;
-  left: 10%;
+  top: 17%;
+  left: 5%;
 }
 
 .clouds-3 {
@@ -91,4 +86,34 @@ div[class*='clouds-'] {
 .clouds-4 {
   top: 20%;
   right: 30%;
+}
+
+/* responsive iphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #banner {
+    left: 10%;
+    right: 10%;
+    height: 80vw;
+    width: 80vw;
+  }
+
+  #ferris {
+    left: 5%;
+    right: 5z%;
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #banner {
+    right: 0;
+    height: 60vw;
+    width: 60vw;
+  }
+
+  #ferris {
+    width: 80vw;
+    height: 80vw;
+  }
 }
