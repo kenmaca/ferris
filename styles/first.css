@@ -5,7 +5,7 @@
 /* ferris wheel */
 #ferris {
   position: absolute;
-  bottom: 2%;
+  bottom: 2vh;
   left: 0;
   height: 60vw;
   width: 60vw;
@@ -34,82 +34,64 @@ g[class*='-rear'] path, g[class*='-rear'] polygon {
 
 #banner {
   position: absolute;
-  top: 10%;
-  right: 5%;
+  top: 10vh;
+  right: 5vw;
   height: 40vw;
   width: 40vw;
 }
 
-/* clouds */
-div[id*='cloud-'] {
-  position: absolute;
-}
-
-.cloud .cls-1 {
-  fill: #FFFFFF;
-}
-
-#cloud-1 {
+#first .cloud-1 {
   z-index: 99;
-  top: 25%;
+  top: 25vh;
   width: 20vw;
   height: 20vw;
   animation: clouds 180s linear -20s infinite;
 }
 
-#cloud-2 {
+#first .cloud-2 {
   z-index: 99;
-  top: 34%;
+  top: 34vh;
   width: 18vw;
   height: 18vw;
   animation: clouds 120s linear -90s infinite;
 }
 
-#cloud-3 {
-  top: 11%;
+#first .cloud-3 {
+  top: 11vh;
   width: 5vw;
   height: 5vw;
   animation: clouds 400s linear -350s infinite;
 }
 
-#cloud-4 {
-  top: 21%;
+#first .cloud-4 {
+  top: 21vh;
   width: 12vw;
   height: 12vw;
   animation: clouds 300s linear -100s infinite;
 }
 
-#cloud-5 {
-  top: 25%;
+#first .cloud-5 {
+  top: 25vh;
   width: 5vw;
   height: 5vw;
   animation: clouds 350s linear -130s infinite;
 }
 
-@keyframes clouds {
-  0% { right: -10%; }
-  100% { right: 100%; }
-}
-
 /* responsive iphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #banner {
-    top: 7%;
-    left: 15%;
-    right: 15%;
+    top: 7vh;
+    left: 15vw;
+    right: 15vw;
     height: 70vw;
     width: 70vw;
   }
 
   #ferris {
-    left: 5%;
-    right: 5%;
+    left: 5vw;
+    right: 5vw;
     width: 90vw;
     height: 90vw;
-  }
-
-  div[id*='cloud-'] {
-    transform: scale(1.5);
   }
 }
 
@@ -123,9 +105,5 @@ div[id*='cloud-'] {
   #ferris {
     width: 80vw;
     height: 80vw;
-  }
-
-  div[id*='cloud-'] {
-    transform: scale(1.5);
   }
 }

@@ -8,30 +8,37 @@ $(() => {
   fetch('assets/img/main/clouds/a.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#cloud-1').html(svg);
+      $('.cloud-1').html(svg);
     });
 
   fetch('assets/img/main/clouds/b.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#cloud-2').html(svg);
+      $('.cloud-2').html(svg);
     });
 
   fetch('assets/img/main/clouds/c.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#cloud-3').html(svg);
+      $('.cloud-3').html(svg);
     });
 
   fetch('assets/img/main/clouds/d.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#cloud-4').html(svg);
+      $('.cloud-4').html(svg);
     });
 
   fetch('assets/img/main/clouds/e.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#cloud-5').html(svg);
+      $('.cloud-5').html(svg);
+    });
+
+  /* page 2 */
+  fetch('assets/img/main/merry-go-round.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#merry-go-round').html(svg);
     });
 });

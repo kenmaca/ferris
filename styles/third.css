@@ -1,0 +1,19 @@
+#third .box {
+  background-color: #FFD1DC;
+}
+
+#third .cloud-2 {
+  top: 10vh;
+  right: 5vw;
+  width: 25vw;
+  height: 25vw;
+  animation: hover 2s linear infinite;
+}
+
+#third .cloud-4 {
+  bottom: -30vh;
+  left: -3vw;
+  width: 30vw;
+  height: 30vw;
+  animation: hover 3s linear infinite;
+}
