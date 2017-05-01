@@ -93,3 +93,46 @@ div[class*='cloud-'] {
   50% { transform: translate(0, 5px); }
   100% { transform: translate(0, -0px); }
 }
+
+.transition {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.transition div {
+  position: absolute;
+  width: 100vw;
+}
+
+.transition .first {
+  bottom: 0;
+}
+
+.transition .first path {
+  fill: #a0c0e0;
+}
+
+.transition .second {
+  bottom: 0;
+}
+
+.transition .second path {
+  fill: #d9e1ed;
+}
+
+.transition .third {
+  bottom: 0;
+}
+
+.transition .third path {
+  fill: #badce8;
+}
+
+.transition .fourth {
+  bottom: 0;
+}
+
+.transition .fourth path {
+  fill: #ffffff;
+}

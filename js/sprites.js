@@ -4,6 +4,38 @@
 */
 $(() => {
 
+  // banner
+  fetch('assets/img/main/banner.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#banner').html(svg);
+    });
+
+  // transition clouds
+  fetch('assets/img/main/transition/first.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('.transition .first').html(svg);
+    });
+
+  fetch('assets/img/main/transition/second.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('.transition .second').html(svg);
+    });
+
+  fetch('assets/img/main/transition/third.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('.transition .third').html(svg);
+    });
+
+  fetch('assets/img/main/transition/fourth.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('.transition .fourth').html(svg);
+    });
+
   // clouds
   fetch('assets/img/main/clouds/a.svg')
     .then(response => response.text())
