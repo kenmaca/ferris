@@ -12,17 +12,9 @@
 }
 
 #ferris path, #ferris polygon {
-  fill: #DDDDDD;
+  fill: #FFFFFF;
   stroke: #000000;
   stroke-width: 0.1px;
-}
-
-.car path, .car polygon {
-  fill: #EEEEEE !important;
-}
-
-g[class*='-rear'] path, g[class*='-rear'] polygon {
-  fill: #AAAAAA !important;
 }
 
 /* banner */

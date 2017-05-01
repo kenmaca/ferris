@@ -12,4 +12,11 @@ $(() => {
   // always in motion: ferris wheel
   tw.to($('g[class*="wheel"], #cars'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, transformOrigin: '50% 50%', ease: Linear.easeNone});
   tw.to($('.car'), FERRIS_SPEED, {rotation: -ROTATION, repeat: -1, transformOrigin: '50% 50%', ease: Linear.easeNone});
+
+  $('#container').on('click', () => {
+    console.log(`clicked: ${$('#container').data('opened')}`);
+    $('#container').data('opened')
+      ? $('#container').removeClass('reveal').data('opened', false)
+      : $('#container').addClass('reveal').data('opened', true);
+  });
 });

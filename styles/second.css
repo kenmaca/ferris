@@ -11,14 +11,14 @@
 }
 
 #second .cloud-1 {
-  top: 15vh;
+  top: 10vh;
   width: 15vw;
   height: 15vw;
   animation: clouds 240s linear -160s infinite;
 }
 
 #second .cloud-2 {
-  top: 10vh;
+  top: 15vh;
   width: 20vw;
   height: 20vw;
   animation: clouds 200s linear -40s infinite;
