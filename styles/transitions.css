@@ -1,0 +1,44 @@
+.transition {
+  width: 100vw;
+  height: 100vh;
+}
+
+.transition div {
+  position: absolute;
+  bottom: -30vh;
+  width: 100vw;
+  opacity: 0;
+}
+
+.transition .first path {
+  fill: #a0c0e0;
+}
+
+.transition .second path {
+  fill: #d9e1ed;
+}
+
+.transition .third path {
+  fill: #badce8;
+}
+
+.transition .fourth {
+  opacity: 1;
+}
+
+.transition .fourth path {
+  fill: #ffffff;
+}
+
+/* responsive iphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .transition {
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .transition {
+    bottom: 0;
+  }
+}

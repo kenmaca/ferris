@@ -1,20 +1,23 @@
 #first .box {
   background-color: #CCE4E6;
+  top: 5vh;
+  left: 5vw;
+  right: 5vw;
 }
 
 /* ferris wheel */
 #ferris {
   position: absolute;
-  bottom: 2vh;
-  left: 0;
-  height: 60vw;
-  width: 60vw;
+  bottom: 10vh;
+  left: 0vw;
+  height: 80vh;
+  width: 80vh;
 }
 
 #ferris path, #ferris polygon {
   fill: #FFFFFF;
   stroke: #000000;
-  stroke-width: 0.1px;
+  stroke-width: 0.2px;
 }
 
 /* banner */
@@ -80,6 +83,7 @@
   }
 
   #ferris {
+    bottom: 14vh;
     left: 5vw;
     right: 5vw;
     width: 90vw;
@@ -95,6 +99,7 @@
   }
 
   #ferris {
+    left: -1vw;
     width: 80vw;
     height: 80vw;
   }
