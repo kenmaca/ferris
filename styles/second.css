@@ -4,8 +4,8 @@
 
 #merry-go-round {
   position: absolute;
-  left: 20vw;
-  bottom: 2vw;
+  left: 3vw;
+  bottom: 3vh;
   width: 60vw;
   height: 60vw;
 }
@@ -22,4 +22,17 @@
   width: 20vw;
   height: 20vw;
   animation: clouds 200s linear -40s infinite;
+}
+
+/* transitions */
+#second .transition .first path {
+  fill: #EEA243;
+}
+
+#second .transition .second path {
+  fill: #F3D34A;
+}
+
+#second .transition .third path {
+  fill: #FFFFFF;
 }

@@ -1,5 +1,5 @@
 #third .box {
-  background-color: #FFD1DC;
+  background-color: #EEA243;
 }
 
 #third .cloud-2 {
@@ -16,4 +16,17 @@
   width: 30vw;
   height: 30vw;
   animation: hover 3s linear infinite;
+}
+
+/* transitions */
+#third .transition .first path {
+  fill: #85658E;
+}
+
+#third .transition .second path {
+  fill: #FFD1DB;
+}
+
+#third .transition .third path {
+  fill: #66193F;
 }

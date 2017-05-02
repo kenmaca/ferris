@@ -6,7 +6,7 @@
 
 .transition div {
   position: absolute;
-  bottom: -30vh;
+  bottom: -35vh;
   width: 100vw;
   opacity: 0;
 }
@@ -21,10 +21,6 @@
 
 .transition .third path {
   fill: #badce8;
-}
-
-.transition .fourth {
-  opacity: 1;
 }
 
 .transition .fourth path {

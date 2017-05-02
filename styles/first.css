@@ -5,6 +5,10 @@
   right: 5vw;
 }
 
+#first .transition .fourth {
+  opacity: 1;
+}
+
 /* ferris wheel */
 #ferris {
   position: absolute;

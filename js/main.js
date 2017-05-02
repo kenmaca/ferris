@@ -18,37 +18,69 @@ $(() => {
   // first scene: cloud transition
   new ScrollMagic.Scene({
     triggerElement: '#first',
-    duration: '10%'
-  }).setPin('#first').addTo(c);
-  new ScrollMagic.Scene({
-    triggerElement: '#first',
     duration: 0,
-    offset: 10
+    offset: 1
   }).setTween(new tl({
     onComplete: jump('#second')
-  }).to($('#banner'), 0.5, {opacity: 0})
-    .to($('#ferris'), 0.5, {bottom: '-100%'}, '-=0.1')
+  }).to($('#first .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#first .fourth'), 0.5, {bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#first .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#banner'), 0.5, {opacity: 0}, '-=0.5')
+    .to($('#ferris'), 0.5, {bottom: '-100%'}, '-=0.3')
+    .to($('#first .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#first .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#first .transition'), 0.5, {bottom: '-15vh', ease: Expo.easeIn})
+    .to($('#first .transition'), 0.2, {bottom: '-15vh', ease: Expo.easeIn})
   ).addTo(c);
 
   // second scene: shrink box
   new ScrollMagic.Scene({
     triggerElement: '#second',
-    duration: '10%'
-  }).setPin('#second').addTo(c);
-  new ScrollMagic.Scene({
-    triggerElement: '#second',
     duration: 0
   }).setTween('#second .box', 0.2, {
-    top: '5vh', left: '5vw', right: '5vw', onReverseComplete: jump('#first', true)
-  }).addTo(c)
-    .addIndicators();
+    top: '5vh', left: '5vw', right: '5vw', bottom: '5vh', onReverseComplete: jump('#first', true)
+  }).addTo(c);
 
-  // first page transition
+  // second scene: cloud transition
+  new ScrollMagic.Scene({
+    triggerElement: '#second',
+    duration: 0,
+    offset: 1
+  }).setTween(new tl({
+    onComplete: jump('#third')
+  }).to($('#second .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+    .to($('#second .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#second .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#second .transition'), 0.2, {bottom: '-15vh', ease: Expo.easeIn})
+  ).addTo(c);
+
+  // third scene: shrink box
+  new ScrollMagic.Scene({
+    triggerElement: '#third',
+    duration: 0
+  }).setTween('#third .box', 0.2, {
+    top: '5vh', left: '5vw', right: '5vw', bottom: '5vh', onReverseComplete: jump('#second', true)
+  }).addTo(c);
+
+  // third scene: cloud transition
+  new ScrollMagic.Scene({
+    triggerElement: '#third',
+    duration: 0,
+    offset: 1
+  }).setTween(new tl({
+    onComplete: jump('#fourth')
+  }).to($('#third .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+    .to($('#third .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#third .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#third .fourth'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#third .transition'), 0.2, {bottom: '-15vh', ease: Expo.easeIn})
+  ).addTo(c);
+
+  // fourth scene: shrink box
+  new ScrollMagic.Scene({
+    triggerElement: '#fourth',
+    duration: 0
+  }).setTween('#fourth .box', 0.2, {
+    top: '5vh', left: '5vw', right: '5vw', bottom: '5vh', onReverseComplete: jump('#third', true)
+  }).addTo(c);
 });
 
 var tw = TweenMax;
@@ -56,8 +88,5 @@ var tl = TimelineMax;
 
 // helpers
 function jump(target, reverse) {
-  return () => {
-    seek = new tl().to(window, 0.5, {scrollTo: target, autoKill: false});
-    return reverse ? seek.to(window, 0, {scrollTo: {y: -1}, autoKill: false}): seek;
-  }
+  return () => new tl().to(window, 0.5, {scrollTo: target, autoKill: false})
 }
