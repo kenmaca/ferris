@@ -26,7 +26,8 @@ $(() => {
   }).to($('#first .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#first .fourth'), 0.5, {bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#banner'), 0.5, {opacity: 0}, '-=0.5')
-    .to($('#ferris'), 0.5, {bottom: '-60vh', ease: Expo.easeOut}, '-=0.2')
+    .to($('#ferris'), 0.5, {bottom: '-80vh', ease: Expo.easeOut}, '-=0.2')
+    .to($('#first div[class*="cloud-"]'), 0.3, {opacity: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#first .transition'), 0.2, {bottom: -50, ease: Linear.noEase})
@@ -50,7 +51,7 @@ $(() => {
   }).to($('#second .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#second .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#second .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#second .transition'), 0.2, {bottom: '-15vh', ease: Expo.easeIn})
+    .to($('#second .transition'), 0.2, {bottom: -50, ease: Linear.noEase})
   ).addTo(c);
 
   // third scene: shrink box
@@ -72,7 +73,7 @@ $(() => {
     .to($('#third .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#third .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#third .fourth'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#third .transition'), 0.2, {bottom: '-15vh', ease: Expo.easeIn})
+    .to($('#third .transition'), 0.2, {bottom: -50, ease: Linear.noEase})
   ).addTo(c);
 
   // fourth scene: shrink box

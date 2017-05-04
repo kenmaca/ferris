@@ -10,6 +10,7 @@
   width: 100vw;
   opacity: 0;
   bottom: -10vh;
+  z-index: 99;
 }
 
 .transition .first path {
@@ -26,4 +27,9 @@
 
 .transition .fourth path {
   fill: #ffffff;
+}
+
+/* white clouds gets lower layer due to persistency */
+.transition .fourth {
+  z-index: 1;
 }
