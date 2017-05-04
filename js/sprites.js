@@ -93,6 +93,30 @@ $(() => {
       $('#merry-go-round').html(svg);
     });
 
+  fetch('assets/img/main/carousel/top.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .top').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/base.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .base').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/horse-1.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .first').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/horse-2.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .second').html(svg);
+    });
+
   /* scene 2: letter */
   fetch('assets/img/main/letter.svg')
     .then(response => response.text())

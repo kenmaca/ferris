@@ -44,6 +44,11 @@ $(() => {
   // second scene: floating letters
   tw.to($('#letter'), 5, {y: '+=25px', x: '+=10px', rotation: -3, scale: 1.02, yoyo: true, repeat: -1, ease: Power1.easeInOut});
 
+  // second scene: carousel top
+  tw.to($('#carousel .top'), 4, {y: '+=50px', yoyo: true, repeat: -1});
+  tw.to($('#carousel .first'), 4, {y: '-=50px', yoyo: true, repeat: -1});
+  tw.to($('#carousel .second'), 4, {y: '+=50px', yoyo: true, repeat: -1});
+
   // second scene: cloud transition
   new ScrollMagic.Scene({
     triggerElement: '#second',
