@@ -5,9 +5,18 @@
 #merry-go-round {
   position: absolute;
   left: 3vw;
-  bottom: 3vh;
+  bottom: 5vh;
   width: 60vw;
   height: 60vw;
+  z-index: 2;
+}
+
+#letter {
+  position: absolute;
+  right: 10vw;
+  top: 10vh;
+  width: 15vw;
+  height: 15vw;
 }
 
 #second .cloud-1 {
@@ -35,4 +44,9 @@
 
 #second .transition .third path {
   fill: #FFFFFF;
+}
+
+#second .transition .fourth {
+  opacity: 1;
+  bottom: -32vh;
 }

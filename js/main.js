@@ -41,6 +41,9 @@ $(() => {
     top: '5vh', left: '5vw', right: '5vw', bottom: '5vh', onReverseComplete: jump('#first', true)
   }).addTo(c);
 
+  // second scene: floating letters
+  tw.to($('#letter'), 5, {y: '+=25px', x: '+=10px', rotation: -3, scale: 1.02, yoyo: true, repeat: -1, ease: Power1.easeInOut});
+
   // second scene: cloud transition
   new ScrollMagic.Scene({
     triggerElement: '#second',
