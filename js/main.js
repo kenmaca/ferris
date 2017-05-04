@@ -12,8 +12,9 @@ $(() => {
   });
 
   // first scene: ferris wheel rotation
-  tw.to($('g[class*="wheel"], #cars'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, transformOrigin: '50% 50%', ease: Linear.easeNone});
-  tw.to($('.car'), FERRIS_SPEED, {rotation: -ROTATION, repeat: -1, transformOrigin: '50% 50%', ease: Linear.easeNone});
+  tw.to($('#ferris .wheel'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1,});
+  tw.to($('.pods'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, transformOrigin: '48.5% 43.3%'});
+  tw.to($('.pod'), FERRIS_SPEED, {rotation: -ROTATION, repeat: -1, transformOrigin: '50% 2%'});
 
   // first scene: cloud transition
   new ScrollMagic.Scene({
@@ -25,10 +26,10 @@ $(() => {
   }).to($('#first .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#first .fourth'), 0.5, {bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#banner'), 0.5, {opacity: 0}, '-=0.5')
-    .to($('#ferris'), 0.5, {bottom: '-100%'}, '-=0.3')
+    .to($('#ferris'), 0.5, {bottom: '-60vh', ease: Expo.easeOut}, '-=0.2')
     .to($('#first .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#first .transition'), 0.2, {bottom: '-15vh', ease: Expo.easeIn})
+    .to($('#first .transition'), 0.2, {bottom: -50, ease: Linear.noEase})
   ).addTo(c);
 
   // second scene: shrink box

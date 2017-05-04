@@ -7,21 +7,107 @@
 
 #first .transition .fourth {
   opacity: 1;
+  bottom: -30vh;
 }
 
 /* ferris wheel */
 #ferris {
   position: absolute;
-  bottom: 10vh;
-  left: 0vw;
-  height: 80vh;
-  width: 80vh;
+  height: 100vh;
+  width: 100vh;
+  bottom: 5vh;
+  left: -5vw;
 }
 
-#ferris path, #ferris polygon {
-  fill: #FFFFFF;
-  stroke: #000000;
-  stroke-width: 0.2px;
+#ferris div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#ferris .rear.stand {
+  left: -2%;
+  top: 1%;
+  width: 97%;
+}
+
+#ferris .front.wheel {
+  left: 16.1%;
+  top: 8%;
+  width: 70%;
+  height: 70%;
+}
+
+#ferris .rear.wheel {
+  top: 9%;
+  left: 14%;
+  width: 68%;
+  height: 68%;
+}
+
+#ferris .pod {
+  height: 6%;
+  width: 6%;
+}
+
+#ferris .pod.first {
+  top: 34%;
+  left: 12%;
+}
+
+#ferris .pod.second {
+  top: 19%;
+  left: 21%;
+}
+
+#ferris .pod.third {
+  top: 10%;
+  left: 36%;
+}
+
+#ferris .pod.fourth {
+  top: 10%;
+  left: 53%;
+}
+
+#ferris .pod.fifth {
+  top: 18%;
+  left: 69%;
+}
+
+#ferris .pod.sixth {
+  top: 33%;
+  left: 77%;
+}
+
+#ferris .pod.seventh {
+  top: 51%;
+  left: 77%;
+}
+
+#ferris .pod.eighth {
+  top: 66%;
+  left: 69%;
+}
+
+#ferris .pod.nineth {
+  top: 75%;
+  left: 54%;
+}
+
+#ferris .pod.tenth {
+  top: 75%;
+  left: 37%;
+}
+
+#ferris .pod.eleventh {
+  top: 67%;
+  left: 22%;
+}
+
+#ferris .pod.twelfth {
+  top: 52%;
+  left: 13%;
 }
 
 /* banner */
@@ -87,11 +173,14 @@
   }
 
   #ferris {
-    bottom: 14vh;
-    left: 5vw;
-    right: 5vw;
+    bottom: 8vh;
+    left: 2vh;
     width: 90vw;
     height: 90vw;
+  }
+
+  #first .transition .fourth {
+    bottom: 0;
   }
 }
 
@@ -106,5 +195,9 @@
     left: -1vw;
     width: 80vw;
     height: 80vw;
+  }
+
+  #first .transition .fourth {
+    bottom: 0;
   }
 }

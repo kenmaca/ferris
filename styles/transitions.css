@@ -2,13 +2,14 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
+  bottom: 0;
 }
 
 .transition div {
   position: absolute;
-  bottom: -35vh;
   width: 100vw;
   opacity: 0;
+  bottom: -10vh;
 }
 
 .transition .first path {
@@ -25,17 +26,4 @@
 
 .transition .fourth path {
   fill: #ffffff;
-}
-
-/* responsive iphone */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .transition {
-    bottom: 0;
-  }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .transition {
-    bottom: 0;
-  }
 }

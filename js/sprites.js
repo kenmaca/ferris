@@ -11,6 +11,24 @@ $(() => {
       $('#banner').html(svg);
     });
 
+  fetch('assets/img/main/ferris/stand.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#ferris .stand').html(svg);
+    });
+
+  fetch('assets/img/main/ferris/wheel.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#ferris .wheel').html(svg);
+    });
+
+  fetch('assets/img/main/ferris/pod.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#ferris .pod').html(svg);
+    });
+
   // transition clouds
   fetch('assets/img/main/transition/first.svg')
     .then(response => response.text())
