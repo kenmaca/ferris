@@ -10,6 +10,20 @@
   bottom: -30vh;
 }
 
+#first .transition .third {
+  opacity: 1;
+  bottom: -22vh;
+  z-index: 1;
+}
+
+#first .transition .second {
+  opacity: 1;
+}
+
+#first .transition .first {
+  opacity: 1;
+}
+
 /* ferris wheel */
 #ferris {
   position: absolute;

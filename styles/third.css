@@ -1,5 +1,5 @@
 #third .box {
-  background-color: #EEA243;
+  background-color: #FFB354;
 }
 
 #third .cloud-2 {
@@ -20,13 +20,13 @@
 
 /* transitions */
 #third .transition .first path {
-  fill: #85658E;
+  fill: #DD9FD9;
 }
 
 #third .transition .second path {
-  fill: #FFD1DB;
+  fill: #F4C1C9;
 }
 
 #third .transition .third path {
-  fill: #66193F;
+  fill: #D68BA0;
 }

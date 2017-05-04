@@ -26,7 +26,7 @@ $(() => {
   }).to($('#first .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#first .fourth'), 0.5, {bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#banner'), 0.5, {opacity: 0}, '-=0.5')
-    .to($('#ferris'), 0.5, {bottom: '-80vh', ease: Expo.easeOut}, '-=0.2')
+    .to($('#ferris'), 0.5, {bottom: '-90vh', ease: Expo.easeOut}, '-=0.2')
     .to($('#first div[class*="cloud-"]'), 0.3, {opacity: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')

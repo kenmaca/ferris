@@ -35,11 +35,11 @@
 
 /* transitions */
 #second .transition .first path {
-  fill: #EEA243;
+  fill: #FFB354;
 }
 
 #second .transition .second path {
-  fill: #F3D34A;
+  fill: #FFDE55;
 }
 
 #second .transition .third path {
