@@ -135,6 +135,30 @@ $(() => {
       $('#carousel .horses .second').html(svg);
     });
 
+  fetch('assets/img/main/carousel/horse-3.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .horses .third').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/horse-4.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .horses .fourth').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/horse-5.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .horses .fifth').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/horse-6.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .horses .sixth').html(svg);
+    });
+
   /* scene 2: letter */
   fetch('assets/img/main/letter.svg')
     .then(response => response.text())

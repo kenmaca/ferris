@@ -3,6 +3,7 @@ $(() => {
   // consts
   const ROTATION = 360;
   const FERRIS_SPEED = 120;
+  const CAROUSEL_DELTA = 40;
 
   // scrollmagic init with aliases
   var c = new ScrollMagic.Controller({
@@ -42,13 +43,17 @@ $(() => {
   }).addTo(c);
 
   // second scene: floating letters
-  tw.to($('#letter'), 5, {y: '+=25px', x: '+=10px', rotation: -3, scale: 1.02, yoyo: true, repeat: -1, ease: Power1.easeInOut});
+  tw.to($('#letter'), 5, {y: '+=13%', x: '+=5%', rotation: -3, scale: 1.02, yoyo: true, repeat: -1, ease: Power1.easeInOut});
 
   // second scene: carousel top
-  tw.to($('#carousel .top'), 4, {y: '+=50%', yoyo: true, repeat: -1});
-  tw.to($('#carousel .top .screw'), 4, {y: '+=20%', yoyo: true, repeat: -1});
-  tw.to($('#carousel .horses .first'), 4, {y: '-=50%', yoyo: true, repeat: -1});
-  tw.to($('#carousel .horses .second'), 4, {y: '+=50%', yoyo: true, repeat: -1});
+  tw.to($('#carousel .top'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .top .screw'), 4, {y: `-=${CAROUSEL_DELTA * 1.5}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .first'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .second'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .third'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .fourth'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .fifth'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .sixth'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
 
   // second scene: cloud transition
   new ScrollMagic.Scene({

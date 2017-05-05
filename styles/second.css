@@ -25,7 +25,7 @@
   width: 20%;
   height: 20%;
   left: 41%;
-  bottom: 65%;
+  bottom: 63%;
 }
 
 #carousel .top .handle div {
@@ -42,11 +42,11 @@
 }
 
 #carousel .top .handle div:nth-of-type(1) {
-  animation-delay: 1.33s;
+  animation-delay: 1.32s;
 }
 
 #carousel .top .handle div:nth-of-type(2) {
-  animation-delay: 0.66s;
+  animation-delay: 0.65s;
 }
 
 #carousel .top .handle div:nth-of-type(3) {
@@ -69,10 +69,10 @@
 }
 
 #carousel .horses .first {
-  width: 8%;
-  height: 8%;
+  width: 6%;
+  height: 6%;
   bottom: 25%;
-  left: 13%;
+  left: 14%;
 }
 
 #carousel .horses .second {
@@ -80,6 +80,34 @@
   height: 12%;
   bottom: 24%;
   left: 23%;
+}
+
+#carousel .horses .third {
+  width: 14%;
+  height: 14%;
+  bottom: 18%;
+  left: 41%;
+}
+
+#carousel .horses .fourth {
+  width: 12%;
+  height: 12%;
+  bottom: 24%;
+  left: 60%;
+}
+
+#carousel .horses .fifth {
+  width: 8%;
+  height: 8%;
+  bottom: 22%;
+  left: 73%;
+}
+
+#carousel .horses .sixth {
+  width: 3%;
+  height: 3%;
+  bottom: 30%;
+  left: 82%;
 }
 
 #letter {
