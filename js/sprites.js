@@ -93,10 +93,16 @@ $(() => {
       $('#merry-go-round').html(svg);
     });
 
-  fetch('assets/img/main/carousel/top.svg')
+  fetch('assets/img/main/carousel/screw.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#carousel .top').html(svg);
+      $('#carousel .top .screw').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/handle.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .top .handle').html(svg);
     });
 
   fetch('assets/img/main/carousel/base.svg')

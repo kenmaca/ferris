@@ -46,6 +46,7 @@ $(() => {
 
   // second scene: carousel top
   tw.to($('#carousel .top'), 4, {y: '+=50px', yoyo: true, repeat: -1});
+  tw.to($('#carousel .top .screw'), 4, {y: '+=50px', yoyo: true, repeat: -1, ease: Linear.easeNone});
   tw.to($('#carousel .first'), 4, {y: '-=50px', yoyo: true, repeat: -1});
   tw.to($('#carousel .second'), 4, {y: '+=50px', yoyo: true, repeat: -1});
 
