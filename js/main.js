@@ -12,9 +12,9 @@ $(() => {
   });
 
   // first scene: ferris wheel rotation
-  tw.to($('#ferris .wheel'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1,});
-  tw.to($('.pods'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, transformOrigin: '48.5% 43.3%'});
-  tw.to($('.pod'), FERRIS_SPEED, {rotation: -ROTATION, repeat: -1, transformOrigin: '50% 2%'});
+  tw.to($('#ferris .wheel'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, ease: Linear.easeNone});
+  tw.to($('.pods'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, transformOrigin: '48.5% 43.3%', ease: Linear.easeNone});
+  tw.to($('.pod'), FERRIS_SPEED, {rotation: -ROTATION, repeat: -1, transformOrigin: '50% 2%', ease: Linear.easeNone});
 
   // first scene: cloud transition
   new ScrollMagic.Scene({
@@ -30,7 +30,7 @@ $(() => {
     .to($('#first div[class*="cloud-"]'), 0.3, {opacity: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.5')
     .to($('#first .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#first .transition'), 0.2, {bottom: -50, ease: Linear.noEase})
+    .to($('#first .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
   ).addTo(c);
 
   // second scene: shrink box
@@ -45,10 +45,10 @@ $(() => {
   tw.to($('#letter'), 5, {y: '+=25px', x: '+=10px', rotation: -3, scale: 1.02, yoyo: true, repeat: -1, ease: Power1.easeInOut});
 
   // second scene: carousel top
-  tw.to($('#carousel .top'), 4, {y: '+=50px', yoyo: true, repeat: -1});
-  tw.to($('#carousel .top .screw'), 4, {y: '+=50px', yoyo: true, repeat: -1, ease: Linear.easeNone});
-  tw.to($('#carousel .first'), 4, {y: '-=50px', yoyo: true, repeat: -1});
-  tw.to($('#carousel .second'), 4, {y: '+=50px', yoyo: true, repeat: -1});
+  tw.to($('#carousel .top'), 4, {y: '+=50%', yoyo: true, repeat: -1});
+  tw.to($('#carousel .top .screw'), 4, {y: '+=20%', yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .first'), 4, {y: '-=50%', yoyo: true, repeat: -1});
+  tw.to($('#carousel .horses .second'), 4, {y: '+=50%', yoyo: true, repeat: -1});
 
   // second scene: cloud transition
   new ScrollMagic.Scene({
@@ -60,7 +60,7 @@ $(() => {
   }).to($('#second .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#second .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#second .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#second .transition'), 0.2, {bottom: -50, ease: Linear.noEase})
+    .to($('#second .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
   ).addTo(c);
 
   // third scene: shrink box
@@ -82,7 +82,7 @@ $(() => {
     .to($('#third .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#third .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#third .fourth'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#third .transition'), 0.2, {bottom: -50, ease: Linear.noEase})
+    .to($('#third .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
   ).addTo(c);
 
   // fourth scene: shrink box

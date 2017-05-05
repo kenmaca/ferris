@@ -99,10 +99,22 @@ $(() => {
       $('#carousel .top .screw').html(svg);
     });
 
-  fetch('assets/img/main/carousel/handle.svg')
+  fetch('assets/img/main/carousel/handle-1.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#carousel .top .handle').html(svg);
+      $('#carousel .top .handle .first').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/handle-2.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .top .handle .second').html(svg);
+    });
+
+  fetch('assets/img/main/carousel/handle-3.svg')
+    .then(response => response.text())
+    .then(svg => {
+      $('#carousel .top .handle .third').html(svg);
     });
 
   fetch('assets/img/main/carousel/base.svg')
@@ -114,13 +126,13 @@ $(() => {
   fetch('assets/img/main/carousel/horse-1.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#carousel .first').html(svg);
+      $('#carousel .horses .first').html(svg);
     });
 
   fetch('assets/img/main/carousel/horse-2.svg')
     .then(response => response.text())
     .then(svg => {
-      $('#carousel .second').html(svg);
+      $('#carousel .horses .second').html(svg);
     });
 
   /* scene 2: letter */
