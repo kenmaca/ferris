@@ -1,8 +1,8 @@
 #first .box {
   background-color: #CCE4E6;
-  top: 5vh;
-  left: 5vw;
-  right: 5vw;
+  top: 2vw;
+  left: 2vw;
+  right: 2vw;
 }
 
 #first .transition .fourth {
@@ -183,21 +183,25 @@
 /* responsive iphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #banner {
-    top: 7vh;
-    left: 15vw;
-    right: 15vw;
-    height: 70vw;
-    width: 70vw;
+    top: -15vw;
+    left: 0;
+    right: 0;
+    height: 100vw;
+    width: 100vw;
   }
 
   #ferris {
-    bottom: 8vh;
-    left: 2vh;
+    bottom: 2vh;
+    left: 3vh;
     width: 90vw;
     height: 90vw;
   }
 
   #first .transition .fourth {
+    bottom: -7vh;
+  }
+
+  #first .transition .second, #first .transition .first {
     bottom: 0;
   }
 }

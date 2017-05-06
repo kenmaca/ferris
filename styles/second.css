@@ -155,3 +155,43 @@
   33% { visibility: hidden; }
   100% { visibility: hidden; }
 }
+
+/* responsive iphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #carousel {
+    width: 80vw;
+    height: 80vw;
+    bottom: 0;
+    left: 10vw;
+  }
+
+  #letter {
+    width: 30vw;
+    height: 30vw;
+    right: 10vw;
+    top: 25vh;
+  }
+
+  #second .transition .fourth {
+    bottom: -10vh;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #banner {
+    right: 0;
+    height: 60vw;
+    width: 60vw;
+  }
+
+  #ferris {
+    bottom: 2vh;
+    left: -1vw;
+    width: 80vw;
+    height: 80vw;
+  }
+
+  #first .transition .fourth {
+    bottom: -10vh;
+  }
+}
