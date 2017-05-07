@@ -24,13 +24,13 @@ $(() => {
     offset: 1
   }).setTween(new tl({
     onComplete: jump('#second')
-  }).to($('#first .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
-    .to($('#first .fourth'), 0.5, {bottom: 0, ease: Expo.easeOut}, '-=0.2')
+  }).to($('#first .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+    .to($('#first .transition .fourth'), 0.5, {bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#banner'), 0.5, {opacity: 0}, '-=0.5')
     .to($('#ferris'), 0.5, {bottom: '-90vh', ease: Expo.easeOut}, '-=0.2')
     .to($('#first div[class*="cloud-"]'), 0.3, {opacity: 0, ease: Expo.easeOut}, '-=0.5')
-    .to($('#first .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.5')
-    .to($('#first .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#first .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.5')
+    .to($('#first .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#first .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
   ).addTo(c);
 
@@ -47,7 +47,7 @@ $(() => {
 
   // second scene: carousel top
   tw.to($('#carousel .top'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
-  tw.to($('#carousel .top .screw'), 4, {y: `-=${CAROUSEL_DELTA * 1.5}%`, yoyo: true, repeat: -1});
+  tw.to($('#carousel .top .screw'), 4, {y: `+=${CAROUSEL_DELTA * 0.3}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .first'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .second'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .third'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
@@ -62,9 +62,9 @@ $(() => {
     offset: 1
   }).setTween(new tl({
     onComplete: jump('#third')
-  }).to($('#second .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
-    .to($('#second .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#second .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+  }).to($('#second .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+    .to($('#second .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#second .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#second .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
   ).addTo(c);
 
@@ -83,10 +83,10 @@ $(() => {
     offset: 1
   }).setTween(new tl({
     onComplete: jump('#fourth')
-  }).to($('#third .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
-    .to($('#third .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#third .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#third .fourth'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+  }).to($('#third .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+    .to($('#third .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#third .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
+    .to($('#third .transition .fourth'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#third .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
   ).addTo(c);
 
