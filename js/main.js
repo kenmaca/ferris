@@ -39,7 +39,7 @@ $(() => {
     triggerElement: '#second',
     duration: 0
   }).setTween('#second .box', 0.2, {
-    top: '5vh', left: '5vw', right: '5vw', bottom: '5vh', onReverseComplete: jump('#first', true)
+    top: '2vw', left: '2vw', right: '2vw', bottom: '2vw', onReverseComplete: jump('#first', true)
   }).addTo(c);
 
   // second scene: floating letters
@@ -73,7 +73,7 @@ $(() => {
     triggerElement: '#third',
     duration: 0
   }).setTween('#third .box', 0.2, {
-    top: '5vh', left: '5vw', right: '5vw', bottom: '5vh', onReverseComplete: jump('#second', true)
+    top: '2vw', left: '2vw', right: '2vw', bottom: '2vw', onReverseComplete: jump('#second', true)
   }).addTo(c);
 
   // third scene: cloud transition
@@ -95,7 +95,7 @@ $(() => {
     triggerElement: '#fourth',
     duration: 0
   }).setTween('#fourth .box', 0.2, {
-    top: '5vh', left: '5vw', right: '5vw', bottom: '5vh', onReverseComplete: jump('#third', true)
+    top: '2vw', left: '2vw', right: '2vw', bottom: '2vw', onReverseComplete: jump('#third', true)
   }).addTo(c);
 });
 

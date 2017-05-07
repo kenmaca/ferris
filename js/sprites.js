@@ -4,165 +4,43 @@
 */
 $(() => {
 
-  // transition clouds
-  fetch('assets/img/main/transition/first.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.transition .first').html(svg);
-    });
+  /* common: transition clouds */
+  loadSvg('transition/first', '.transition .first');
+  loadSvg('transition/second', '.transition .second');
+  loadSvg('transition/third', '.transition .third');
+  loadSvg('transition/fourth', '.transition .fourth');
 
-  fetch('assets/img/main/transition/second.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.transition .second').html(svg);
-    });
+  /* common: clouds */
+  loadSvg('clouds/a', '.cloud-1');
+  loadSvg('clouds/b', '.cloud-2');
+  loadSvg('clouds/c', '.cloud-3');
+  loadSvg('clouds/d', '.cloud-4');
+  loadSvg('clouds/e', '.cloud-5');
 
-  fetch('assets/img/main/transition/third.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.transition .third').html(svg);
-    });
+  /* scene 1 */
+  loadSvg('banner', '#banner');
+  loadSvg('ferris/stand', '#ferris .stand');
+  loadSvg('ferris/wheel', '#ferris .wheel');
+  loadSvg('ferris/pod', '#ferris .pod');
 
-  fetch('assets/img/main/transition/fourth.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.transition .fourth').html(svg);
-    });
+  /* scene 2 */
+  loadSvg('carousel/screw', '#carousel .top .screw');
+  loadSvg('carousel/handle-1', '#carousel .top .handle .first');
+  loadSvg('carousel/base', '#carousel .base');
+  loadSvg('carousel/horse-1', '#carousel .horses .first');
+  loadSvg('carousel/horse-2', '#carousel .horses .second');
+  loadSvg('carousel/horse-3', '#carousel .horses .third');
+  loadSvg('carousel/horse-4', '#carousel .horses .fourth');
+  loadSvg('carousel/horse-5', '#carousel .horses .fifth');
+  loadSvg('carousel/horse-6', '#carousel .horses .sixth');
+  loadSvg('letter', '#second #letter');
 
-  // clouds
-  fetch('assets/img/main/clouds/a.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.cloud-1').html(svg);
-    });
-
-  fetch('assets/img/main/clouds/b.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.cloud-2').html(svg);
-    });
-
-  fetch('assets/img/main/clouds/c.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.cloud-3').html(svg);
-    });
-
-  fetch('assets/img/main/clouds/d.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.cloud-4').html(svg);
-    });
-
-  fetch('assets/img/main/clouds/e.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('.cloud-5').html(svg);
-    });
-
-  // scene 1: banner
-  fetch('assets/img/main/banner.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#banner').html(svg);
-    });
-
-  // scene 1: ferris
-  fetch('assets/img/main/ferris/stand.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#ferris .stand').html(svg);
-    });
-
-  fetch('assets/img/main/ferris/wheel.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#ferris .wheel').html(svg);
-    });
-
-  fetch('assets/img/main/ferris/pod.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#ferris .pod').html(svg);
-    });
-
-  /* scene 2: carousel */
-  fetch('assets/img/main/merry-go-round.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#merry-go-round').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/screw.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .top .screw').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/handle-1.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .top .handle .first').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/handle-2.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .top .handle .second').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/handle-3.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .top .handle .third').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/base.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .base').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/horse-1.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .horses .first').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/horse-2.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .horses .second').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/horse-3.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .horses .third').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/horse-4.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .horses .fourth').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/horse-5.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .horses .fifth').html(svg);
-    });
-
-  fetch('assets/img/main/carousel/horse-6.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#carousel .horses .sixth').html(svg);
-    });
-
-  /* scene 2: letter */
-  fetch('assets/img/main/letter.svg')
-    .then(response => response.text())
-    .then(svg => {
-      $('#letter').html(svg);
-    });
+  /* scene 3 */
+  loadSvg('hot-air-balloon', '#third .hot-air-balloon');
 });
+
+function loadSvg(from, to) {
+  return fetch(`assets/img/main/${from}.svg`)
+    .then(response => response.text())
+    .then(svg => $(to).html(svg));
+}
