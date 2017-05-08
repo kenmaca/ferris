@@ -34,10 +34,93 @@
   height: 100%;
 }
 
+#press {
+  position: absolute;
+  bottom: -10vh;
+  right: 0;
+  width: 60vh;
+  height: 60vh;
+}
+
+#press div {
+  position: absolute;
+}
+
+#press .base {
+  width: 100%;
+  height: 100%;
+}
+
+#press .rolls {
+  top: 22%;
+  left: 47.5%;
+  width: 25%;
+  height: 25%;
+}
+
+#press .rolls div {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  animation-name: roll-swap;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-delay: 0.5s;
+}
+
+#press .rolls .first.roll {
+  animation-delay: 0s;
+}
+
+#press .wheel {
+  width: 10%;
+  height: 10%;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#press .first.wheel {
+  left: 38%;
+  top: 26%;
+  transform-origin: 48% 50%;
+}
+
+#press .second.wheel {
+  left: 43%;
+  top: 40%;
+  animation-direction: reverse;
+}
+
+#press .half-wheel {
+  width: 10%;
+  height: 10%;
+  animation-name: half-spin;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#press .first.half-wheel {
+  left: 32%;
+  top: 34%;
+  transform-origin: 80% 60%;
+}
+
+#press .second.half-wheel {
+  left: 41%;
+  top: 51.5%;
+  animation-direction: reverse;
+  transform-origin: 75% 60%;
+}
+
 #third .content {
   position: absolute;
   top: 45vh;
-  left: 35vw;
+  left: 38vw;
   width: 30vw;
 }
 
@@ -52,4 +135,22 @@
 
 #third .transition .third path {
   fill: #D68BA0;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes half-spin {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(30deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-30deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes roll-swap {
+  0% { visibility: visible; }
+  50% { visibility: hidden; }
 }

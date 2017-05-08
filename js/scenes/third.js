@@ -5,6 +5,13 @@
 
 // sprites
 loadSvg('hot-air-balloon', '#hot-air-balloon');
+loadSvg('press/base', '#press .base');
+loadSvg('press/roll-1', '#press .first.roll');
+loadSvg('press/roll-2', '#press .second.roll');
+loadSvg('press/half-wheel-1', '#press .first.half-wheel');
+loadSvg('press/half-wheel-2', '#press .second.half-wheel');
+loadSvg('press/wheel-1', '#press .first.wheel');
+loadSvg('press/wheel-2', '#press .second.wheel');
 
 $(() => {
   shrinkScene('#second', '#third', c);
