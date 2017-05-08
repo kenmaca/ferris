@@ -36,7 +36,8 @@ $(() => {
     offset: 1
   }).setTween(new tl({
     onComplete: jump('#fourth')
-  }).to($('#third .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+  }).to($('#third .content'), 0.2, {opacity: 0})
+    .to($('#third .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#third .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#hot-air-balloon-container'), 1, {top: '-120vh', ease: Power1.easeInOut}, '-=0.2')
     .to($('#third .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=1')
