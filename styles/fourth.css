@@ -3,8 +3,9 @@
 }
 
 #swings {
-  position: absolute;
-  width: 30vw;
-  height: 30vw;
-  bottom: 40vh;
+  position: fixed;
+  width: 200vh;
+  height: 200vh;
+  bottom: -540vh;
+  left: -30vw;
 }
