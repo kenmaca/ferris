@@ -38,7 +38,7 @@ $(() => {
     onComplete: jump('#fourth')
   }).to($('#third .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#third .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#hot-air-balloon-container'), 1, {top: '-100vh', ease: Power1.easeInOut}, '-=0.2')
+    .to($('#hot-air-balloon-container'), 1, {top: '-120vh', ease: Power1.easeInOut}, '-=0.2')
     .to($('#third .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=1')
     .to($('#third .transition .fourth'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.8')
     .to($('#third .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
