@@ -41,7 +41,8 @@ $(() => {
     offset: 1
   }).setTween(new tl({
     onComplete: jump('#third')
-  }).to($('#second .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+  }).to($('#second .content'), 0.2, {opacity: 0})
+    .to($('#second .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#second .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#second .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#second .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})

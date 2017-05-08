@@ -137,10 +137,11 @@
 
 #banner {
   position: absolute;
-  top: 10vh;
-  right: 5vw;
-  height: 40vw;
-  width: 40vw;
+  z-index: 1;
+  top: -10vh;
+  right: 2vw;
+  height: 45vw;
+  width: 45vw;
 }
 
 #first .cloud-1 {
@@ -160,6 +161,7 @@
 }
 
 #first .cloud-3 {
+  z-index: 2;
   top: 11vh;
   width: 5vw;
   height: 5vw;
@@ -167,6 +169,7 @@
 }
 
 #first .cloud-4 {
+  z-index: 2;
   top: 21vh;
   width: 12vw;
   height: 12vw;
@@ -174,10 +177,17 @@
 }
 
 #first .cloud-5 {
+  z-index: 2;
   top: 25vh;
   width: 5vw;
   height: 5vw;
   animation: clouds 350s linear -130s infinite;
+}
+
+#first .content {
+  position: absolute;
+  bottom: 2vw;
+  right: 4vw;
 }
 
 /* responsive iphone */

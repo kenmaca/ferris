@@ -114,6 +114,14 @@
   animation: clouds 200s linear -40s infinite;
 }
 
+/* content */
+#second .content {
+  position: absolute;
+  right: 8vw;
+  bottom: 17vw;
+  width: 30vw;
+}
+
 /* transitions */
 #second .transition .first path {
   fill: #FFB354;

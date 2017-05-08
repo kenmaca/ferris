@@ -27,7 +27,8 @@ $(() => {
     offset: 1
   }).setTween(new tl({
     onComplete: jump('#second')
-  }).to($('#first .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
+  }).to($('#first .content'), 0.2, {opacity: 0})
+    .to($('#first .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut})
     .to($('#first .transition .fourth'), 0.5, {bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#banner'), 0.5, {opacity: 0}, '-=0.5')
     .to($('#ferris'), 0.5, {bottom: '-90vh', ease: Power1.easeInOut}, '-=0.2')
