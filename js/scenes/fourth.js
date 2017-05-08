@@ -19,7 +19,7 @@ $(() => {
 
     // adjusts the amount of scroll proportionate to scene
     bottom: $('#fourth').height() * -0.1
-  }).addIndicators().addTo(c);
+  }).addTo(c);
 
   // cloud transition
   new ScrollMagic.Scene({
