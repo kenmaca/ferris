@@ -139,9 +139,9 @@
   position: absolute;
   z-index: 1;
   top: -10vh;
-  right: 2vw;
-  height: 45vw;
-  width: 45vw;
+  right: 15vh;
+  height: 70vh;
+  width: 70vh;
 }
 
 #first .cloud-1 {
@@ -186,8 +186,9 @@
 
 #first .content {
   position: absolute;
-  bottom: 3vw;
+  bottom: 2vw;
   right: 6vw;
+  color: #FFFFFF;
 }
 
 /* responsive iphone */
