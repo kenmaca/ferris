@@ -1,3 +1,10 @@
 #fourth .box {
   background-color: #DD9FD9;
 }
+
+#swings {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  bottom: 40vh;
+}

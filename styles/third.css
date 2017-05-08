@@ -11,11 +11,22 @@
 }
 
 #third .cloud-4 {
-  bottom: -30vh;
+  bottom: -55vh;
   left: -3vw;
-  width: 30vw;
-  height: 30vw;
+  width: 45vw;
+  height: 45vw;
+  z-index: 5;
   animation: hover 3s linear infinite;
+}
+
+/* used to animate slide in transition with css hover inner */
+#hot-air-balloon-container {
+  position: fixed;
+  width: 10vw;
+  height: 10vw;
+  left: 5vw;
+  top: -100vh;
+  z-index: 4;
 }
 
 /* transitions */
