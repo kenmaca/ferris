@@ -7,14 +7,7 @@
 loadSvg('hot-air-balloon', '#third .hot-air-balloon');
 
 $(() => {
-
-  // shrink box
-  new ScrollMagic.Scene({
-    triggerElement: '#third',
-    duration: 0
-  }).setTween('#third .box', 0.2, {
-    top: '2vw', left: '2vw', right: '2vw', bottom: '2vw', onReverseComplete: jump('#second', true)
-  }).addTo(c);
+  shrinkScene('#second', '#third', c);
 
   // cloud transition
   new ScrollMagic.Scene({

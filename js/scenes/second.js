@@ -19,14 +19,7 @@ loadSvg('carousel/horse-6', '#carousel .horses .sixth');
 loadSvg('letter', '#second #letter');
 
 $(() => {
-
-  // shrink box
-  new ScrollMagic.Scene({
-    triggerElement: '#second',
-    duration: 0
-  }).setTween('#second .box', 0.2, {
-    top: '2vw', left: '2vw', right: '2vw', bottom: '2vw', onReverseComplete: jump('#first', true)
-  }).addTo(c);
+  shrinkScene('#first', '#second', c);
 
   // floating letters
   tw.to($('#letter'), 5, {y: '+=13%', x: '+=5%', rotation: -3, scale: 1.02, yoyo: true, repeat: -1, ease: Power1.easeInOut});
