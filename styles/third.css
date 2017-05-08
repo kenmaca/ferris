@@ -11,8 +11,8 @@
 }
 
 #third .cloud-4 {
-  bottom: -65vh;
-  left: -3vw;
+  bottom: -20vw;
+  left: -5vw;
   width: 45vw;
   height: 45vw;
   z-index: 5;
@@ -32,6 +32,13 @@
 #hot-air-balloon {
   width: 100%;
   height: 100%;
+}
+
+#third .content {
+  position: absolute;
+  top: 45vh;
+  left: 35vw;
+  width: 30vw;
 }
 
 /* transitions */
