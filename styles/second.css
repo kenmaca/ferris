@@ -94,8 +94,8 @@
 
 #letter {
   position: absolute;
-  right: 10vw;
-  top: 10vh;
+  right: 8vw;
+  top: 8vh;
   width: 15vw;
   height: 15vw;
   z-index: 101;
