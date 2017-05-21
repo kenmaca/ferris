@@ -65,6 +65,36 @@ body {
   background-color: #FFFFFF;
 }
 
+/* full align container prominent sprite positioning */
+.prominent {
+  position: absolute;
+  height: 100vh;
+}
+
+.prominent.left {
+  left: 0;
+}
+
+.prominent.right {
+  right: 0;
+}
+
+.prominent.top {
+  top: 0;
+}
+
+.prominent.bottom {
+  bottom: 0;
+}
+
+.prominent.fill {
+  width: 100vw;
+}
+
+.prominent.half {
+  width: 50vw;
+}
+
 /* clouds */
 div[class*='cloud-'] {
   position: absolute;
