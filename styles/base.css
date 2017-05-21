@@ -81,10 +81,12 @@ body {
 
 .prominent.top {
   top: 0;
+  height: 50vh !important;
 }
 
 .prominent.bottom {
   bottom: 0;
+  height: 50vh !important;
 }
 
 .prominent.fill {
