@@ -138,11 +138,13 @@
 #banner {
   position: absolute;
   z-index: 1;
-  top: -10vh;
-  right: 15vh;
+  top: -2vh;
+  right: 5vh;
   height: 70vh;
   width: 70vh;
 }
+
+/* clouds removed on client request on v0.4.1
 
 #first .cloud-1 {
   z-index: 99;
@@ -182,7 +184,7 @@
   width: 5vw;
   height: 5vw;
   animation: clouds 350s linear -130s infinite;
-}
+}*/
 
 #first .content {
   position: absolute;
