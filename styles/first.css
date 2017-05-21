@@ -25,12 +25,16 @@
 }
 
 /* ferris wheel */
-#ferris {
+#ferris-container {
   position: absolute;
-  height: 110vh;
-  width: 110vh;
-  bottom: -5vh;
-  left: -5vw;
+  bottom: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+}
+
+#ferris {
+  margin: auto auto;
 }
 
 #ferris div {
@@ -41,6 +45,11 @@
 
 #ferris .front, #ferris .pods {
   z-index: 2;
+}
+
+#ferris .pods {
+  left: 1%;
+  top: -1%;
 }
 
 #ferris .rear.stand {
@@ -135,11 +144,17 @@
   stroke-width: 0px;
 }
 
-#banner {
+#banner-container {
   position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+}
+
+#banner {
   z-index: 1;
-  top: -2vh;
-  right: 5vh;
+  margin: -5vh auto;
   height: 70vh;
   width: 70vh;
 }
