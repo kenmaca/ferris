@@ -3,10 +3,11 @@
 }
 
 #third .cloud-2 {
-  top: 10vh;
-  right: 5vw;
+  top: 25vh;
+  left: 25vw;
   width: 25vw;
   height: 25vw;
+  z-index: 5;
   animation: hover 2s linear infinite;
 }
 
@@ -34,12 +35,20 @@
   height: 100%;
 }
 
+#font-blocks {
+  position: absolute;;
+  top: 0;
+  right: 10vw;
+  height: 45vh;
+  width: 45vh;
+}
+
 #press {
   position: absolute;
   bottom: -10vh;
   right: 0;
-  width: 60vh;
-  height: 60vh;
+  width: 70vh;
+  height: 70vh;
 }
 
 #press div {
@@ -118,10 +127,8 @@
 }
 
 #third .content {
-  position: absolute;
-  top: 45vh;
-  left: 38vw;
   width: 30vw;
+  margin-top: 30vh;
 }
 
 /* transitions */

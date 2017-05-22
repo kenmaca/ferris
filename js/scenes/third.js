@@ -12,6 +12,7 @@ loadSvg('press/half-wheel-1', '#press .first.half-wheel');
 loadSvg('press/half-wheel-2', '#press .second.half-wheel');
 loadSvg('press/wheel-1', '#press .first.wheel');
 loadSvg('press/wheel-2', '#press .second.wheel');
+loadSvg('font-blocks', '#font-blocks');
 
 $(() => {
   shrinkScene('#second', '#third', c);
