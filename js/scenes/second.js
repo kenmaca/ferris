@@ -38,7 +38,7 @@ $(() => {
   new ScrollMagic.Scene({
     triggerElement: '#second',
     duration: 0,
-    offset: 1
+    offset: 2
   }).setTween(new tl({
     onComplete: jump('#third')
   }).to($('#second .content'), 0.2, {opacity: 0})
