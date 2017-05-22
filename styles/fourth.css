@@ -2,10 +2,33 @@
   background-color: #DD9FD9;
 }
 
+#fourth .content {
+  margin-left: 10vw;
+  margin-top: 30vh;
+  width: 25vw;
+}
+
+#fourth #popcorn {
+  margin-left: 5vw;
+  height: 45vh;
+  width: 45vh;
+}
+
+/* fixed sprites, overlapping between scenes */
 #swings {
+  position: fixed;
+  width: 220vh;
+  height: 220vh;
+  bottom: -600vh;
+  left: -15vw;
+  z-index: 99;
+}
+
+#sharpener {
   position: fixed;
   width: 200vh;
   height: 200vh;
-  bottom: -540vh;
-  left: -30vw;
+  bottom: -600vh;
+  right: 10vw;
+  z-index: 99;
 }

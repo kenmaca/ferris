@@ -4,5 +4,4 @@
 */
 
 $(() => {
-  shrinkScene('#fourth', '#fifth', c);
 });

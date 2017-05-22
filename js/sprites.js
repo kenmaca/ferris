@@ -31,5 +31,5 @@ $(() => {
 function loadSvg(from, to) {
   return fetch(`${SVG_PATH}/${from}.svg`)
     .then(response => response.text())
-    .then(svg => $(to).html(svg));
+    .then(svg => $(to ? to: `#${from}`).html(svg));
 }

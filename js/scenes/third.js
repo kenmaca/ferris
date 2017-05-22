@@ -23,7 +23,8 @@ $(() => {
     duration: 0
   }).setTween('#hot-air-balloon-container', 1, {
     top: '-10vh',
-    ease: Power1.easeInOut
+    ease: Power1.easeInOut,
+    overwrite: false
   }).addTo(c);
 
   // hot-air-balloon sway
@@ -43,7 +44,8 @@ $(() => {
     duration: 0,
     offset: 2
   }).setTween(new tl({
-    onComplete: jump('#fourth')
+    onComplete: jump('#fourth'),
+    overwrite: true
   }).to($('#third .content'), 0.2, {opacity: 0})
     .to($('#third .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
     .to($('#third .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
