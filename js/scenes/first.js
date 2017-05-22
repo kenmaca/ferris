@@ -16,7 +16,7 @@ loadSvg('ferris/pod', '#ferris .pod');
 $(() => {
 
   // ferris wheel rotation
-  tw.to($('#ferris .wheel'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, transformOrigin: '50% 48%', ease: Linear.easeNone});
+  tw.to($('#ferris .wheel'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, ease: Linear.easeNone});
   tw.to($('.pods'), FERRIS_SPEED, {rotation: ROTATION, repeat: -1, transformOrigin: '48.5% 43.3%', ease: Linear.easeNone});
   tw.to($('.pod'), FERRIS_SPEED, {rotation: -ROTATION, repeat: -1, transformOrigin: '50% 2%', ease: Linear.easeNone});
 

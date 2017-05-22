@@ -5,8 +5,8 @@
 #carousel {
   position: absolute;
   bottom: -5vh;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
   z-index: 2;
 }
 
@@ -116,9 +116,7 @@
 
 /* content */
 #second .content {
-  position: absolute;
-  right: 8vw;
-  bottom: 17vw;
+  margin-top: 10vh;
   width: 30vw;
 }
 
