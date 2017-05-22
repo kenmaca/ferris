@@ -13,22 +13,3 @@
   height: 45vh;
   width: 45vh;
 }
-
-/* fixed sprites, overlapping between scenes */
-#swings {
-  position: fixed;
-  width: 220vh;
-  height: 220vh;
-  bottom: -600vh;
-  left: -15vw;
-  z-index: 99;
-}
-
-#sharpener {
-  position: fixed;
-  width: 200vh;
-  height: 200vh;
-  bottom: -600vh;
-  right: 10vw;
-  z-index: 99;
-}

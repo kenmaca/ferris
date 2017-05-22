@@ -1,7 +1,33 @@
 #fifth {
-  height: 300vh;
+  height: 180vh;
+  overflow: visible;
 }
 
 #fifth .box {
   background-color: #9C84D3;
+}
+
+#fifth #cat-tent {
+  position: absolute;
+  bottom: 5vh;
+  left: 10vw;
+  width: 90vh;
+  height: 90vh;
+}
+
+#fifth #swings {
+  position: absolute;
+  width: 220vh;
+  height: 220vh;
+  bottom: 6vh;
+  left: -8vw;
+}
+
+#fifth #sharpener {
+  position: fixed;
+  width: 200vh;
+  height: 200vh;
+  bottom: -600vh;
+  right: 10vw;
+  z-index: 99;
 }

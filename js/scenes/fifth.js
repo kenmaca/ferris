@@ -3,5 +3,8 @@
    @author Kenneth Ma (http://kenma.ca), 2017
 */
 
+// sprites
+loadSvg('cat-tent');
+
 $(() => {
 });
