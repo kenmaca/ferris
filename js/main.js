@@ -21,7 +21,8 @@ var tl = TimelineMax;
    @return a scroller function
 */
 function jump(target) {
-  return () => new tl().to(window, 0.5, {scrollTo: target, autoKill: false})
+  // return () => new tl().to(window, 0.5, {scrollTo: target})
+  return () => {};
 }
 
 /* Creates a new animation to shrink a scene box with reversing animation.
