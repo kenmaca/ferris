@@ -19,7 +19,6 @@ loadSvg('carousel/horse-6', '#carousel .horses .sixth');
 loadSvg('letter', '#second #letter');
 
 $(() => {
-  shrinkScene('#first', '#second', c);
 
   // floating letters
   tw.to($('#letter'), 5, {y: '+=13%', x: '+=5%', rotation: -3, scale: 1.02, yoyo: true, repeat: -1, ease: Power1.easeInOut});
@@ -33,18 +32,4 @@ $(() => {
   tw.to($('#carousel .horses .fourth'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .fifth'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .sixth'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
-
-  // cloud transition
-  new ScrollMagic.Scene({
-    triggerElement: '#second',
-    duration: 0,
-    offset: 2
-  }).setTween(new tl({
-    onComplete: jump('#third')
-  }).to($('#second .content'), 0.2, {opacity: 0})
-    .to($('#second .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#second .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#second .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#second .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
-  ).addTo(c);
 });

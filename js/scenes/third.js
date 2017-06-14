@@ -15,17 +15,6 @@ loadSvg('press/wheel-2', '#press .second.wheel');
 loadSvg('font-blocks', '#font-blocks');
 
 $(() => {
-  shrinkScene('#second', '#third', c);
-
-  // slide hot-air-balloon in
-  new ScrollMagic.Scene({
-    triggerElement: '#third',
-    duration: 0
-  }).setTween('#hot-air-balloon-container', 1, {
-    top: '-10vh',
-    ease: Power1.easeInOut,
-    overwrite: false
-  }).addTo(c);
 
   // hot-air-balloon sway
   tw.to($('#hot-air-balloon'), 4, {
@@ -37,21 +26,4 @@ $(() => {
     repeat: -1,
     ease: Power1.easeInOut
   });
-
-  // cloud transition
-  new ScrollMagic.Scene({
-    triggerElement: '#third',
-    duration: 0,
-    offset: 2
-  }).setTween(new tl({
-    onComplete: jump('#fourth'),
-    overwrite: true
-  }).to($('#third .content'), 0.2, {opacity: 0})
-    .to($('#third .transition .first'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#third .transition .second'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.2')
-    .to($('#hot-air-balloon-container'), 1, {top: '-120vh', ease: Power1.easeInOut}, '-=0.2')
-    .to($('#third .transition .third'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=1')
-    .to($('#third .transition .fourth'), 0.5, {opacity: 1, bottom: 0, ease: Expo.easeOut}, '-=0.8')
-    .to($('#third .transition'), 0.2, {bottom: -50, ease: Linear.easeNone})
-  ).addTo(c);
 });
