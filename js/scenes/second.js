@@ -18,6 +18,11 @@ loadSvg('carousel/horse-5', '#carousel .horses .fifth');
 loadSvg('carousel/horse-6', '#carousel .horses .sixth');
 loadSvg('letter', '#second #letter');
 
+// clouds
+loadSvg('clouds/cloud 7', '#second .cloud-7');
+loadSvg('clouds/cloud 8', '#second .cloud-8');
+loadSvg('clouds/cloud 9', '#second .cloud-9');
+
 $(() => {
 
   // floating letters

@@ -14,6 +14,9 @@ loadSvg('press/wheel-1', '#press .first.wheel');
 loadSvg('press/wheel-2', '#press .second.wheel');
 loadSvg('font-blocks', '#font-blocks');
 
+// clouds
+loadSvg('clouds/cloud 10', '#third .cloud-10');
+
 $(() => {
 
   // hot-air-balloon sway

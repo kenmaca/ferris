@@ -1,24 +1,3 @@
-#third .box {
-  background-color: #FFB354;
-}
-
-#third .cloud-2 {
-  top: 25vh;
-  left: 25vw;
-  width: 25vw;
-  height: 25vw;
-  z-index: 5;
-  animation: hover 2s linear infinite;
-}
-
-#third .cloud-4 {
-  bottom: -20vw;
-  left: -5vw;
-  width: 45vw;
-  height: 45vw;
-  z-index: 5;
-  animation: hover 3s linear infinite;
-}
 
 /* used to animate slide in transition with css hover inner */
 #hot-air-balloon-container {
@@ -131,17 +110,11 @@
   margin-top: 30vh;
 }
 
-/* transitions */
-#third .transition .first path {
-  fill: #DD9FD9;
-}
-
-#third .transition .second path {
-  fill: #F4C1C9;
-}
-
-#third .transition .third path {
-  fill: #D68BA0;
+/* clouds */
+.cloud-10 {
+  top: 0vh;
+  right: 5vw;
+  width: 30vw;
 }
 
 @keyframes spin {
