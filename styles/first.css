@@ -105,17 +105,11 @@
 }
 
 /* banner */
-#banner path {
-  fill: #FFFFFF;
-  stroke: transparent;
-  stroke-width: 0px;
-}
-
 #banner {
   z-index: 1;
   margin: -5vh auto;
-  height: 70vh;
-  width: 70vh;
+  height: 35vh;
+  width: 35vh;
 }
 
 /* clouds */
