@@ -9,25 +9,108 @@
 
 #fifth #cat-tent {
   position: absolute;
-  bottom: 5vh;
-  left: 10vw;
+  bottom: -10vh;
+  left: 15vw;
   width: 90vh;
   height: 90vh;
+  z-index: 4;
+}
+
+#fifth #path-tent {
+  position: absolute;
+  bottom: -57vh;
+  left: 34vw;
+  width: 120vh;
+  height: 120vh;
+  z-index: 3;
 }
 
 #fifth #swings {
   position: absolute;
-  width: 220vh;
-  height: 220vh;
-  bottom: 6vh;
-  left: -8vw;
+  width: 120vh;
+  height: 120vh;
+  bottom: 151vh;
+  left: -2vw;
+  z-index: 0;
+}
+
+#fifth #bush-1 {
+  position: absolute;
+  width: 38vh;
+  height: 38vh;
+  bottom: -20vh;
+  left: 4vw;
+  z-index: 3;
+}
+
+#fifth #bush-2 {
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  bottom: -26vh;
+  left: 35vw;
+  z-index: 3;
+}
+
+#fifth #bush-3 {
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  bottom: -22vh; 
+  left: 72vw;
+  z-index: 3;
+}
+
+#fifth #bush-4 {
+  position: absolute;
+  width: 90vh;
+  height: 90vh;
+  bottom: -35vh;
+  left: 0vw;
+  z-index: 2;
+}
+
+#fifth #bush-5 {
+  position: absolute;
+  width: 80vh;
+  height: 80vh;
+  bottom: -20vh;
+  left: 61vw;
+  z-index: 2;
+}
+
+#fifth #bush-6 {
+  position: absolute;
+  width: 60vh;
+  height: 60vh;
+  bottom: 10vh;
+  left: 68vw;
+  z-index: 0;
+}
+
+#fifth #bush-7 {
+  position: absolute;
+  width: 80vh;
+  height: 80vh;
+  bottom: -35vh;
+  left: 0vw;
+  z-index: 2;
+}
+
+#fifth #bush-8 {
+  position: absolute;
+  width: 85vh;
+  height: 85vh;
+  bottom: -35vh;
+  left: 58vw;
+  z-index: 2;
 }
 
 #fifth #sharpener {
-  position: fixed;
-  width: 200vh;
-  height: 200vh;
-  bottom: -600vh;
-  right: 10vw;
-  z-index: 99;
+  position: absolute;
+  width: 55vh;
+  height: 55vh;
+  bottom: 193vh;
+  right: 0vw;
+  z-index: 1;
 }
