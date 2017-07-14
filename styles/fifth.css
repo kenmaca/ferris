@@ -31,7 +31,7 @@
   height: 120vh;
   bottom: 151vh;
   left: -2vw;
-  z-index: 0;
+  z-index: 1;
 }
 
 #fifth #bush-1 {
@@ -113,4 +113,20 @@
   bottom: 193vh;
   right: 0vw;
   z-index: 1;
+}
+
+#cloud-13 {
+  position: absolute;
+  top: 20vh;
+  left: 3vw;
+  width: 40vw;
+  z-index: 0;
+}
+
+#cloud-14 {
+  position: absolute;
+  top: 50vh;
+  left: 14vw;
+  width: 15vw;
+  z-index: 2;
 }

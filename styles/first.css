@@ -113,16 +113,20 @@
 }
 
 /* clouds */
-.cloud-1 {
-  top: 5vh;
-  right: -25vw;
-  width: 100vw;
+#cloud-1 {
+  position: absolute;
+  top: 75vh;
+  left: -10vw;
+  width: 80vw;
+  z-index: 10;
 }
 
-.cloud-2 {
-  top: 30vh;
+#cloud-2 {
+  position: absolute;
+  top: 35vh;
   left: -10vw;
-  width: 100vw;
+  width: 80vw;
+  z-index: 0;
 }
 
 .cloud-3 {

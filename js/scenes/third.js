@@ -4,7 +4,7 @@
 */
 
 // sprites
-loadSvg('hot-air-balloon', '#hot-air-balloon');
+loadSvg('hot-air-balloon');
 loadSvg('press/base', '#press .base');
 loadSvg('press/roll-1', '#press .first.roll');
 loadSvg('press/roll-2', '#press .second.roll');
@@ -15,7 +15,9 @@ loadSvg('press/wheel-2', '#press .second.wheel');
 loadSvg('font-blocks', '#font-blocks');
 
 // clouds
-loadSvg('clouds/cloud 10', '#third .cloud-10');
+loadSvg('clouds/cloud-8', '#cloud-8');
+loadSvg('clouds/cloud-9', '#cloud-9');
+loadSvg('clouds/cloud-10', '#cloud-10');
 
 $(() => {
 

@@ -19,9 +19,11 @@ loadSvg('carousel/horse-6', '#carousel .horses .sixth');
 loadSvg('letter', '#second #letter');
 
 // clouds
-loadSvg('clouds/cloud 7', '#second .cloud-7');
-loadSvg('clouds/cloud 8', '#second .cloud-8');
-loadSvg('clouds/cloud 9', '#second .cloud-9');
+loadSvg('clouds/cloud-3', '#cloud-3');
+loadSvg('clouds/cloud-4', '#cloud-4');
+loadSvg('clouds/cloud-5', '#cloud-5');
+loadSvg('clouds/cloud-6', '#cloud-6');
+loadSvg('clouds/cloud-7', '#cloud-7');
 
 $(() => {
 

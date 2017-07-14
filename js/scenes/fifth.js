@@ -16,5 +16,9 @@ loadSvg('bushes/bush-6', '#bush-6');
 loadSvg('bushes/bush-7', '#bush-7');
 loadSvg('bushes/bush-8', '#bush-8');
 
+// clouds
+loadSvg('clouds/cloud-13', '#cloud-13');
+loadSvg('clouds/cloud-14', '#cloud-14');
+
 $(() => {
 });

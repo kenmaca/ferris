@@ -13,3 +13,19 @@
   height: 45vh;
   width: 45vh;
 }
+
+#cloud-11 {
+  position: absolute;
+  top: 42vh;
+  left: 4vw;
+  width: 20vw;
+  z-index: 0;
+}
+
+#cloud-12 {
+  position: absolute;
+  top: 102vh;
+  right: 25vw;
+  width: 10vw;
+  z-index: 0;
+}

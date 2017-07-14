@@ -14,12 +14,8 @@ loadSvg('ferris/wheel', '#ferris .wheel');
 loadSvg('ferris/pod', '#ferris .pod');
 
 // clouds
-loadSvg('clouds/cloud 6', '#first .cloud-6');
-loadSvg('clouds/cloud 5', '#first .cloud-5');
-loadSvg('clouds/cloud 4', '#first .cloud-4');
-loadSvg('clouds/cloud 3', '#first .cloud-3');
-loadSvg('clouds/cloud 2', '#first .cloud-2');
-loadSvg('clouds/cloud 1', '#first .cloud-1');
+loadSvg('clouds/cloud-1', '#cloud-1');
+loadSvg('clouds/cloud-2', '#cloud-2');
 
 $(() => {
 
