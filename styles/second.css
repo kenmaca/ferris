@@ -90,7 +90,7 @@
 #letter {
   position: absolute;
   right: 32vw;
-  top: 4vh;
+  top: 7vh;
   width: 15vw;
   height: 15vw;
   z-index: 101;
@@ -98,25 +98,25 @@
 
 /* content */
 #second .content {
-  margin-top: 10vh;
+  margin-top: 25vh;
   width: 30vw;
 }
 
 /* clouds */
 #cloud-3 {
   position: absolute;
-  top: 60vh;
-  left: -14vw;
+  top: 65vh;
+  left: -18vw;
   width: 80vw;
   z-index: 0;
 }
 
 #cloud-4 {
   position: absolute;
-  top: 75vh;
+  top: 80vh;
   left: -14vw;
   width: 80vw;
-  z-index: 10;
+  z-index: 20;
 }
 
 #cloud-5 {
@@ -124,7 +124,6 @@
   top: 15vh;
   left: 32vw;
   width: 20vw;
-  z-index: 10;
 }
 
 #cloud-6 {
@@ -132,15 +131,13 @@
   top: 2vh;
   right: 8vw;
   width: 35vw;
-  z-index: 0;
 }
 
 #cloud-7 {
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   right: 6vw;
   width: 20vw;
-  z-index: 0;
 }
 
 /* responsive iphone */
