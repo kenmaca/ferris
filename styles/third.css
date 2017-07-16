@@ -2,9 +2,10 @@
 /* used to animate slide in transition with css hover inner */
 #hot-air-balloon {
   position: absolute;
+  bottom: 50vh;
   width: 70vh;
   height: 70vh;
-  z-index: 2;
+  z-index: 21;
 }
 
 #font-blocks {
@@ -107,17 +108,16 @@
 /* clouds */
 #cloud-8 {
   position: absolute;
-  top: 15vh;
-  left: -1vw;
+  top: 5vh;
   width: 40vw;
   z-index: 0;
 }
 
 #cloud-9 {
   position: absolute;
-  top: 32vh;
-  left: 35vw;
-  width: 20vw;
+  top: 30vh;
+  left: 40vw;
+  width: 15vw;
   z-index: 0;
 }
 
