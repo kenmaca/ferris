@@ -4,11 +4,12 @@
 
 #fourth .content {
   margin-left: 10vw;
-  margin-top: 30vh;
+  margin-top: 10vh;
   width: 30vw;
 }
 
 #fourth #popcorn {
+  margin-top: -10vh;
   margin-left: 5vw;
   height: 45vh;
   width: 45vh;

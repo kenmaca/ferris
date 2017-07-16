@@ -21,6 +21,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* scene content descriptors */
@@ -69,6 +70,10 @@ body {
   position: absolute;
   height: 100vh;
   display: flex;
+}
+
+.prominent.vertical {
+  flex-direction: column;
 }
 
 .prominent.fixed {
