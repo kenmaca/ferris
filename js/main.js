@@ -44,3 +44,7 @@ function shrinkScene(from, to, controller) {
     onReverseComplete: jump(from, true)
   }).addTo(controller);
 }
+
+$(() => {
+  $('#frame').fullpage({});
+})

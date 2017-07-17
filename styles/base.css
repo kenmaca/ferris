@@ -10,7 +10,6 @@ body {
 #frame {
   height: 600vh;
   width: 100vw;
-  overflow: hidden;
 }
 
 #gradient {
@@ -73,6 +72,7 @@ body {
 
 /* full align container prominent sprite positioning */
 .prominent {
+  top: 0;
   position: absolute;
   height: 100vh;
   display: flex;
