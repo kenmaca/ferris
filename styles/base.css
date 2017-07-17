@@ -7,6 +7,12 @@ body {
   font-size: 14px;
 }
 
+#frame {
+  height: 600vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 #gradient {
   position: absolute;
   left: 2vw;

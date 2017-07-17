@@ -1,7 +1,7 @@
 #cloud-13 {
   position: absolute;
   top: 20vh;
-  left: 3vw;
+  left: 0vw;
   width: 40vw;
   z-index: 0;
 }
@@ -9,7 +9,7 @@
 #cloud-14 {
   position: absolute;
   top: 50vh;
-  left: 14vw;
+  left: 10vw;
   width: 15vw;
   z-index: 2;
 }
