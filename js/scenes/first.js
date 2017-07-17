@@ -9,8 +9,10 @@ const FERRIS_SPEED = 120;
 
 // sprites
 loadSvg('banner', '#banner');
-loadSvg('ferris/stand', '#ferris .stand');
-loadSvg('ferris/wheel', '#ferris .wheel');
+loadSvg('ferris/rear-stand', '#ferris .rear.stand');
+loadSvg('ferris/stand', '#ferris .front.stand');
+loadSvg('ferris/rear-wheel', '#ferris .rear.wheel');
+loadSvg('ferris/wheel', '#ferris .front.wheel');
 loadSvg('ferris/pod', '#ferris .pod');
 
 // clouds
