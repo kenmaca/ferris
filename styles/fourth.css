@@ -3,7 +3,7 @@
 }
 
 #fourth .content {
-  margin-left: 10vw;
+  margin-left: -5vw;
   margin-top: 10vh;
   width: 30vw;
 }
@@ -19,14 +19,14 @@
   position: absolute;
   top: 42vh;
   left: 4vw;
-  width: 20vw;
+  width: 15vw;
   z-index: 0;
 }
 
 #cloud-12 {
   position: absolute;
-  top: 102vh;
-  right: 25vw;
+  bottom: 10vh;
+  right: 35vw;
   width: 10vw;
   z-index: 0;
 }
