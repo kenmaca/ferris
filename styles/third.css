@@ -27,6 +27,7 @@
 
 #press div {
   position: absolute;
+  z-index: 1;
 }
 
 #press .base {
@@ -123,7 +124,7 @@
 
 #cloud-10 {
   position: absolute;
-  top: 12vh;
+  top: 5vh;
   right: 4vw;
   width: 35vw;
   z-index: 0;
