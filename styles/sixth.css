@@ -1,0 +1,125 @@
+#sixth {
+  overflow: visible;
+}
+
+#sixth .box {
+  background-color: #9C84D3;
+}
+
+#sixth #floor {
+  overflow: hidden;
+}
+
+#sixth #cat-tent {
+  position: absolute;
+  bottom: 5vh;
+  left: 10vw;
+  width: 85vh;
+  height: 85vh;
+  z-index: 4;
+}
+
+#sixth #path-tent {
+  position: absolute;
+  top: 25vh;
+  left: 34vw;
+  width: 110vh;
+  height: 110vh;
+  z-index: 3;
+}
+
+#sixth #swings {
+  position: absolute;
+  width: 120vh;
+  height: 120vh;
+  bottom: 170vh;
+  left: -8vw;
+  z-index: 1;
+}
+
+/* white left forward */
+#sixth #bush-1 {
+  position: absolute;
+  width: 34vh;
+  height: 34vh;
+  top: 70vh;
+  left: 4vw;
+  z-index: 3;
+}
+
+/* white second left forward */
+#sixth #bush-2 {
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  top: 65vh;
+  left: 30vw;
+  z-index: 3;
+}
+
+/* white right forward */
+#sixth #bush-3 {
+  position: absolute;
+  width: 45vh;
+  height: 45vh;
+  top: 55vh;
+  right: 5vw;
+  z-index: 3;
+}
+
+/* light rear left */
+#sixth #bush-4 {
+  position: absolute;
+  width: 90vh;
+  height: 90vh;
+  top: 35vh;
+  left: 0vw;
+  z-index: 2;
+}
+
+#sixth #bush-5 {
+  position: absolute;
+  width: 80vh;
+  height: 80vh;
+  top: 35vh;
+  left: 61vw;
+  z-index: 2;
+}
+
+/* light rear behind pencil-box */
+#sixth #bush-6 {
+  position: absolute;
+  width: 60vh;
+  height: 60vh;
+  top: 20vh;
+  left: 68vw;
+  z-index: 0;
+}
+
+/* dark middle left */
+#sixth #bush-7 {
+  position: absolute;
+  width: 80vh;
+  height: 80vh;
+  top: 43vh;
+  left: 0vw;
+  z-index: 2;
+}
+
+#sixth #bush-8 {
+  position: absolute;
+  width: 85vh;
+  height: 85vh;
+  top: 41vh;
+  left: 58vw;
+  z-index: 2;
+}
+
+#sixth #sharpener {
+  position: absolute;
+  width: 65vh;
+  height: 55vh;
+  bottom: 230vh;
+  right: 0vw;
+  z-index: 1;
+}
