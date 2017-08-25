@@ -33,3 +33,45 @@
 .transition .fourth {
   z-index: 1;
 }
+
+/* first scene bottom clouds */
+#cloud-1-tr {
+  position: absolute;
+  top: 200vh;
+  left: -10vw;
+  width: 195vw;
+  z-index: 1000;
+}
+
+#cloud-2-tr {
+  position: absolute;
+  top: 200vh;
+  left: -10vw;
+  width: 180vw;
+  z-index: 1000;
+}
+
+#cloud-3-tr {
+  position: absolute;
+  top: 200vh;
+  right: -10vw;
+  width: 180vw;
+  z-index: 1000;
+}
+
+#cloud-4-tr {
+  position: absolute;
+  top: 200vh;
+  right: -10vw;
+  width: 195vw;
+  z-index: 1000;
+}
+
+/* second scene top clouds */
+#cloud-5-tr {
+  position: absolute;
+  top: -35vh;
+  left: -30vw;
+  width: 195vw;
+  z-index: 1000;
+}

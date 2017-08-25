@@ -19,6 +19,12 @@ loadSvg('ferris/pod', '#ferris .pod');
 loadSvg('clouds/cloud-1', '#cloud-1');
 loadSvg('clouds/cloud-2', '#cloud-2');
 
+// transition clouds
+loadSvg('clouds/cloud-1', '#cloud-1-tr');
+loadSvg('clouds/cloud-3', '#cloud-2-tr');
+loadSvg('clouds/cloud-3', '#cloud-3-tr');
+loadSvg('clouds/cloud-1', '#cloud-4-tr');
+
 $(() => {
 
   // ferris wheel rotation

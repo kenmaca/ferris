@@ -133,32 +133,6 @@
   z-index: 0;
 }
 
-.cloud-3 {
-  bottom: 5vh;
-  left: -15vw;
-  width: 90vw;
-}
-
-.cloud-4 {
-  z-index: 2;
-  bottom: -5vh;
-  left: -5vw;
-  width: 60vw;
-}
-
-.cloud-5 {
-  z-index: 3;
-  bottom: -20vh;
-  left: -10vw;
-  width: 100vw;
-}
-
-.cloud-6 {
-  bottom: -5vh;
-  right: -10vw;
-  width: 60vw;
-}
-
 /* clouds removed on client request on v0.4.1
 
 #first .transition .fourth {
