@@ -12,10 +12,10 @@
 
 #sixth #cat-tent {
   position: absolute;
-  bottom: 5vh;
-  left: 10vw;
-  width: 85vh;
-  height: 85vh;
+  bottom: 15vh;
+  left: 15vw;
+  width: 65vh;
+  height: 65vh;
   z-index: 4;
 }
 
