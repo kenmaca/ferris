@@ -45,9 +45,9 @@ $('#frame').fullpage({
         cloudTransition(direction, index);
         sceneNumberToTransition[index](direction);
         delay = SCROLL_DOWN_DELAY;
-        if (index == 5) delay = 0;
+        if (index >= 4) delay = 0;
       }
-
+      
       clearTimeout(timeoutId);
       timeoutId = setTimeout(function(){
         animationIsFinished = true;

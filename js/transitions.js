@@ -44,7 +44,7 @@ function fromSixthScene(direction) {
 }
 
 function cloudTransition(direction, scene) {
-  if (scene < 5) {
+  if (scene < 4) {
     var sceneId = sceneNumberToId[scene];
     if (direction == "down") {
       tw.to($(`${sceneId} .content`), 0.2, {opacity: 0});
