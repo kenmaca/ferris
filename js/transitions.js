@@ -64,7 +64,7 @@ function cloudTransition(direction, scene) {
         tw.to($(`${sceneId} .transition .third`), 1, {bottom: "-70vh", ease: Expo.easeOut, delay: 1});
         tw.to($(`${sceneId} .transition .fourth`), 0.7, {bottom: "-70vh", ease: Expo.easeOut, delay: 1});
         tw.to($(`${sceneId} .transition .first`), 1, {bottom: "-70vh", ease: Expo.easeOut, delay: 1});
-        tw.to($(`${sceneId} .content`), 0.2, {opacity: 1, delay: 1.8});
+        tw.to($(`${sceneId} .content`), 0.2, {opacity: 1, delay: 1});
   
         setTimeout(() => {
           animationHasStarted = false;
