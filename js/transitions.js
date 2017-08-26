@@ -54,7 +54,8 @@ function cloudTransition(direction, scene) {
       tw.to($(`${sceneId} .transition .second`), 0.7, {bottom: "0vh", ease: Expo.easeOut});
       tw.to($(`${sceneId} .transition .fourth`), 0.5, {bottom: "30vh", ease: Expo.easeOut, delay: 0.9});
       tw.to($(`${sceneId} .transition .third`), 0.5, {bottom: "20vh", ease: Expo.easeOut, delay: 1.3});
-      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-5vh", ease: Expo.easeOut, delay: 1.8});
+      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.8});
+      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 2.2});
     } else if (direction == "up") {
       setTimeout(() => {
         tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut});

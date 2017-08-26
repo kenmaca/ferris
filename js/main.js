@@ -19,7 +19,7 @@ function jump(target) {
   return () => {};
 }
 
-const SCROLL_DOWN_DELAY = 1800; //milliseconds
+const SCROLL_DOWN_DELAY = 2200; //milliseconds
 const SCROLL_UP_DELAY = 0;
 const SCROLLING_SPEED = 700;
 var timeoutId;
