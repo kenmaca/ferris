@@ -19,6 +19,12 @@ loadSvg('clouds/cloud-8', '#cloud-8');
 loadSvg('clouds/cloud-9', '#cloud-9');
 loadSvg('clouds/cloud-10', '#cloud-10');
 
+// transition clouds
+loadSvg('transition/first', '#third .transition .first');
+loadSvg('transition/second', '#third .transition .second');
+loadSvg('transition/third', '#third .transition .third');
+loadSvg('transition/fourth', '#third .transition .fourth');
+
 $(() => {
 
   // hot-air-balloon sway

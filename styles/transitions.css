@@ -8,25 +8,9 @@
 .transition div {
   position: absolute;
   width: 100vw;
-  opacity: 0;
-  bottom: -10vh;
-  z-index: 99;
-}
-
-.transition .first path {
-  fill: #a0c0e0;
-}
-
-.transition .second path {
-  fill: #d9e1ed;
-}
-
-.transition .third path {
-  fill: #badce8;
-}
-
-.transition .fourth path {
-  fill: #ffffff;
+  /* opacity: 0; */
+  bottom: -70vh;
+  z-index: 1000;
 }
 
 /* white clouds gets lower layer due to persistency */
@@ -34,44 +18,66 @@
   z-index: 1;
 }
 
-/* first scene bottom clouds */
-#cloud-1-tr {
-  position: absolute;
-  top: 200vh;
-  left: -10vw;
-  width: 195vw;
-  z-index: 1000;
+#first .transition .first path {
+  fill: #6cadc8;
 }
 
-#cloud-2-tr {
-  position: absolute;
-  top: 200vh;
-  left: -10vw;
-  width: 180vw;
-  z-index: 1000;
+#first .transition .second path {
+  fill: #d9e1ed;
 }
 
-#cloud-3-tr {
-  position: absolute;
-  top: 200vh;
-  right: -10vw;
-  width: 180vw;
-  z-index: 1000;
+#first .transition .third path {
+  fill: #badce8;
 }
 
-#cloud-4-tr {
-  position: absolute;
-  top: 200vh;
-  right: -10vw;
-  width: 195vw;
-  z-index: 1000;
+#first .transition .fourth path {
+  fill: #ffffff;
 }
 
-/* second scene top clouds */
-#cloud-5-tr {
-  position: absolute;
-  top: -35vh;
-  left: -30vw;
-  width: 195vw;
-  z-index: 1000;
+#second .transition .first path {
+  fill: #c5c5db;
+}
+
+#second .transition .second path {
+  fill: #ddc4d5;
+}
+
+#second .transition .third path {
+  fill: #ccd1e9;
+}
+
+#second .transition .fourth path {
+  fill: #ffffff;
+}
+
+#third .transition .first path {
+  fill: #daa1bd;
+}
+
+#third .transition .second path {
+  fill: #fccec9;
+}
+
+#third .transition .third path {
+  fill: #e3dbe3;
+}
+
+#third .transition .fourth path {
+  fill: #ffffff;
+}
+
+#fourth .transition .first path {
+  fill: #ffc7a2;
+}
+
+#fourth .transition .second path {
+  fill: #ff9c85;
+}
+
+#fourth .transition .third path {
+  fill: #fff7bf;
+}
+
+#fourth .transition .fourth path {
+  fill: #ffffff;
 }

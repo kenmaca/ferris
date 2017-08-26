@@ -26,7 +26,10 @@ loadSvg('clouds/cloud-6', '#cloud-6');
 loadSvg('clouds/cloud-7', '#cloud-7');
 
 // transition clouds
-loadSvg('clouds/cloud-1', '#cloud-5-tr');
+loadSvg('transition/first', '#second .transition .first');
+loadSvg('transition/second', '#second .transition .second');
+loadSvg('transition/third', '#second .transition .third');
+loadSvg('transition/fourth', '#second .transition .fourth');
 
 $(() => {
 
