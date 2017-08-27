@@ -16,7 +16,17 @@ loadSvg('carousel/horse-3', '#carousel .horses .third');
 loadSvg('carousel/horse-4', '#carousel .horses .fourth');
 loadSvg('carousel/horse-5', '#carousel .horses .fifth');
 loadSvg('carousel/horse-6', '#carousel .horses .sixth');
-loadSvg('letter', '#second #letter');
+
+// letter and balloons
+loadSvg('balloons/balloon-1', '#second #letter .balloon-1');
+loadSvg('balloons/balloon-2', '#second #letter .balloon-2');
+loadSvg('balloons/balloon-3', '#second #letter .balloon-3');
+loadSvg('balloons/balloon-4', '#second #letter .balloon-4');
+loadSvg('balloons/balloon-5', '#second #letter .balloon-5');
+
+// bird
+loadSvg('bird-down', '#bird .bird-down');
+loadSvg('bird-up', '#bird .bird-up');
 
 // clouds
 loadSvg('clouds/cloud-3', '#cloud-3');
@@ -46,3 +56,32 @@ $(() => {
   tw.to($('#carousel .horses .fifth'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .sixth'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
 });
+
+
+const birdFlapTime = 300;
+var birdAnimation = false;
+function animateBird(birdUp, birdDown) {
+  if (birdAnimation) {
+    if (birdUp.is(":visible")) {
+      birdUp.hide();
+      birdDown.show();
+    } else {
+      birdDown.hide();
+      birdUp.show();
+    }
+    setTimeout(() => {
+      animateBird(birdUp, birdDown);
+    }, birdFlapTime);
+  }
+}
+
+function startBirdAnimation() {
+  birdAnimation = true;
+  animateBird($('#bird .bird-up'), $('#bird .bird-down'));
+  $('#bird').show();
+}
+
+function stopBirdAnimation() {
+  birdAnimation = false;
+  $('#bird').hide();
+}

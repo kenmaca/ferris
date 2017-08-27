@@ -25,6 +25,50 @@ function fromFirstScene(direction) {
 
 function fromSecondScene(direction) {
   console.log("2", direction);
+  
+  if (direction == "down"){
+    $("#bird").css("left", "-40vw");
+    startBirdAnimation();
+    tw.to($('#bird'), 4, {left: "100vw"});
+
+    // balloon poping, letter falling animations
+    setTimeout(() => {
+      $("#letter .balloon-1").hide();
+      $("#letter .balloon-2").show();
+
+      setTimeout(() => {
+        $("#letter .balloon-2").hide();
+        $("#letter .balloon-3").show();
+
+        setTimeout(() => {
+          $("#letter .balloon-3").hide();
+          $("#letter .balloon-4").show();
+
+          setTimeout(() => {
+            $("#letter .balloon-4").hide();
+            $("#letter .balloon-5").show();
+
+            setTimeout(() => {
+              tw.to($('#letter'), 1, {top: "100vh", ease: Expo.easeOut});
+
+              setTimeout(() => {
+                $("#letter .balloon-5").hide();
+                $("#letter .balloon-1").show();
+                $("#letter").css("top", "7vh");
+
+              }, 1200);
+            }, 50);
+          }, 50);
+        }, 50);
+      }, 50);
+
+    }, 1600);
+
+    // stop bird animation
+    setTimeout(() => {
+      stopBirdAnimation();
+    }, 2500);
+  }
 }
 
 function fromThirdScene(direction) {
@@ -79,5 +123,5 @@ function cloudTransition(direction, scene) {
       enableScroll();
     }
   }
-  
+
 }

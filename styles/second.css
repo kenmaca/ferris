@@ -87,6 +87,26 @@
   left: 82%;
 }
 
+#bird {
+  position: absolute;
+  top: 13vh;
+  width: 10vh;
+  height: 10vh;
+  display: none;
+  z-index: 110;
+}
+
+#bird .bird-up {
+  width: 10vh;
+  height: 10vh;
+}
+
+#bird .bird-down {
+  width: 10vh;
+  height: 10vh;
+  display: none;
+}
+
 #letter {
   position: absolute;
   right: 32vw;
@@ -94,6 +114,26 @@
   width: 15vw;
   height: 15vw;
   z-index: 101;
+}
+
+#letter .balloon-1 {
+  display: inline;
+}
+
+#letter .balloon-2 {
+  display: none;
+}
+
+#letter .balloon-3 {
+  display: none;
+}
+
+#letter .balloon-4 {
+  display: none;
+}
+
+#letter .balloon-5 {
+  display: none;
 }
 
 /* content */
