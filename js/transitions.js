@@ -105,10 +105,10 @@ function cloudTransition(direction, scene) {
         tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut});
         tw.to($(`${sceneId} .transition .third`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 0.5});
         tw.to($(`${sceneId} .transition .fourth`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 0.5});
-        tw.to($(`${sceneId} .transition .second`), 0.7, {bottom: "-100vh", ease: Expo.easeOut, delay: 1});
-        tw.to($(`${sceneId} .transition .third`), 1, {bottom: "-100vh", ease: Expo.easeOut, delay: 1});
-        tw.to($(`${sceneId} .transition .fourth`), 0.7, {bottom: "-100vh", ease: Expo.easeOut, delay: 1});
-        tw.to($(`${sceneId} .transition .first`), 1, {bottom: "-100vh", ease: Expo.easeOut, delay: 1});
+        tw.to($(`${sceneId} .transition .second`), 0.7, {bottom: "-150vh", ease: Expo.easeOut, delay: 1});
+        tw.to($(`${sceneId} .transition .third`), 1, {bottom: "-150vh", ease: Expo.easeOut, delay: 1});
+        tw.to($(`${sceneId} .transition .fourth`), 0.7, {bottom: "-150vh", ease: Expo.easeOut, delay: 1});
+        tw.to($(`${sceneId} .transition .first`), 1, {bottom: "-150vh", ease: Expo.easeOut, delay: 1});
         tw.to($(`${sceneId} .content`), 0.2, {opacity: 1, delay: 1});
   
         setTimeout(() => {

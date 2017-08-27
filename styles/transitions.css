@@ -9,13 +9,13 @@
   position: absolute;
   width: 100vw;
   /* opacity: 0; */
-  bottom: -100vh;
+  bottom: -150vh;
   z-index: 1000;
 }
 
 /* white clouds gets lower layer due to persistency */
 .transition .fourth {
-  z-index: 1;
+  z-index: 100;
 }
 
 #first .transition .first path {
