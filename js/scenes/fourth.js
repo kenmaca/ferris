@@ -5,7 +5,6 @@
 
 // sprites
 loadSvg('swings');
-loadSvg('sharpener');
 loadSvg('popcorn');
 
 // clouds
