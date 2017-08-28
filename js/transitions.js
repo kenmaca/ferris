@@ -21,6 +21,11 @@ const sceneNumberToTransition = {
 
 function fromFirstScene(direction) {
   console.log("1", direction);
+  if (direction == "down") {
+    tw.to($('#ferris'), 1, {bottom: "-100vh", ease: Expo.easeOut, delay: 1.8});
+  } else if (direction == "up") {
+    tw.to($('#ferris'), 1, {bottom: "0vh", ease: Expo.easeOut, delay: 1});
+  }
 }
 
 function fromSecondScene(direction) {
@@ -73,6 +78,11 @@ function fromSecondScene(direction) {
 
 function fromThirdScene(direction) {
   console.log("3", direction);
+  if (direction == "down") {
+    tw.to($("#hot-air-balloon"), 3, {bottom: "150vh", ease: Expo.easeOut, delay: 0.2});
+  } else {
+    tw.to($("#hot-air-balloon"), 3, {bottom: "50vh", ease: Expo.easeOut, delay: 0.7});
+  }
 }
 
 function fromFourthScene(direction) {

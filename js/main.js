@@ -39,7 +39,7 @@ $('#frame').fullpage({
   
       if (direction == "up") {
         cloudTransition(direction, nextIndex);
-        sceneNumberToTransition[index](direction);
+        sceneNumberToTransition[nextIndex](direction);
         delay = SCROLL_UP_DELAY;
       } else if (direction == "down") {
         cloudTransition(direction, index);

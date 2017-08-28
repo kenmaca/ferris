@@ -34,6 +34,7 @@ loadSvg('clouds/cloud-4', '#cloud-4');
 loadSvg('clouds/cloud-5', '#cloud-5');
 loadSvg('clouds/cloud-6', '#cloud-6');
 loadSvg('clouds/cloud-7', '#cloud-7');
+loadSvg('clouds/cloud-15', '#cloud-15');
 
 // transition clouds
 loadSvg('transition/first', '#second .transition .first');

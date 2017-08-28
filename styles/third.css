@@ -130,6 +130,22 @@
   z-index: 0;
 }
 
+#cloud-16 {
+  position: absolute;
+  bottom: -10vh;
+  right: 20vw;
+  width: 35vw;
+  z-index: 2;
+}
+
+#cloud-17 {
+  position: absolute;
+  bottom: 0vh;
+  right: 24vw;
+  width: 35vw;
+  z-index: 0;
+}
+
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

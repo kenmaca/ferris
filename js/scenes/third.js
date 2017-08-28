@@ -18,6 +18,8 @@ loadSvg('font-blocks', '#font-blocks');
 loadSvg('clouds/cloud-8', '#cloud-8');
 loadSvg('clouds/cloud-9', '#cloud-9');
 loadSvg('clouds/cloud-10', '#cloud-10');
+loadSvg('clouds/cloud-16', '#cloud-16');
+loadSvg('clouds/cloud-17', '#cloud-17');
 
 // transition clouds
 loadSvg('transition/first', '#third .transition .first');

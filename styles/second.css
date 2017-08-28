@@ -144,17 +144,17 @@
 /* clouds */
 #cloud-3 {
   position: absolute;
-  top: 65vh;
-  left: -18vw;
+  top: 55vh;
+  left: -10vw;
   width: 80vw;
   z-index: 0;
 }
 
 #cloud-4 {
   position: absolute;
-  top: 80vh;
-  left: -14vw;
-  width: 80vw;
+  top: 75vh;
+  left: -10vw;
+  width: 85vw;
   z-index: 20;
 }
 
@@ -177,6 +177,14 @@
   top: 20vh;
   right: 6vw;
   width: 20vw;
+}
+
+#cloud-15 {
+  position: absolute;
+  top: 80vh;
+  right: 3vw;
+  width: 30vw;
+  z-index: 20;
 }
 
 /* responsive iphone */
