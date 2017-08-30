@@ -19,6 +19,8 @@ function jump(target) {
   return () => {};
 }
 
+const DOWN = "down";
+const UP = "up";
 const SCROLL_DOWN_DELAY = 2200; //milliseconds
 const SCROLL_UP_DELAY = 0;
 const SCROLLING_SPEED = 700;
@@ -37,11 +39,11 @@ $('#frame').fullpage({
 
       var delay;
   
-      if (direction == "up") {
+      if (direction == UP) {
         cloudTransition(direction, nextIndex);
         sceneNumberToTransition[nextIndex](direction);
         delay = SCROLL_UP_DELAY;
-      } else if (direction == "down") {
+      } else if (direction == DOWN) {
         cloudTransition(direction, index);
         sceneNumberToTransition[index](direction);
         delay = SCROLL_DOWN_DELAY;
@@ -55,7 +57,7 @@ $('#frame').fullpage({
         clearTimeout(timeoutId);
         animationIsFinished = false;
 
-        if (direction == "down"){
+        if (direction == DOWN){
           animationHasStarted = false;
           enableScroll();
         }
