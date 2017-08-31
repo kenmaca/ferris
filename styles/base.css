@@ -57,7 +57,7 @@ body {
 
 .content a li {
   display: inline;
-  background-color: #FFFFFF;
+  background-image: url("../assets/img/main/button.svg");
   color: #000000;
   padding: 10px 40px;
   margin-left: 0;
@@ -67,7 +67,7 @@ body {
 }
 
 .content a li:hover {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
 }
 
 /* full align container prominent sprite positioning */

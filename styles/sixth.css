@@ -19,6 +19,17 @@
   z-index: 7;
 }
 
+#sixth #cat-tent-1 {
+  width: 65vh;
+  height: 65vh;
+}
+
+#sixth #cat-tent-2 {
+  width: 65vh;
+  height: 65vh;
+  display: none;
+}
+
 #sixth #path-tent {
   position: absolute;
   top: 25vh;
@@ -115,44 +126,43 @@
   z-index: 2;
 }
 
-#sharpener-pencils {
+/* #sharpener-pencils {
   position: absolute;
   width: 65vh;
   height: 55vh;
   bottom: 230vh;
   right: 0vw;
-}
+} */
 
 #sharpener {
   position: absolute;
   width: 20vw;
   height: 10vh;
-  top: -5vh;
+  bottom: 270vh;
+
   right: 13.5vw;
   z-index: 3;
 }
 
-#pencil-1 {
+#pencil {
   position: absolute;
   width: 3.5vw;
-  top: 25vh;
+  bottom: 150vh;
   right: 22vw;
   z-index: 1;
 }
 
+#pencil-1 {
+}
+
 #pencil-2 {
-  position: absolute;
-  width: 3.5vw;
-  top: 25vh;
-  right: 22vw;
-  z-index: 1;
   display: none;
 }
 
 #pencilbox {
   position: absolute;
   width: 30vw;
-  top: 128vh;
+  bottom: 55vh;
   right: -3vw;
   z-index: 3;
 }

@@ -4,7 +4,8 @@
 */
 
 // sprites
-loadSvg('cat-tent');
+loadSvg('cat-tent/cat-tent-1', '#cat-tent-1');
+loadSvg('cat-tent/cat-tent-2', '#cat-tent-2');
 loadSvg('path-tent');
 loadSvg('sharpener/sharpener', "#sharpener");
 loadSvg('sharpener/pencil-1', "#pencil-1");
@@ -23,9 +24,7 @@ loadSvg('bushes/bush-8', '#bush-8');
 loadSvg('clouds/cloud-13', '#cloud-13');
 loadSvg('clouds/cloud-14', '#cloud-14');
 
-$(() => {
-});
-
+// Sharpener animation
 const pencilFrontRotation = 200;
 const pencilBackRotation = 400;
 var sharpen = false;
@@ -58,4 +57,35 @@ function stopSharpening() {
   sharpen = false;
 }
 
-startSharpening();
+// Cat animation
+var catAnimation = false;
+const catAnimationTime = 700;
+function animateCat(catTent1, catTent2) {
+  if (catAnimation) {
+    if (catTent1.is(":visible")) {
+      catTent1.hide();
+      catTent2.show();
+    } else {
+      catTent2.hide();
+      catTent1.show();
+    }
+
+    setTimeout(() => {
+      animateCat(catTent1, catTent2);
+    }, catAnimationTime);
+  }
+}
+
+function startCatAnimation() {
+  catAnimation = true;
+  animateCat($('#cat-tent-1'), $('#cat-tent-2'));
+}
+
+function stopCatAnimation() {
+  catAnimation = false;
+}
+
+$(() => {
+  startSharpening();
+  startCatAnimation();
+});
