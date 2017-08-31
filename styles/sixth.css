@@ -136,19 +136,18 @@
 
 #sharpener {
   position: absolute;
-  width: 20vw;
-  height: 10vh;
-  bottom: 270vh;
-
-  right: 13.5vw;
+  width: 13vw;
+  height: 6vh;
+  bottom: 260vh;
+  right: 13.2vw;
   z-index: 3;
 }
 
 #pencil {
   position: absolute;
-  width: 3.5vw;
-  bottom: 150vh;
-  right: 22vw;
+  width: 2.9vw;
+  bottom: 110vh;
+  right: 18.3vw;
   z-index: 1;
 }
 
@@ -161,7 +160,7 @@
 
 #pencilbox {
   position: absolute;
-  width: 30vw;
+  width: 25vw;
   bottom: 55vh;
   right: -3vw;
   z-index: 3;

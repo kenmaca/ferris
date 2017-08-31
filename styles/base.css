@@ -58,6 +58,7 @@ body {
 .content a li {
   display: inline;
   background-image: url("../assets/img/main/button.svg");
+  background-size: 100% 100%;
   color: #000000;
   padding: 10px 40px;
   margin-left: 0;

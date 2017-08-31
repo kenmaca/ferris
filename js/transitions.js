@@ -88,6 +88,15 @@ function fromThirdScene(direction) {
 
 function fromFourthScene(direction) {
   console.log("4", direction);
+  if (direction == DOWN) {
+    tw.to($("#sharpener"), 1.5, {bottom: "193vh"});
+    setTimeout(() => {
+      startSharpening();
+    }, 1600);
+  } else if (direction == UP) {
+    stopSharpening();
+    tw.to($("#sharpener"), 1, {bottom: "260vh"});
+  }
 }
 
 function fromFifthScene(direction) {
