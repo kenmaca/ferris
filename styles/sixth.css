@@ -136,10 +136,10 @@
 
 #sharpener {
   position: absolute;
-  width: 13vw;
+  width: 12vw;
   height: 6vh;
-  bottom: 260vh;
-  right: 13.2vw;
+  bottom: 265vh;
+  right: 13.5vw;
   z-index: 3;
 }
 
