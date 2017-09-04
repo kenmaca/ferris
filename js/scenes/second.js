@@ -9,6 +9,8 @@ const CAROUSEL_DELTA = 40;
 // sprites
 loadSvg('carousel/screw', '#carousel .top .screw');
 loadSvg('carousel/handle-1', '#carousel .top .handle .first');
+loadSvg('carousel/handle-2', '#carousel .top .handle .second');
+loadSvg('carousel/handle-3', '#carousel .top .handle .third');
 loadSvg('carousel/base', '#carousel .base');
 loadSvg('carousel/horse-1', '#carousel .horses .first');
 loadSvg('carousel/horse-2', '#carousel .horses .second');
@@ -56,9 +58,12 @@ $(() => {
   tw.to($('#carousel .horses .fourth'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .fifth'), 4, {y: `-=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
   tw.to($('#carousel .horses .sixth'), 4, {y: `+=${CAROUSEL_DELTA}%`, yoyo: true, repeat: -1});
+
+  startCarouselWheelAnimation();
 });
 
 
+// bird animation
 const birdFlapTime = 300;
 var birdAnimation = false;
 function animateBird(birdUp, birdDown) {
@@ -85,4 +90,36 @@ function startBirdAnimation() {
 function stopBirdAnimation() {
   birdAnimation = false;
   $('#bird').hide();
+}
+
+// carousel top wheel animation
+const wheelRotateTime = 200;
+var carouselWheelAnimation = false;
+function animateCarouselWheel(wheel1, wheel2, wheel3) {
+  if (carouselWheelAnimation) {
+    if (wheel1.is(":visible")) {
+      wheel1.hide();
+      wheel2.show();
+    } else if (wheel2.is(":visible")) {
+      wheel2.hide();
+      wheel3.show();
+    } else {
+      wheel3.hide();
+      wheel1.show();
+    }
+    setTimeout(() => {
+      animateCarouselWheel(wheel1, wheel2, wheel3);
+    }, wheelRotateTime);
+  }
+}
+
+function startCarouselWheelAnimation() {
+  carouselWheelAnimation = true;
+  animateCarouselWheel($('#carousel .top .handle .first'), 
+    $('#carousel .top .handle .second'), 
+    $('#carousel .top .handle .third'));
+}
+
+function stopCarouselWheelAnimation() {
+  carouselWheelAnimation = false;
 }

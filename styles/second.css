@@ -30,6 +30,18 @@
   height: 100%;
 }
 
+#carousel .top .handle .first {
+  display: show;
+}
+
+#carousel .top .handle .second {
+  display: none;
+}
+
+#carousel .top .handle .third {
+  display: none;
+}
+
 #carousel .top .screw-container {
   width: 15%;
   height: 200%;
@@ -144,15 +156,15 @@
 /* clouds */
 #cloud-3 {
   position: absolute;
-  top: 55vh;
-  left: -10vw;
-  width: 80vw;
+  top: 62vh;
+  left: 5vw;
+  width: 67vw;
   z-index: 0;
 }
 
 #cloud-4 {
   position: absolute;
-  top: 75vh;
+  top: 81vh;
   left: -10vw;
   width: 85vw;
   z-index: 20;
@@ -181,7 +193,7 @@
 
 #cloud-15 {
   position: absolute;
-  top: 80vh;
+  top: 90vh;
   right: 3vw;
   width: 30vw;
   z-index: 20;

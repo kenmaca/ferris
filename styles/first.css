@@ -2,7 +2,7 @@
 /* ferris wheel */
 #ferris {
   position: absolute;
-  bottom: 0;
+  bottom: -5vh;
   left: 10vh;
   width: 100vh;
   height: 100vh;
@@ -119,15 +119,15 @@
 /* clouds */
 #cloud-1 {
   position: absolute;
-  top: 75vh;
-  left: -10vw;
+  top: 82vh;
+  left: -6vw;
   width: 95vw;
   z-index: 10;
 }
 
 #cloud-2 {
   position: absolute;
-  top: 55vh;
+  top: 65vh;
   left: -10vw;
   width: 80vw;
   z-index: 0;

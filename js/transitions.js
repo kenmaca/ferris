@@ -24,7 +24,7 @@ function fromFirstScene(direction) {
   if (direction == DOWN) {
     tw.to($('#ferris'), 1, {bottom: "-100vh", ease: Expo.easeOut, delay: 1.8});
   } else if (direction == UP) {
-    tw.to($('#ferris'), 1, {bottom: "0vh", ease: Expo.easeOut, delay: 1});
+    tw.to($('#ferris'), 1, {bottom: "-5vh", ease: Expo.easeOut, delay: 1});
   }
 }
 
@@ -54,7 +54,7 @@ function fromSecondScene(direction) {
             $("#letter .balloon-5").show();
 
             setTimeout(() => {
-              tw.to($('#letter'), 1, {top: "100vh", ease: Expo.easeOut});
+              tw.to($('#letter'), 6, {top: "100vh", ease: Expo.easeOut});
 
               setTimeout(() => {
                 $("#letter .balloon-5").hide();
@@ -62,7 +62,7 @@ function fromSecondScene(direction) {
 
               }, 1200);
             }, 50);
-          }, 50);
+          }, 100);
         }, 50);
       }, 50);
 
@@ -119,7 +119,7 @@ function cloudTransition(direction, scene) {
       tw.to($(`${sceneId} .transition .fourth`), 0.5, {bottom: "30vh", ease: Expo.easeOut, delay: 0.9});
       tw.to($(`${sceneId} .transition .third`), 0.5, {bottom: "20vh", ease: Expo.easeOut, delay: 1.3});
       tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.8});
-      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 2.2});
+      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 1.8});
     } else if (direction == UP) {
       setTimeout(() => {
         tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut});

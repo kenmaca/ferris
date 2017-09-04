@@ -19,14 +19,30 @@
   z-index: 7;
 }
 
-#sixth #cat-tent-1 {
+#sixth #tent {
   width: 65vh;
   height: 65vh;
 }
 
-#sixth #cat-tent-2 {
-  width: 65vh;
-  height: 65vh;
+#sixth #flags {
+  position: absolute;
+  top: 0vh;
+  left: 31.6vh;
+  width: 8vw;
+}
+
+#sixth #flag-1 {
+}
+
+#sixth #flag-2 {
+  display: none;
+}
+
+#sixth #flag-3 {
+  display: none;
+}
+
+#sixth #flag-4 {
   display: none;
 }
 
