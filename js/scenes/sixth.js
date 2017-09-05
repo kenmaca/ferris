@@ -10,6 +10,8 @@ loadSvg('cat-tent/flag-2', '#flag-2');
 loadSvg('cat-tent/flag-3', '#flag-3');
 loadSvg('cat-tent/flag-4', '#flag-4');
 loadSvg('path-tent');
+loadSvg('cat-tent/cat-tongue-in', '#cat-tongue-in');
+loadSvg('cat-tent/cat-tongue-out', '#cat-tongue-out');
 loadSvg('sharpener/sharpener', "#sharpener");
 loadSvg('sharpener/pencil-1', "#pencil-1");
 loadSvg('sharpener/pencil-2', "#pencil-2");
@@ -60,7 +62,7 @@ function stopSharpening() {
   sharpen = false;
 }
 
-// Cat-tent flag animation
+// cat-tent flag animation
 var flagAnimation = false;
 const flagAnimationTime = 300;
 function animateFlag(flag1, flag2, flag3, flag4) {
@@ -94,6 +96,35 @@ function stopFlagAnimation() {
   flagAnimation = false;
 }
 
+// cat-tent cat animation
+var catAnimation = false;
+const catAnimationTime = 400;
+function animateCat(catTongueIn, catTongueOut) {
+  if (catAnimation) {
+    if (catTongueIn.is(":visible")) {
+      catTongueIn.hide();
+      catTongueOut.show();
+    } else {
+      catTongueOut.hide();
+      catTongueIn.show();
+    }
+  
+    setTimeout(() => {
+      animateCat(catTongueIn, catTongueOut);
+    }, catAnimationTime);
+  }
+}
+
+function startCatAnimation() {
+  catAnimation = true;
+  animateCat($('#cat-tongue-in'), $('#cat-tongue-out'));
+}
+
+function stopCatAnimation() {
+  catAnimation = false;
+}
+
 $(() => {
   startFlagAnimation();
+  startCatAnimation();
 });

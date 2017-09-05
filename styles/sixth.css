@@ -24,6 +24,20 @@
   height: 65vh;
 }
 
+#sixth #cat {
+  position: absolute;
+  width: 12vh;
+  left: 28vh;
+  top: 55vh;
+}
+
+#sixth #cat #cat-tongue-in {
+}
+
+#sixth #cat #cat-tongue-out {
+  display: none;
+}
+
 #sixth #flags {
   position: absolute;
   top: 0vh;

@@ -21,7 +21,7 @@ function jump(target) {
 
 const DOWN = "down";
 const UP = "up";
-const SCROLL_DOWN_DELAY = 2200; //milliseconds
+const SCROLL_DOWN_DELAY = 1600; //milliseconds
 const SCROLL_UP_DELAY = 0;
 const SCROLLING_SPEED = 700;
 var timeoutId;

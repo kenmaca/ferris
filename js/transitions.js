@@ -22,7 +22,7 @@ const sceneNumberToTransition = {
 function fromFirstScene(direction) {
   console.log("1", direction);
   if (direction == DOWN) {
-    tw.to($('#ferris'), 1, {bottom: "-100vh", ease: Expo.easeOut, delay: 1.8});
+    tw.to($('#ferris'), 1, {bottom: "-100vh", ease: Expo.easeOut, delay: 1.5});
   } else if (direction == UP) {
     tw.to($('#ferris'), 1, {bottom: "-5vh", ease: Expo.easeOut, delay: 1});
   }
@@ -32,9 +32,9 @@ function fromSecondScene(direction) {
   console.log("2", direction);
   
   if (direction == DOWN){
-    $("#bird").css("left", "-40vw");
+    $("#bird").css("left", "-10vw");
     startBirdAnimation();
-    tw.to($('#bird'), 4, {left: "100vw"});
+    tw.to($('#bird'), 4, {left: "120vw"});
 
     // balloon poping, letter falling animations
     setTimeout(() => {
@@ -62,11 +62,11 @@ function fromSecondScene(direction) {
 
               }, 1200);
             }, 50);
-          }, 100);
+          }, 75);
         }, 50);
       }, 50);
 
-    }, 1600);
+    }, 1100);
 
     // stop bird animation
     setTimeout(() => {
@@ -112,14 +112,12 @@ function cloudTransition(direction, scene) {
     var sceneId = sceneNumberToId[scene];
     if (direction == DOWN) {
       tw.to($(`${sceneId} .content`), 0.2, {opacity: 0});
-      tw.to($(`${sceneId} .transition .first`), 1, {bottom: "-5vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .fourth`), 0.7, {bottom: "0vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .third`), 1, {bottom: "0vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .second`), 0.7, {bottom: "0vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .fourth`), 0.5, {bottom: "30vh", ease: Expo.easeOut, delay: 0.9});
-      tw.to($(`${sceneId} .transition .third`), 0.5, {bottom: "20vh", ease: Expo.easeOut, delay: 1.3});
-      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.8});
-      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 1.8});
+      tw.to($(`${sceneId} .transition .first`), 1.3, {bottom: "-25vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .fourth`), 1, {bottom: "40vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .third`), 1.3, {bottom: "20vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .second`), 1, {bottom: "-20vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.3});
+      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 2.1});
     } else if (direction == UP) {
       setTimeout(() => {
         tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut});
