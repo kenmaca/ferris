@@ -117,8 +117,8 @@ function cloudTransition(direction, scene) {
     if (direction == DOWN) {
       tw.to($(`${sceneId} .content`), 0.2, {opacity: 0});
       tw.to($(`${sceneId} .transition .first`), 1.3, {bottom: "-25vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .fourth`), 1, {bottom: "40vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .third`), 1.3, {bottom: "15vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .fourth`), 1, {bottom: "0vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .third`), 1.3, {bottom: "0vh", ease: Expo.easeOut});
       tw.to($(`${sceneId} .transition .second`), 1, {bottom: "-20vh", ease: Expo.easeOut});
       tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.3});
       tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 2.1});
