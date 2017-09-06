@@ -89,13 +89,17 @@ function fromThirdScene(direction) {
 function fromFourthScene(direction) {
   console.log("4", direction);
   if (direction == DOWN) {
-    tw.to($("#sharpener"), 1.5, {bottom: "195vh"});
+    tw.to($("#sharpener-cloud"), 0.4, {opacity: 0});
+    tw.to($("#sharpener"), 1.5, {bottom: "194vh"});
     setTimeout(() => {
       startSharpening();
     }, 1600);
   } else if (direction == UP) {
     stopSharpening();
-    tw.to($("#sharpener"), 1, {bottom: "265vh"});
+    tw.to($("#sharpener"), 1, {bottom: "270vh"});
+    setTimeout(() => {
+      tw.to($("#sharpener-cloud"), 0.4, {opacity: 1});
+    }, 900);
   }
 }
 
@@ -114,7 +118,7 @@ function cloudTransition(direction, scene) {
       tw.to($(`${sceneId} .content`), 0.2, {opacity: 0});
       tw.to($(`${sceneId} .transition .first`), 1.3, {bottom: "-25vh", ease: Expo.easeOut});
       tw.to($(`${sceneId} .transition .fourth`), 1, {bottom: "40vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .third`), 1.3, {bottom: "20vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .third`), 1.3, {bottom: "15vh", ease: Expo.easeOut});
       tw.to($(`${sceneId} .transition .second`), 1, {bottom: "-20vh", ease: Expo.easeOut});
       tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.3});
       tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 2.1});

@@ -166,18 +166,25 @@
 
 #sharpener {
   position: absolute;
-  width: 12vw;
+  width: 20vh;
   height: 6vh;
-  bottom: 265vh;
-  right: 13.5vw;
+  bottom: 270vh;
+  right: 23vh;
   z-index: 3;
+}
+
+#sharpener-cloud {
+  position: absolute;
+  width: 30vh;
+  right: 18vh;
+  bottom: 224vh;
 }
 
 #pencil {
   position: absolute;
-  width: 2.9vw;
-  bottom: 110vh;
-  right: 18.3vw;
+  width: 4vh;
+  bottom: 112vh;
+  right: 31vh;
   z-index: 1;
 }
 
@@ -190,8 +197,8 @@
 
 #pencilbox {
   position: absolute;
-  width: 25vw;
+  width: 40vh;
   bottom: 55vh;
-  right: -3vw;
+  right: -3vh;
   z-index: 3;
 }
