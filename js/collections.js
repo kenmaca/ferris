@@ -1,0 +1,1 @@
+loadSvg('banner-collections');

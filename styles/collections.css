@@ -1,0 +1,119 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', 'Helvetica', arial, sans-serif;
+  font-size: 14px;
+}
+
+/* scene content descriptors */
+.content {
+  z-index: 100;
+  font-family: 'Arapey', serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.content .title {
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content a ul {
+  padding: 0;
+  margin-top: 50px;
+}
+
+.content a li {
+  display: inline;
+  background-image: url("../assets/img/main/button.svg");
+  background-size: 100% 100%;
+  color: #000000;
+  padding: 10px 40px;
+  margin-left: 0;
+  list-style: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in;
+}
+
+.content a li:hover {
+  /* background-color: #FFFFFF; */
+}
+
+/* full align container prominent sprite positioning */
+.prominent {
+  top: 0;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+}
+
+.prominent.vertical {
+  flex-direction: column;
+}
+
+.prominent.fixed {
+  position: fixed !important;
+}
+
+.prominent.left {
+  left: 0;
+}
+
+.prominent.right {
+  right: 0;
+}
+
+.prominent.top {
+  top: 0;
+  height: 50vh !important;
+}
+
+.prominent.bottom {
+  bottom: 0;
+  height: 50vh !important;
+}
+
+.prominent.fill {
+  width: 100vw;
+}
+
+.prominent.half {
+  width: 50vw;
+}
+
+.prominent.middle {
+  align-items: center;
+}
+
+.prominent.center {
+  justify-content: center;
+}
+
+#title {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.row {
+  width: 36vw;
+}
+
+.cell {
+  padding-bottom: 9vw;
+  border-style: solid;
+}
+
+#banner-collections {
+  position: absolute;
+  top: -20vh;
+  right: 30vh;
+  width: 20vh;
+}
