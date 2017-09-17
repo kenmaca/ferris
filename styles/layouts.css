@@ -9,7 +9,57 @@
 }
 
 /* Layout 2 */
+.layout2 {
+  background-color: burlywood;
+}
+
 .layout2 img {
   width: 50vh;
   height: 30vh;
+}
+
+/* Layout 3 */
+.layout3 .row {
+  padding-top: 20vw;
+  padding-bottom: 20vw;
+}
+
+/* Layout 4 */
+.layout4 {
+  background-color: #edf1f7;
+}
+
+.layout4 img {
+  height: 70vh;
+}
+
+.layout4 .content {
+  padding-top: 20vw;
+  padding-bottom: 20vw;
+}
+
+/* Layout 5 */
+
+.layout5 .row {
+  padding: 0.2vh;
+  padding-left: 5vh;
+}
+
+.layout5 .col {
+  padding-top: 1vh;
+  height: 100%;
+}
+
+.layout5 .col .row {
+  background-color: #edf1f7;
+  height: 97vh;
+}
+
+.layout5 .content {
+  margin-top: 20vh;
+}
+
+.layout5 img {
+  margin-top: 10vh;
+  height: 50vh;
 }
