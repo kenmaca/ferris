@@ -46,6 +46,13 @@ body {
   letter-spacing: 2px;
 }
 
+.content .subtitle {
+  font-family: 'Old Standard TT', serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
 .content a {
   text-decoration: none;
 }

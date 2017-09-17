@@ -1,0 +1,15 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+}
+
+.layout .row {
+  width: 100%;
+  padding: 5vw;
+}
+
+/* Layout 2 */
+.layout2 img {
+  width: 50vh;
+  height: 30vh;
+}
