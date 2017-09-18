@@ -1,6 +1,7 @@
 .layout {
   width: 100vw;
   height: 100vh;
+  padding: 0;
 }
 
 .layout .row {
@@ -16,6 +17,10 @@
 .layout2 img {
   width: 50vh;
   height: 30vh;
+}
+
+.layout2 .subtitle {
+  margin-top: 5vh;
 }
 
 /* Layout 3 */
@@ -42,7 +47,7 @@
 
 .layout5 .row {
   padding: 0.2vh;
-  padding-left: 5vh;
+  padding-left: 8vh;
 }
 
 .layout5 .col {
@@ -62,4 +67,140 @@
 .layout5 img {
   margin-top: 10vh;
   height: 50vh;
+}
+
+/* Layout 6 */
+.layout6 .row {
+  padding: 0.2vh;
+  padding-left: 8vh;
+}
+
+.layout6 .col {
+  padding-top: 1vh;
+  height: 100%;
+}
+
+.layout6 .col .row {
+  background-color: #edf1f7;
+  height: 97vh;
+}
+
+.layout6 .content {
+  margin-top: 5vh;
+}
+
+.layout6 img {
+  margin-top: 10vh;
+  height: 70vh;
+}
+
+/* Layout 7 */
+.layout7 .carousel, .item, .active {
+  height:100%;
+}
+
+.layout7 .carousel-inner {
+  height:100%;
+}
+
+.layout7 .carousel-control.left,
+.layout7 .carousel-control.right {
+  background-image:none !important;
+  filter:none !important;
+}
+
+.layout7 .content {
+  width: 40vh;
+  margin-top: 30vh;
+  margin-left: 30vh;
+}
+
+/* Layout 8 */
+.layout8 .row {
+  padding: 0.2vh;
+  padding-left: 8vh;
+}
+
+.layout8 .col {
+  padding-top: 1vh;
+  height: 100%;
+}
+
+.layout8 .col .row {
+  background-color: #edf1f7;
+  height: 97vh;
+}
+
+.layout8 .col1 .content {
+  margin-top: 35vh;
+  padding-right: 8vh;
+}
+
+.layout8 .col2 .row {
+  padding-right: 8vh;
+}
+
+.layout8 .carousel {
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.layout8 .carousel img {
+  width: 100%;
+  height: 45vh;
+}
+
+.layout8 .carousel-control.left,
+.layout8 .carousel-control.right {
+  background-image:none !important;
+  filter:none !important;
+}
+
+.layout8 .carousel-control.left {
+  margin-left: -12%;
+  margin-top: -50vh;
+}
+
+.layout8 .carousel-control.right {
+  margin-right: -12%;
+  margin-top: -50vh;
+}
+
+.layout8 .carousel .content {
+  margin-top: 5vh;
+}
+
+/* Portrait mode adjustments */
+@media screen and (orientation:portrait) {
+  .layout5, .layout6, .layout8 {
+    height: 200vh;
+  }
+
+  .layout5 .col, .layout6 .col, .layout8 .col {
+    height: 100vh;
+  }
+
+  .layout7 .content {
+    margin-left: 10vh;
+  }
+
+  .layout8 .carousel {
+    margin-top: 20vh;
+    width: 100%;
+  }
+
+  .layout8 .carousel img {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .layout8 .carousel-control.left {
+    margin-left: -15%;
+    margin-top: -75vh;
+  }
+  
+  .layout8 .carousel-control.right {
+    margin-right: -15%;
+    margin-top: -75vh;
+  }
 }
