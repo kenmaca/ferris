@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.layout, .layout div {
+  background-size: cover;
+}
+
 .layout .row {
   width: 100%;
   padding: 5vw;
@@ -103,6 +107,10 @@
 
 .layout7 .carousel-inner {
   height:100%;
+}
+
+.layout7 img {
+  width: 100%;
 }
 
 .layout7 .carousel-control.left,
