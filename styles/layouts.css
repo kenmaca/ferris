@@ -173,6 +173,14 @@
   margin-top: 5vh;
 }
 
+.layout8 .carousel-indicators li {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.layout8 .carousel-indicators .active {
+  background-color: rgba(0,0,0,0.8);
+}
+
 /* Layout 9 */
 .layout9 {
   background-color: #edf1f7;
