@@ -1,0 +1,123 @@
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  height: 60vh;
+  background-image: url('/images/pages/products/painterly-petals-collection/hero.jpg');
+  background-size: 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 550px) {
+  .hero {
+    height: 80vh;
+    background-size: 70%;
+  }
+  .hero .row.bottom {
+    margin-top: 65vh;
+    text-align: center;
+  }
+}
+
+.inspiration {
+  background-image: url('/images/pages/products/painterly-petals-collection/inspiration.jpg');
+  background-size: 170%;
+  background-position: 40% 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 550px) {
+  .inspiration {
+    background-size: 90%;
+    background-position: 0% 0%;
+  }
+  .inspiration .row.bottom {
+    margin-top: 55vh;
+  }
+}
+
+.prix-fixe {
+  background-image: url('/images/pages/products/painterly-petals-collection/prix-fixe.jpg');
+  background-size: 150%;
+  background-position: 40% 100%;
+  background-repeat: no-repeat;
+}
+.prix-fixe .row.bottom {
+  margin-top: 5vh;
+}
+.prix-fixe label {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+.prix-fixe p {
+  margin-top: 1.2rem;
+}
+@media (min-width: 550px) {
+  .prix-fixe {
+    background-size: 90%;
+    background-position: -45% 40%;
+  }
+  .prix-fixe .row.bottom {
+    margin-top: 20vh;
+  }
+  .prix-fixe label {
+    font-size: 1.8rem;
+  }
+}
+
+/* Updates to page-wide images based on class name of body, toggled by click
+   events. */
+body.garden-rose .designs {
+  background-image: url('/images/pages/products/painterly-petals-collection/garden-rose/overview.jpg');
+}
+body.birds-of-paradise .designs {
+  background-image: url('/images/pages/products/painterly-petals-collection/birds-of-paradise/overview.jpg');
+}
+body.georgias-glory .designs {
+  background-image: url('/images/pages/products/painterly-petals-collection/georgias-glory/overview.jpg');
+}
+
+.designs {
+  height: 130vh;
+  background-size: 150%;
+  background-position: 40% 100%;
+  background-repeat: no-repeat;
+}
+.designs .design-selector {
+  font-family: "Playfair Display SC", serif;
+  color: #c8b475;
+}
+.designs .design-description {
+  display: none;
+}
+.designs .design-description.active {
+  display: block;
+}
+@media (min-width: 550px) {
+  .designs {
+    height: 91vh;
+    background-color: #CCCACF;
+    background-size: 80%;
+    background-position: 140% 80%;
+  }
+}
+
+.shapes .row.bottom .columns,
+.shapes .row.bottom .column {
+  text-align: center;
+}
+.shapes .row.bottom img {
+  width: 80vw;
+}
+.shapes .row.bottom p,
+.shapes .row.bottom h6 {
+  color: #c8b475;
+  font-family: "Playfair Display SC", serif;
+}
+@media (min-width: 550px) {
+  .shapes .row.bottom {
+    margin-top: 20vh;
+  }
+  .shapes .row.bottom img {
+    width: 20vw;
+  }
+}

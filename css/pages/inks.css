@@ -1,0 +1,85 @@
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero.section {
+  background-color: #e4e4e4;
+  background-image: url('/images/pages/products/inks/hero.jpg');
+  background-size: 150%;
+  background-position: 50% -40%;
+}
+@media (min-width: 550px) {
+  .hero.section {
+    background-size: 100%;
+    background-position: 50% 0%;
+  }
+  .hero.section .top.row .title {
+    border-width: 0;
+  }
+}
+
+.j-herbin.section {
+  background-image: url('/images/pages/products/inks/j-herbin.png');
+  background-size: 170%;
+  background-position: 40% 100%;
+}
+@media (min-width: 550px) {
+  .j-herbin.section {
+    background-size: 960px;
+    background-position: 30% 100px;
+  }
+}
+
+.colours.section {
+  background-image: url('/images/pages/products/inks/colours.png');
+  background-size: 110%;
+  background-position: 50% 100%;
+}
+@media (min-width: 550px) {
+  .colours.section {
+    background-size: 960px;
+    background-position: 400px 70px;
+  }
+  .colours.section .top.row .columns h6 {
+    text-align: center;
+  }
+  .price.columns h5 {
+    color: #c8b475;
+    margin-top: 5vh;
+    font-size: 3rem;
+  }
+  .colours.section .top.row .columns:last-child {
+    padding-left: 100px;
+  }
+}
+
+.rohrer-klingner.section {
+  background-image: url('/images/pages/products/inks/jar-trio.png');
+  background-size: 160%;
+  background-position: 45% 100%;
+}
+@media (min-width: 550px) {
+  .rohrer-klingner.section {
+    background-size: auto 100%;
+    background-position: 50% 150px;
+  }
+}
+
+.rohrer-klingner-colours.section {
+  background-image: url('/images/pages/products/inks/rohrer-klingner.png');
+  background-size: 150%;
+  background-position: -110px 80%;
+}
+@media (min-width: 550px) {
+  .rohrer-klingner-colours.section {
+    background-size: auto 700px;
+    background-position: 300px -40px;
+  }
+  .rohrer-klingner-colours.section .bottom.row {
+    margin-top: 330px;
+  }
+}
+
+.footer.section {
+  background-image: url('/images/pages/products/inks/footer.png');
+  background-size: auto 150%;
+  background-position: 50% 18%;
+}

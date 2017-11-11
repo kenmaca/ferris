@@ -1,0 +1,16 @@
+/* Elements
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.square {
+  margin-left: 0;
+  width: 50% !important;
+  height: 0;
+  padding-bottom: 50%;
+  background-color: #007B8A;
+  background-size: cover;
+}
+@media (min-width: 550px) {
+  .square {
+    width: 20% !important;
+    padding-bottom: 20%;
+  }
+}

@@ -1,0 +1,136 @@
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  overflow-x: hidden;
+}
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nav {
+  width: 100vw;
+  padding: 1.2rem 0;
+  background-color: #007B8A;
+  z-index: 100;
+  font-family: "Playfair Display SC", serif;
+}
+.nav,
+.nav a {
+  color: #FFF;
+  font-family: "Playfair Display SC", serif;
+  text-decoration: none;
+}
+
+.nav .row .columns:last-child,
+.nav .row .column:last-child {
+  margin-top: 2rem;
+  padding-right: 1.2rem;
+}
+.nav .row .columns.active,
+.nav .row .columns.active a,
+.nav .row .column.active a,
+.nav a:hover {
+  color: #EBDDA1;
+  font-weight: 900;
+}
+@media (min-width: 550px) {
+  .nav .row {
+    display: flex;
+    align-items: center;
+  }
+  .nav .row .columns:last-child,
+  .nav .row .column:last-child {
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 2rem;
+  background-image: url('/images/logo-frame.png');
+  background-size: cover;
+}
+
+.logo img {
+  margin: 7.35px;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: -webkit-transform .8s ease-out;
+          transition:         transform .8s ease-out;
+}
+.logo img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+@media (min-width: 550px) {
+  .logo {
+    margin-bottom: 0;
+  }
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  height: 600px;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
+}
+@media (min-width: 550px) {
+  .section {
+    height: 700px;
+  }
+}
+.section-heading,
+.section.description {
+  margin-bottom: 2rem;
+}
+
+.section h1,
+.section h2,
+.section h3,
+.section h4 {
+  font-family: "Playfair Display SC", serif;
+}
+.section h5,
+.section h6 {
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+.section .title {
+  color: #c8b475;
+}
+
+.hero.section {
+  height: 60vh;
+}
+.hero.section .title h3,
+.hero.section .title p {
+  color: #000;
+}
+
+@media (min-width: 550px) {
+  .hero.section {
+    height: 80vh;
+  }
+  .top.row {
+    display: flex;
+    align-items: center;
+  }
+  .top.row .title {
+    padding: 1vh 0;
+    border-bottom: 1px solid #c8b475;
+    border-top: 1px solid #c8b475;
+  }
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-center-text {
+  text-align: center;
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.debug {
+  background-color: red;
+}
