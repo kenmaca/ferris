@@ -78,82 +78,113 @@
   z-index: 1;
 }
 
-/* white left forward */
-#sixth #bush-1 {
+#sixth #gondolas {
   position: absolute;
-  width: 34vh;
-  height: 34vh;
-  top: 70vh;
-  left: 4vw;
+  width: 80vw;
+  left: 5vw;
+  top: 1vh;
+}
+
+#sixth #double-tent {
+  position: absolute;
+  width: 13vw;
+  top: 25vh;
+  right: 35vw;
+}
+
+#sixth #strength-test {
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  right: 36vw;
+  top: 40vh;
+}
+
+#sixth #red-tent {
+  position: absolute;
+  height: 25vh;
+  width: 25vh;
+  right: 36vw;
+  top: 39vh;
+}
+
+#sixth #sweet-stand {
+  position: absolute;
+  height: 43vh;
+  width: 43vh;
+  right: 44vw;
+  top: 31vh;
+}
+
+#sixth #rollercoaster {
+  position: absolute;
+  height: 70vh;
+  width: 70vh;
+  left: -2vw;
+  top: 25vh;
   z-index: 6;
 }
 
-/* white second left forward */
-#sixth #bush-2 {
+#sixth #game-stands {
   position: absolute;
-  width: 50vh;
   height: 50vh;
-  top: 65vh;
-  left: 30vw;
+  width: 50vh;
+  left: -5vw;
+  top: 48vh;
   z-index: 6;
 }
 
-/* white right forward */
-#sixth #bush-3 {
+#sixth #yellow-blue-tent {
   position: absolute;
-  width: 45vh;
+  height: 52vh;
+  width: 52vh;
+  left: 10vw;
+  top: 25vh;
+  z-index: 6;
+}
+
+#sixth #bear {
+  position: absolute;
   height: 45vh;
-  top: 55vh;
-  right: 5vw;
-  z-index: 6;
+  width: 45vh;
+  right: 31vw;
+  top: 61vh;
 }
 
-/* light rear left */
-#sixth #bush-4 {
+#sixth #tent-bush {
   position: absolute;
-  width: 90vh;
-  height: 90vh;
-  top: 35vh;
-  left: 0vw;
-  z-index: 5;
+  height: 35vh;
+  width: 35vh;
+  left: 5vw;
+  bottom: -12vh;
+  z-index: 7;
 }
 
-#sixth #bush-5 {
+#sixth #left-bush {
   position: absolute;
-  width: 80vh;
-  height: 80vh;
-  top: 35vh;
-  left: 61vw;
-  z-index: 5;
+  height: 70vh;
+  width: 70vh;
+  left: -20vw;
+  bottom: -55vh;
+  z-index: 7;
 }
 
-/* light rear behind pencil-box */
-#sixth #bush-6 {
+#sixth #right-bush {
   position: absolute;
-  width: 60vh;
-  height: 60vh;
-  top: 20vh;
-  left: 68vw;
-  z-index: 0;
+  height: 70vh;
+  width: 70vh;
+  right: 18vw;
+  bottom: -55vh;
+  z-index: 7;
 }
 
-/* dark middle left */
-#sixth #bush-7 {
+#popcorn-cart {
   position: absolute;
-  width: 80vh;
-  height: 80vh;
-  top: 43vh;
-  left: 0vw;
-  z-index: 5;
-}
-
-#sixth #bush-8 {
-  position: absolute;
-  width: 85vh;
-  height: 85vh;
-  top: 41vh;
-  left: 58vw;
-  z-index: 2;
+  height: 50vh;
+  width: 50vh;
+  right: -2vw;
+  bottom: 10vh;
+  z-index: 8;
 }
 
 /* #sharpener-pencils {

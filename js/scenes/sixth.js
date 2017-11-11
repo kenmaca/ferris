@@ -9,7 +9,6 @@ loadSvg('cat-tent/flag-1', '#flag-1');
 loadSvg('cat-tent/flag-2', '#flag-2');
 loadSvg('cat-tent/flag-3', '#flag-3');
 loadSvg('cat-tent/flag-4', '#flag-4');
-loadSvg('path-tent');
 loadSvg('cat-tent/cat-tongue-in', '#cat-tongue-in');
 loadSvg('cat-tent/cat-tongue-out', '#cat-tongue-out');
 loadSvg('sharpener/sharpener', '#sharpener');
@@ -17,14 +16,21 @@ loadSvg('sharpener/cloud', '#sharpener-cloud');
 loadSvg('sharpener/pencil-1', '#pencil-1');
 loadSvg('sharpener/pencil-2', '#pencil-2');
 loadSvg('sharpener/pencilbox', '#pencilbox');
-loadSvg('bushes/bush-1', '#bush-1');
-loadSvg('bushes/bush-2', '#bush-2');
-loadSvg('bushes/bush-3', '#bush-3');
-loadSvg('bushes/bush-4', '#bush-4');
-loadSvg('bushes/bush-5', '#bush-5');
-loadSvg('bushes/bush-6', '#bush-6');
-loadSvg('bushes/bush-7', '#bush-7');
-loadSvg('bushes/bush-8', '#bush-8');
+
+// 6.0 additions
+loadSvg('final/goldolas', '#gondolas');
+loadSvg('final/double tent', '#double-tent');
+loadSvg('final/strength test', '#strength-test');
+loadSvg('final/red tent', '#red-tent');
+loadSvg('final/sweet stand', '#sweet-stand');
+loadSvg('final/roller coaster', '#rollercoaster');
+loadSvg('final/game stands', '#game-stands');
+loadSvg('final/yellow blue tent', '#yellow-blue-tent');
+loadSvg('final/bear', '#bear');
+loadSvg('final/bush by the tent', '#tent-bush');
+loadSvg('final/bush 1', '#right-bush');
+loadSvg('final/bush 2', '#left-bush');
+loadSvg('final/popcorn stand', '#popcorn-cart');
 
 // clouds
 loadSvg('clouds/cloud-13', '#cloud-13');
@@ -109,7 +115,7 @@ function animateCat(catTongueIn, catTongueOut) {
       catTongueOut.hide();
       catTongueIn.show();
     }
-  
+
     setTimeout(() => {
       animateCat(catTongueIn, catTongueOut);
     }, catAnimationTime);
