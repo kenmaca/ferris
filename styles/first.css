@@ -215,8 +215,13 @@
     align-items: center;
   }
 
+  #first #banner {
+    width: 30vh;
+    margin-top: -9vh;
+  }
+
   #ferris {
-    bottom: 2vh;
+    bottom: 1vh;
     left: 3vh;
     width: 90vw;
     height: 90vw;

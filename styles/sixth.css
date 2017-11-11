@@ -80,9 +80,9 @@
 
 #sixth #gondolas {
   position: absolute;
-  width: 80vw;
-  left: 5vw;
-  top: 1vh;
+  width: 60vw;
+  left: 22vw;
+  bottom: 35vh;
 }
 
 #sixth #double-tent {
@@ -232,4 +232,47 @@
   bottom: 55vh;
   right: -3vh;
   z-index: 3;
+}
+
+
+/* responsive iphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+  #pencil,
+  #pencil-1,
+  #pencil-2,
+  #pencilbox,
+  #sharpener-cloud,
+  #sharpener,
+  #strength-test,
+  #game-stands,
+  #double-tent,
+  #bear,
+  #rollercoaster,
+  #tent,
+  #flags,
+  #cat,
+  #sweet-stand,
+  #red-tent {
+    display: none;
+  }
+
+  #sixth #popcorn-cart {
+    bottom: 13vh;
+    right: -13vw;
+  }
+
+  #sixth #gondolas {
+    width: 180vw;
+    height: 180vw;
+    right: 5vh;
+    left: inherit;
+    top: inherit;
+    bottom: 30vh;
+  }
+
+  #sixth #yellow-blue-tent {
+    height: 60vh;
+    width: 60vh;
+    left: -30vw;
+  }
 }
