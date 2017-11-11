@@ -202,19 +202,17 @@
 #first .content p {
   text-align: center;
   font-family: 'Playfair Display SC', serif;
-  font-size: 14px;
+  font-size: 17.5px;
   letter-spacing: 0.3em;
   color: #cacf9d;
 }
 
 /* responsive iphone */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #banner {
-    top: -15vw;
-    left: 0;
-    right: 0;
-    height: 100vw;
-    width: 100vw;
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+  #first div.banner:first-child {
+    margin-top: -6vh;
+    width: 100vw !important;
+    align-items: center;
   }
 
   #ferris {
@@ -224,30 +222,19 @@
     height: 90vw;
   }
 
-  #first .transition .fourth {
-    bottom: -7vh;
+  /* clouds */
+  #cloud-1 {
+    top: 86vh;
+    left: -6vw;
+    width: 100vw;
+    z-index: 10;
   }
 
-  #first .transition .second, #first .transition .first {
-    bottom: 0;
-  }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #banner {
-    right: 0;
-    height: 60vw;
-    width: 60vw;
-  }
-
-  #ferris {
-    bottom: 2vh;
-    left: -1vw;
+  #cloud-2 {
+    position: absolute;
+    top: 85vh;
+    left: -10vw;
     width: 80vw;
-    height: 80vw;
-  }
-
-  #first .transition .fourth {
-    bottom: -10vh;
+    z-index: 0;
   }
 }

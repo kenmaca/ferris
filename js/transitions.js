@@ -30,7 +30,7 @@ function fromFirstScene(direction) {
 
 function fromSecondScene(direction) {
   console.log("2", direction);
-  
+
   if (direction == DOWN){
     $("#bird").css("left", "-10vw");
     startBirdAnimation();
@@ -82,7 +82,7 @@ function fromThirdScene(direction) {
   if (direction == DOWN) {
     tw.to($("#hot-air-balloon"), 3, {bottom: "150vh", ease: Expo.easeOut, delay: 0.2});
   } else {
-    tw.to($("#hot-air-balloon"), 3, {bottom: "50vh", ease: Expo.easeOut, delay: 0.7});
+    tw.to($("#hot-air-balloon"), 3, {bottom: "60vh", ease: Expo.easeOut, delay: 0.7});
   }
 }
 
@@ -129,7 +129,7 @@ function cloudTransition(direction, scene) {
         tw.to($(`${sceneId} .transition .fourth`), 2, {bottom: "-150vh", ease: Expo.easeOut, delay: 0.5});
         tw.to($(`${sceneId} .transition .first`), 1.5, {bottom: "-150vh", ease: Expo.easeOut, delay: 0.5});
         tw.to($(`${sceneId} .content`), 0.2, {opacity: 1, delay: 1});
-  
+
         setTimeout(() => {
           animationHasStarted = false;
           enableScroll();

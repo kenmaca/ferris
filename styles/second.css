@@ -15,8 +15,8 @@
 #carousel .base {
   width: 95%;
   height: 95%;
-  top: 17vh;
-  left: 2.5vh;
+  top: 17%;
+  left: 2.5%;
 }
 
 #carousel .top {
@@ -99,7 +99,7 @@
   width: 3%;
   height: 3%;
   bottom: 30%;
-  left: 82%;
+  left: 83%;
 }
 
 #bird {
@@ -203,33 +203,31 @@
 }
 
 /* responsive iphone */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
   #carousel {
-    width: 80vw;
-    height: 80vw;
-    bottom: 0;
-    left: 10vw;
+    width: 100vw;
+    height: 100vw;
+    bottom: -5vh;
+    left: 0;
   }
 
   #letter {
-    width: 30vw;
-    height: 30vw;
-    right: 10vw;
-    top: 25vh;
-  }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #banner {
-    right: 0;
-    height: 60vw;
-    width: 60vw;
+    display: none;
   }
 
-  #ferris {
-    bottom: 2vh;
-    left: -1vw;
-    width: 80vw;
-    height: 80vw;
+  #second .content {
+    margin-top: 30vh;
+  }
+
+  #bird {
+    top: 40vh;
+  }
+
+  #cloud-3 {
+    top: 83vh;
+  }
+
+  #cloud-4 {
+    top: 90vh;
   }
 }

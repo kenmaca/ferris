@@ -2,7 +2,7 @@
 /* used to animate slide in transition with css hover inner */
 #hot-air-balloon {
   position: absolute;
-  bottom: 50vh;
+  bottom: 60vh;
   width: 70vh;
   height: 70vh;
   z-index: 21;
@@ -162,4 +162,19 @@
 @keyframes roll-swap {
   0% { visibility: visible; }
   50% { visibility: hidden; }
+}
+
+/* responsive iphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+  #font-blocks,
+  #press,
+  #cloud-17 {
+    display: none;
+  }
+
+  #third .content {
+    margin-top: inherit;
+    align-self: flex-end;
+    margin-bottom: 10vh;
+  }
 }
