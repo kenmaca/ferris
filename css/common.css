@@ -81,10 +81,6 @@ body {
     height: 700px;
   }
 }
-.section-heading,
-.section.description {
-  margin-bottom: 2rem;
-}
 
 .section h1,
 .section h2,
@@ -115,11 +111,19 @@ body {
   .top.row {
     display: flex;
     align-items: center;
+    margin-bottom: 5rem;
   }
   .top.row .title {
     padding: 1vh 0;
     border-bottom: 1px solid #c8b475;
     border-top: 1px solid #c8b475;
+  }
+  .top.row .title h3 {
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .top.row p:last-child {
+    margin-bottom: 0;
   }
 }
 

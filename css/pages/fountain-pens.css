@@ -1,0 +1,102 @@
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero.section {
+  background-image: url('/images/pages/products/fountain-pens/hero-right.png');
+  background-size: 150%;
+  background-position: 0% 70%;
+}
+@media (min-width: 550px) {
+  .hero.section {
+    background-image: url('/images/pages/products/fountain-pens/hero-down.png');
+    background-size: auto 150%;
+    background-position: 70% 100%;
+  }
+  .hero.section .top.row .title {
+    border-width: 0;
+  }
+}
+
+.design.section {
+  background-image: url('/images/pages/products/fountain-pens/blue-l.png');
+  background-size: auto 70%;
+  background-position: 100% 100px;
+}
+.design.section .bottom.row p {
+  width: 70%;
+}
+@media (min-width: 550px) {
+  .design.section .bottom.row p {
+    width: auto;
+  }
+  .design.section {
+    background-size: auto 100%;
+    background-position: 0% 0%;
+  }
+  .design.section .bottom.row {
+    margin-top: 10rem;
+  }
+}
+
+.colours.section {
+  background-image: url('/images/pages/products/fountain-pens/white-pen.png');
+  background-size: 400%;
+  background-position: 30% 70%;
+}
+@media (min-width: 550px) {
+  .colours.section {
+    background-image: url('/images/pages/products/fountain-pens/white-pen.png');
+    background-size: 900px;
+    background-position: 45% 50%;
+  }
+  .colours.section .bottom.row {
+    margin-top: 40%;
+  }
+}
+
+.limited-offer.section {
+  background-image: url('/images/pages/products/fountain-pens/limited-offer.png');
+  background-size: 200%;
+  background-position: 10% 50%;
+}
+.limited-offer.section .top.row p {
+  width: 70%;
+}
+@media (min-width: 550px) {
+  .limited-offer.section {
+    background-size: 80%;
+    background-position: 50% 60%;
+  }
+  .limited-offer.section .top.row {
+    align-items: flex-start;
+  }
+  .limited-offer.section .top.row p {
+    width: auto;
+  }
+  .limited-offer.section .top.row p:first-child {
+    margin-top: 30%;
+  }
+}
+
+.holiday-gift-set.section {
+  background-image: url('/images/pages/products/fountain-pens/holiday-gift-set.png');
+  background-size: auto 50%;
+  background-position: 50% 100%;
+}
+@media (min-width: 550px) {
+  .holiday-gift-set.section {
+    background-size: auto 80%;
+    background-position: 80% 30%;
+  }
+}
+
+.footer.section {
+  background-image: url('/images/pages/products/fountain-pens/footer.png');
+  background-size: auto 110%;
+  background-position: 52% -10%;
+}
+@media (min-width: 550px) {
+  .footer.section {
+    background-size: 100%;
+    background-position: 0% 50%;
+  }
+}
