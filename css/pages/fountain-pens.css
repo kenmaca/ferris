@@ -11,9 +11,8 @@
     background-size: auto 150%;
     background-position: 70% 100%;
   }
-  .hero.section .top.row .title {
+  .hero.section .container .row:first-child .title {
     margin-top: 15%;
-    border-width: 0;
   }
 }
 
@@ -22,19 +21,22 @@
   background-size: auto 70%;
   background-position: 100% 100px;
 }
-.design.section .bottom.row p {
+.design.section .container .row:last-child p {
   width: 70%;
 }
 @media (min-width: 550px) {
-  .design.section .bottom.row p {
-    width: auto;
-  }
   .design.section {
     background-size: auto 100%;
     background-position: 0% 0%;
   }
-  .design.section .title {
-    margin-top: 15%;
+  .design.section .banner {
+    top: 20%;
+  }
+  .design.section .container .row:first-child {
+    margin-top: 25%;
+  }
+  .design.section .bottom.row p {
+    width: auto;
   }
 }
 
@@ -45,9 +47,9 @@
 }
 
 /* active colour swap */
-.colours.section.white-selected .bottom.row .columns:nth-child(1) .option-item,
-.colours.section.yellow-selected .bottom.row .columns:nth-child(2) .option-item,
-.colours.section.teal-selected .bottom.row .columns:nth-child(3) .option-item {
+.colours.section.white-selected .container .row:last-child .columns:nth-child(1) .option-item,
+.colours.section.yellow-selected .container .row:last-child .columns:nth-child(2) .option-item,
+.colours.section.teal-selected .container .row:last-child .columns:nth-child(3) .option-item {
   color: #000;
 }
 .colours.section.yellow-selected {
@@ -62,8 +64,11 @@
     background-size: 90%;
     background-position: 45% 50%;
   }
-  .colours.section .bottom.row {
+  .colours.section .container .row:last-child {
     margin-top: 40%;
+  }
+  .colours.section .container .row:first-child {
+    margin-top: 30px;
   }
 }
 
@@ -72,22 +77,13 @@
   background-size: 200%;
   background-position: 10% 50%;
 }
-.limited-offer.section .top.row p {
+.limited-offer.section .container .row:first-child p {
   width: 70%;
 }
 @media (min-width: 550px) {
   .limited-offer.section {
     background-size: 80%;
     background-position: 50% 60%;
-  }
-  .limited-offer.section .top.row {
-    align-items: flex-start;
-  }
-  .limited-offer.section .top.row p {
-    width: auto;
-  }
-  .limited-offer.section .top.row p:first-child {
-    margin-top: 30%;
   }
 }
 
@@ -101,7 +97,7 @@
     background-size: auto 80%;
     background-position: 80% 30%;
   }
-  .holiday-gift-set.section .title {
+  .holiday-gift-set.section .container .row:first-child {
     margin-top: 15%;
   }
 }

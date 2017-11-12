@@ -1,7 +1,6 @@
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
-  height: 60vh;
   background-image: url('/images/pages/products/painterly-petals-collection/hero.jpg');
   background-size: 100%;
   background-position: 50% 100%;
@@ -9,11 +8,10 @@
 }
 @media (min-width: 550px) {
   .hero {
-    height: 80vh;
     background-size: 70%;
   }
   .hero .row.bottom {
-    margin-top: 65vh;
+    margin-top: 75vh;
     text-align: center;
   }
 }
@@ -26,11 +24,14 @@
 }
 @media (min-width: 550px) {
   .inspiration {
-    background-size: 90%;
-    background-position: 0% 0%;
+    background-size: auto 200%;
+    background-position: 75% 39%;
   }
   .inspiration .row.bottom {
-    margin-top: 55vh;
+    margin-top: 550px;
+  }
+  .inspiration .row.bottom p {
+    text-align: right;
   }
 }
 

@@ -4,15 +4,12 @@
   background-color: #e4e4e4;
   background-image: url('/images/pages/products/inks/hero.jpg');
   background-size: 150%;
-  background-position: 50% -40%;
+  background-position: 50% -20%;
 }
 @media (min-width: 550px) {
   .hero.section {
     background-size: 100%;
-    background-position: 50% 0%;
-  }
-  .hero.section .top.row .title {
-    border-width: 0;
+    background-position: 50% -2%;
   }
 }
 
@@ -23,27 +20,37 @@
 }
 @media (min-width: 550px) {
   .j-herbin.section {
-    background-size: 960px;
+    background-size: 1000px;
     background-position: 30% 100px;
   }
 }
 
 .colours.section {
-  background-image: url('/images/pages/products/inks/colours.png');
-  background-size: 110%;
-  background-position: 50% 100%;
+  background-image: url('/images/pages/products/inks/colours-horizontal.png');
+  background-size: 130%;
+  background-position: 70% 120%;
 }
 @media (min-width: 550px) {
   .colours.section {
+    background-image: url('/images/pages/products/inks/colours.png');
     background-size: 960px;
-    background-position: 400px 70px;
+    background-position: 65% 150px;
   }
-  .colours.section .top.row .columns h6 {
-    text-align: center;
+  .colours.section .container .row:first-child {
+    margin-top: 120px;
   }
-
-  .colours.section .top.row .columns:last-child {
-    padding-left: 100px;
+  .colours.section .container .row:first-child h5 {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+  .colours.section .container .row .columns:nth-child(2) {
+    padding-left: 10px;
+  }
+  .colours.section .container .row .columns:nth-child(3) {
+    padding-left: 60px;
+  }
+  .colours.section .container .row:first-child .columns:nth-child(4) {
+    padding-left: 90px;
   }
 }
 
@@ -62,15 +69,21 @@
 .rohrer-klingner-colours.section {
   background-image: url('/images/pages/products/inks/rohrer-klingner.png');
   background-size: 150%;
-  background-position: -110px 80%;
+  background-position: -110px 100%;
 }
 @media (min-width: 550px) {
   .rohrer-klingner-colours.section {
     background-size: auto 700px;
     background-position: 300px -40px;
   }
+  .rohrer-klingner-colours.section .container .row:first-child {
+    margin-top: 160px;
+  }
+  .rohrer-klingner-colours.section .container .row:first-child h5 {
+    margin-left: 10px;
+  }
   .rohrer-klingner-colours.section .bottom.row {
-    margin-top: 330px;
+    margin-top: 350px;
   }
 }
 
