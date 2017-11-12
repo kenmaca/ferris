@@ -41,11 +41,7 @@
   .colours.section .top.row .columns h6 {
     text-align: center;
   }
-  .price.columns h5 {
-    color: #c8b475;
-    margin-top: 5vh;
-    font-size: 3rem;
-  }
+
   .colours.section .top.row .columns:last-child {
     padding-left: 100px;
   }

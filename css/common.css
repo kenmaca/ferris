@@ -128,6 +128,9 @@ body {
 .u-center-text {
   text-align: center;
 }
+.u-right-text {
+  text-align: right;
+}
 .dot-row {
   display: flex;
   align-items: center;
@@ -144,16 +147,18 @@ body {
 /* Font Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .uppercased {
-  font-family: "Belleza", sans-serif;
   text-transform: uppercase;
 }
 .option-item {
+  font-family: "Belleza", sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  cursor: pointer;
 }
 .accented {
   color: #c8b475;
+}
+.clickable {
+  cursor: pointer;
 }
 
 /* Misc
