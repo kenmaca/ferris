@@ -12,6 +12,7 @@
     background-position: 70% 100%;
   }
   .hero.section .top.row .title {
+    margin-top: 15%;
     border-width: 0;
   }
 }
@@ -32,8 +33,8 @@
     background-size: auto 100%;
     background-position: 0% 0%;
   }
-  .design.section .bottom.row {
-    margin-top: 10rem;
+  .design.section .title {
+    margin-top: 15%;
   }
 }
 
@@ -42,10 +43,23 @@
   background-size: 400%;
   background-position: 30% 70%;
 }
+
+/* active colour swap */
+.colours.section.white-selected .bottom.row .columns:nth-child(1) .option-item,
+.colours.section.yellow-selected .bottom.row .columns:nth-child(2) .option-item,
+.colours.section.teal-selected .bottom.row .columns:nth-child(3) .option-item {
+  color: #000;
+}
+.colours.section.yellow-selected {
+  background-image: url('/images/pages/products/fountain-pens/yellow-pen.png');
+}
+.colours.section.teal-selected {
+  background-image: url('/images/pages/products/fountain-pens/teal-pen.png');
+}
 @media (min-width: 550px) {
   .colours.section {
     background-image: url('/images/pages/products/fountain-pens/white-pen.png');
-    background-size: 900px;
+    background-size: 90%;
     background-position: 45% 50%;
   }
   .colours.section .bottom.row {
@@ -86,6 +100,9 @@
   .holiday-gift-set.section {
     background-size: auto 80%;
     background-position: 80% 30%;
+  }
+  .holiday-gift-set.section .title {
+    margin-top: 15%;
   }
 }
 

@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- fonts -->
-  <link href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC|Raleway:400,300,600|Playfair+Display+SC" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Belleza|Raleway:400,300,600|Playfair+Display+SC" rel="stylesheet" type="text/css">
 
   <!-- standard styles -->
   <link rel="stylesheet" href="/css/normalize.css">
@@ -62,7 +62,7 @@
     <div class="container">
       <div class="top row">
         <div class="four columns title">
-          <h3>The <b>Brush</b> Fountain Pen</h3>
+          <h2>The <b>Brush</b> Fountain Pen</h2>
         </div>
       </div>
       <div class="bottom row">
@@ -89,7 +89,7 @@
     </div>
   </div>
 
-  <div class="colours section">
+  <div class="colours section white-selected">
     <div class="container">
       <div class="top row">
         <div class="two columns title">
@@ -101,13 +101,22 @@
       </div>
       <div class="bottom row">
         <div class="three columns offset-by-one">
-          Creme Glacee White
+          <div class="dot-row" id="selectWhite">
+            <div class="dot" style="background-color: #f3f0e9"></div>
+            <div class="uppercased option-item accented">Crème Glacée White</div>
+          </div>
         </div>
         <div class="three columns offset-by-one">
-          Sunset Yellow
+          <div class="dot-row" id="selectYellow">
+            <div class="dot" style="background-color: #fecd7e"></div>
+            <div class="uppercased option-item accented">Sunset Yellow</div>
+          </div>
         </div>
         <div class="three columns offset-by-one">
-          Printmakers' Teal
+          <div class="dot-row" id="selectTeal">
+            <div class="dot" style="background-color: #00a7c4"></div>
+            <div class="uppercased option-item accented">Printmakers' Teal</div>
+          </div>
         </div>
       </div>
     </div>
@@ -151,5 +160,28 @@
 
   <div class="footer section"></div>
 
+  <!-- Base -->
+  <script src="/js/common.js"></script>
+
+  <!-- Custom -->
+  <script type="text/javascript">
+    function reset() {
+      removeClass(['white-selected', 'yellow-selected', 'teal-selected'], '.colours.section');
+    }
+
+    // handle click to change pen colours
+    document.getElementById('selectWhite').onclick = function() {
+      reset();
+      addClass('white-selected', '.colours.section');
+    }
+    document.getElementById('selectYellow').onclick = function() {
+      reset();
+      addClass('yellow-selected', '.colours.section');
+    }
+    document.getElementById('selectTeal').onclick = function() {
+      reset();
+      addClass('teal-selected', '.colours.section');
+    }
+  </script>
 </body>
 </html>
