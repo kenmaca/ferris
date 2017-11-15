@@ -5,12 +5,20 @@
   width: 50% !important;
   height: 0;
   padding-bottom: 50%;
-  background-color: #007B8A;
   background-size: cover;
+  background-clip: padding-box;
+  box-sizing: content-box;
+  border: 20px solid rgba(255, 255, 255, 0);
+  border-image: url('/images/grid-frame.svg') 15% 15% stretch;
+  outline: 1px #CCC solid;
 }
 @media (min-width: 550px) {
   .square {
-    width: 20% !important;
-    padding-bottom: 20%;
+    width: 15% !important;
+    padding-bottom: 15%;
   }
+}
+
+.hero.section .container .row:last-child {
+  margin-bottom: 10%;
 }
