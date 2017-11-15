@@ -18,8 +18,8 @@
 
 .inspiration.section {
   background-image: url('/images/pages/products/painterly-petals-collection/inspiration.png');
-  background-size: auto 100%;
-  background-position: 40% 100%;
+  background-size: auto 40%;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
 }
 @media (min-width: 550px) {
@@ -38,7 +38,7 @@
 .suite.section {
   background-image: url('/images/pages/products/painterly-petals-collection/suite.png');
   background-size: auto 100%;
-  background-position: 40% 100%;
+  background-position: 40% 400px;
   background-repeat: no-repeat;
 }
 @media (min-width: 550px) {
@@ -53,8 +53,8 @@
 
 .printing.section {
   background-image: url('/images/pages/products/painterly-petals-collection/printing.png');
-  background-size: auto 90%;
-  background-position: 40% 100%;
+  background-size: auto 70%;
+  background-position: 40% 270px;
   background-repeat: no-repeat;
 }
 @media (min-width: 550px) {
@@ -72,8 +72,8 @@
 
 .hand.section {
   background-image: url('/images/pages/products/painterly-petals-collection/hand.png');
-  background-size: auto 90%;
-  background-position: 40% 100%;
+  background-size: auto 120%;
+  background-position: 40% 0%;
   background-repeat: no-repeat;
 }
 @media (min-width: 550px) {
@@ -91,8 +91,8 @@
 
 .prix-fixe.section {
   background-image: url('/images/pages/products/painterly-petals-collection/prix-fixe.png');
-  background-size: 150%;
-  background-position: 40% 100%;
+  background-size: 100%;
+  background-position: 40% 80%;
   background-repeat: no-repeat;
 }
 @media (min-width: 550px) {
@@ -140,8 +140,9 @@ body.georgias-glory .colours.section {
 }
 
 .designs.section {
+  height: 800px;
   background-size: 150%;
-  background-position: 40% 100%;
+  background-position: 60% 100%;
   background-repeat: no-repeat;
 }
 .designs.section .description {
@@ -149,6 +150,7 @@ body.georgias-glory .colours.section {
 }
 @media (min-width: 550px) {
   .designs.section {
+    height: 100vh;
     background-size: auto 100%;
     background-position: 100% 50%;
   }
@@ -181,6 +183,9 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
   background-image: url('/images/pages/products/painterly-petals-collection/no10-envelope-open.png') !important;
 }
 
+.shapes.section {
+  height: 1400px;
+}
 .shapes.section .container .row:last-child .columns,
 .shapes.section .container .row:last-child .column {
   text-align: center;
@@ -203,6 +208,9 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
   background-image: url('/images/pages/products/painterly-petals-collection/no10-envelope-close.png');
 }
 @media (min-width: 550px) {
+  .shapes.section {
+    height: 100vh;
+  }
   .shapes.section .container .row:last-child {
     margin-top: 150px;
   }
@@ -210,7 +218,7 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
 
 .colours.section {
   background-image: url('/images/pages/products/painterly-petals-collection/painterly8-1.png');
-  background-size: 150%;
+  background-size: 0%;
   background-position: 40% 100%;
   background-repeat: no-repeat;
 }
@@ -220,7 +228,7 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
   padding-bottom: 100%;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 55% 50%;
 }
 @media (min-width: 550px) {
   .colours.section {
