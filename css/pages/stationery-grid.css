@@ -2,13 +2,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .square {
   margin-left: 0;
-  width: 50% !important;
+  width: 37% !important;
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 37%;
   background-size: cover;
   background-clip: padding-box;
   box-sizing: content-box;
-  border: 20px solid rgba(255, 255, 255, 0);
+  border: 20px solid;
   border-image: url('/images/grid-frame.svg') 15% 15% stretch;
   outline: 1px #CCC solid;
 }
