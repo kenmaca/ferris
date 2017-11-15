@@ -1,5 +1,6 @@
 const TRANSITION_SPEED = 1;
 const TRANSITION_SPEED_NEXT = 3;
+const MOBILE = screen.width < 550;
 
 const sceneNumberToId = {
   1: "#first",
@@ -122,12 +123,12 @@ function cloudTransition(direction, scene) {
     var sceneId = sceneNumberToId[scene];
     if (direction == DOWN) {
       tw.to($(`${sceneId} .content`), 0.2, {opacity: 0});
-      tw.to($(`${sceneId} .transition .first`), 0.5, {bottom: "-35vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .second`), 1.5, {bottom: "-20vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .third`), 2, {bottom: "-30vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .fourth`), 0.5, {bottom: "-45vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.3});
-      tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 2.1});
+      tw.to($(`${sceneId} .transition .first`), 0.5, {bottom: MOBILE ? "0vh": "-35vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .second`), 1.5, {bottom:  MOBILE ? "0vh": "-20vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .third`), 2, {bottom:  MOBILE ? "5vh": "-30vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .fourth`), 2, {bottom:  MOBILE ? "10vh": "-45vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition`), 0.5, {bottom:  MOBILE ? "0vh": "-20vh", ease: Expo.easeOut, delay: 1.3});
+      tw.to($(`${sceneId} .transition`), 0.5, {bottom:  MOBILE ? "0vh": "0vh", ease: Expo.easeOut, delay: 2.1});
     } else if (direction == UP) {
       setTimeout(() => {
         tw.to($(`${sceneId} .transition .second`), 2, {bottom: "-150vh", ease: Expo.easeOut, delay: 0.5});
