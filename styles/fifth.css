@@ -20,6 +20,34 @@
   z-index: 2;
 }
 
+#contact-grid {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 25px;
+}
+
+#contact-grid .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#contact-grid .row .icon {
+  width: 60px;
+  height: 60px;
+}
+
+#contact-grid .row .description {
+  margin-left: 25px;
+}
+
+#contact-grid a {
+  color: #000;
+  text-decoration: none;
+}
+
 /* responsive iphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
   #cloud-14 {

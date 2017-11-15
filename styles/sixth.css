@@ -135,13 +135,40 @@
   z-index: 6;
 }
 
-#sixth #yellow-blue-tent {
+#sixth #blue-tent {
   position: absolute;
   height: 52vh;
   width: 52vh;
   left: 10vw;
   top: 25vh;
   z-index: 6;
+}
+
+#sixth #yellow-blue-tent {
+  height: 52vh;
+  width: 52vh;
+}
+
+#sixth #bflags {
+  position: absolute;
+  top: 0vh;
+  left: 25.4vh;
+  width: 5vw;
+}
+
+#sixth #bflag-1 {
+}
+
+#sixth #bflag-2 {
+  display: none;
+}
+
+#sixth #bflag-3 {
+  display: none;
+}
+
+#sixth #bflag-4 {
+  display: none;
 }
 
 #sixth #bear {

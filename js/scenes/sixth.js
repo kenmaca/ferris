@@ -25,7 +25,11 @@ loadSvg('final/red tent', '#red-tent');
 loadSvg('final/sweet stand', '#sweet-stand');
 loadSvg('final/roller coaster', '#rollercoaster');
 loadSvg('final/game stands', '#game-stands');
-loadSvg('final/yellow blue tent', '#yellow-blue-tent');
+loadSvg('cat-tent/blue-tent', '#yellow-blue-tent');
+loadSvg('cat-tent/bflag-1', '#bflag-1');
+loadSvg('cat-tent/bflag-2', '#bflag-2');
+loadSvg('cat-tent/bflag-3', '#bflag-3');
+loadSvg('cat-tent/bflag-4', '#bflag-4');
 loadSvg('final/bear', '#bear');
 loadSvg('final/bush by the tent', '#tent-bush');
 loadSvg('final/bush 1', '#right-bush');
@@ -73,7 +77,7 @@ function stopSharpening() {
 // cat-tent flag animation
 var flagAnimation = false;
 const flagAnimationTime = 300;
-function animateFlag(flag1, flag2, flag3, flag4) {
+function animateFlag(flag1, flag2, flag3, flag4, interval) {
   if (flagAnimation) {
     if (flag1.is(":visible")) {
       flag1.hide();
@@ -90,14 +94,15 @@ function animateFlag(flag1, flag2, flag3, flag4) {
     }
 
     setTimeout(() => {
-      animateFlag(flag1, flag2, flag3, flag4);
-    }, flagAnimationTime);
+      animateFlag(flag1, flag2, flag3, flag4, interval);
+    }, interval);
   }
 }
 
 function startFlagAnimation() {
   flagAnimation = true;
-  animateFlag($('#flag-1'), $('#flag-2'), $('#flag-3'), $('#flag-4'));
+  animateFlag($('#flag-1'), $('#flag-2'), $('#flag-3'), $('#flag-4'), flagAnimationTime);
+  animateFlag($('#bflag-3'), $('#bflag-4'), $('#bflag-1'), $('#bflag-2'), flagAnimationTime * 0.7);
 }
 
 function stopFlagAnimation() {
@@ -106,7 +111,7 @@ function stopFlagAnimation() {
 
 // cat-tent cat animation
 var catAnimation = false;
-const catAnimationTime = 400;
+const catAnimationTime = 1800;
 function animateCat(catTongueIn, catTongueOut) {
   if (catAnimation) {
     if (catTongueIn.is(":visible")) {
