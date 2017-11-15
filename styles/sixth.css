@@ -88,8 +88,9 @@
 #sixth #double-tent {
   position: absolute;
   width: 13vw;
-  top: 25vh;
+  bottom: 32vh;
   right: 35vw;
+  z-index: 4;
 }
 
 #sixth #strength-test {
@@ -110,10 +111,10 @@
 
 #sixth #sweet-stand {
   position: absolute;
-  height: 43vh;
-  width: 43vh;
+  height: 39vh;
+  width: 39vh;
   right: 44vw;
-  top: 31vh;
+  bottom: 26vh;
 }
 
 #sixth #rollercoaster {
@@ -130,7 +131,7 @@
   height: 50vh;
   width: 50vh;
   left: -5vw;
-  top: 48vh;
+  bottom: 5vh;
   z-index: 6;
 }
 
@@ -148,7 +149,8 @@
   height: 45vh;
   width: 45vh;
   right: 31vw;
-  top: 61vh;
+  bottom: -7vh;
+  z-index: 7;
 }
 
 #sixth #tent-bush {
@@ -200,7 +202,7 @@
   width: 20vh;
   height: 6vh;
   bottom: 270vh;
-  right: 23vh;
+  right: 28vh;
   z-index: 3;
 }
 
@@ -215,11 +217,8 @@
   position: absolute;
   width: 4vh;
   bottom: 112vh;
-  right: 31vh;
+  right: 36vh;
   z-index: 1;
-}
-
-#pencil-1 {
 }
 
 #pencil-2 {
@@ -228,12 +227,19 @@
 
 #pencilbox {
   position: absolute;
-  width: 40vh;
-  bottom: 55vh;
+  width: 45vh;
+  bottom: 40vh;
   right: -3vh;
   z-index: 3;
 }
 
+#sixth #pencil-bush {
+  position: absolute;
+  width: 40vh;
+  right: -10vh;
+  bottom: 35vh;
+  z-index: 4;
+}
 
 /* responsive iphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
@@ -274,5 +280,9 @@
     height: 60vh;
     width: 60vh;
     left: -30vw;
+  }
+
+  #sixth #pencil-bush {
+    bottom: 10vh;
   }
 }

@@ -30,6 +30,7 @@ loadSvg('final/bear', '#bear');
 loadSvg('final/bush by the tent', '#tent-bush');
 loadSvg('final/bush 1', '#right-bush');
 loadSvg('final/bush 2', '#left-bush');
+loadSvg('final/bush 2', '#pencil-bush');
 loadSvg('final/popcorn stand', '#popcorn-cart');
 
 // clouds
