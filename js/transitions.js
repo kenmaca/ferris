@@ -83,9 +83,13 @@ function fromSecondScene(direction) {
 function fromThirdScene(direction) {
   console.log("3", direction);
   if (direction == DOWN) {
+    tw.to($('#press'), 1.5, {bottom: "-100vh", ease: Expo.easeOut});
     tw.to($("#hot-air-balloon"), 3, {bottom: "150vh", ease: Expo.easeOut, delay: 0.2});
+    tw.to($('#font-blocks'), 0.5, {opacity: 0});
   } else {
+    tw.to($('#press'), 1.5, {bottom: "-10vh", ease: Expo.easeOut, delay: 1});
     tw.to($("#hot-air-balloon"), 3, {bottom: "60vh", ease: Expo.easeOut, delay: 0.7});
+    tw.to($('#font-blocks'), 0.5, {opacity: 1, delay: 1});
   }
 }
 
@@ -118,10 +122,10 @@ function cloudTransition(direction, scene) {
     var sceneId = sceneNumberToId[scene];
     if (direction == DOWN) {
       tw.to($(`${sceneId} .content`), 0.2, {opacity: 0});
-      tw.to($(`${sceneId} .transition .first`), 1.3, {bottom: "-25vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .fourth`), 1, {bottom: "0vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .third`), 1.3, {bottom: "0vh", ease: Expo.easeOut});
-      tw.to($(`${sceneId} .transition .second`), 1, {bottom: "-20vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .first`), 0.5, {bottom: "-35vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .second`), 1.5, {bottom: "-20vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .third`), 2, {bottom: "-30vh", ease: Expo.easeOut});
+      tw.to($(`${sceneId} .transition .fourth`), 0.5, {bottom: "-45vh", ease: Expo.easeOut});
       tw.to($(`${sceneId} .transition`), 0.5, {bottom: "-20vh", ease: Expo.easeOut, delay: 1.3});
       tw.to($(`${sceneId} .transition`), 0.5, {bottom: "0vh", ease: Expo.easeOut, delay: 2.1});
     } else if (direction == UP) {
