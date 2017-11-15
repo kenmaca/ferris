@@ -226,18 +226,26 @@
 
 #sharpener {
   position: absolute;
-  width: 20vh;
+  width: 25vh;
   height: 6vh;
-  bottom: 270vh;
-  right: 28vh;
+  bottom: 280vh;
+  right: 25vh;
   z-index: 3;
 }
 
 #sharpener-cloud {
   position: absolute;
-  width: 30vh;
-  right: 18vh;
+  width: 70vh;
+  right: 3vh;
   bottom: 224vh;
+}
+
+#sharpener-cloud-2 {
+  position: absolute;
+  width: 50vh;
+  right: 7vh;
+  bottom: 221vh;
+  z-index: 4;
 }
 
 #pencil {
