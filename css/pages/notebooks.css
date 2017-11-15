@@ -48,15 +48,15 @@
 .colours.section {
   background-image: url('/images/pages/products/notebooks/blue.png');
   background-size: auto 50%;
-  background-position: 50% 330px;
+  background-position: 50% 400px;
 }
 
 /* active colour swap */
-.colours.section.blue-selected .container .row:last-child .columns:nth-child(1) .option-item,
-.colours.section.green-selected .container .row:last-child .columns:nth-child(2) .option-item,
-.colours.section.orange-selected .container .row:last-child .columns:nth-child(3) .option-item,
-.colours.section.yellow-selected .container .row:last-child .columns:nth-child(4) .option-item,
-.colours.section.red-selected .container .row:last-child .columns:nth-child(5) .option-item {
+.colours.section.blue-selected .container .row:nth-child(2) .columns:nth-child(1) .option-item,
+.colours.section.green-selected .container .row:nth-child(2) .columns:nth-child(2) .option-item,
+.colours.section.orange-selected .container .row:nth-child(2) .columns:nth-child(3) .option-item,
+.colours.section.yellow-selected .container .row:nth-child(2) .columns:nth-child(4) .option-item,
+.colours.section.red-selected .container .row:nth-child(2) .columns:nth-child(5) .option-item {
   color: #000;
 }
 .colours.section.blue-selected {
@@ -79,6 +79,7 @@
 }
 #mobile-colour-select {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #desktop-colour-select > div {

@@ -168,6 +168,16 @@ body {
   }
 }
 
+.action {
+  display: inline;
+  font-size: 1.1rem !important;
+  padding: 12px 50px;
+  background-image: url('/images/button.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+}
+
 /* Font Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .uppercased {
