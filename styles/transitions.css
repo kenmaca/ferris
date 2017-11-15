@@ -18,6 +18,14 @@
   z-index: 100;
 }
 
+.transition .third {
+  z-index: 101;
+}
+
+.transition .second {
+  z-index: 102;
+}
+
 #first .transition .first path {
   fill: #6cadc8;
 }

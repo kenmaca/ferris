@@ -242,4 +242,8 @@
     width: 80vw;
     z-index: 0;
   }
+
+  #first .content {
+    display: none;
+  }
 }

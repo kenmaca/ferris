@@ -22,9 +22,9 @@ const sceneNumberToTransition = {
 function fromFirstScene(direction) {
   console.log("1", direction);
   if (direction == DOWN) {
-    tw.to($('#ferris'), 1, {bottom: "-100vh", ease: Expo.easeOut, delay: 1.5});
+    tw.to($('#ferris'), 1.5, {bottom: "-100vh", ease: Expo.easeOut});
   } else if (direction == UP) {
-    tw.to($('#ferris'), 1, {bottom: "-5vh", ease: Expo.easeOut, delay: 1});
+    tw.to($('#ferris'), 1, {bottom: "-2vh", ease: Expo.easeOut, delay: 1});
   }
 }
 
@@ -32,9 +32,11 @@ function fromSecondScene(direction) {
   console.log("2", direction);
 
   if (direction == DOWN){
+
     $("#bird").css("left", "-10vw");
     startBirdAnimation();
     tw.to($('#bird'), 4, {left: "120vw"});
+    tw.to($('#carousel'), 1.5, {bottom: "-100vh", ease: Expo.easeOut});
 
     // balloon poping, letter falling animations
     setTimeout(() => {
@@ -74,6 +76,7 @@ function fromSecondScene(direction) {
     }, 2500);
   } else if (direction == UP) {
     tw.to($("#letter"), 2, {top: "7vh", ease: Expo.easeOut, delay: 0.7});
+    tw.to($('#carousel'), 1.5, {bottom: "0vh", ease: Expo.easeOut, delay: 1});
   }
 }
 

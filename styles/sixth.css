@@ -283,6 +283,7 @@
   #pencil-2,
   #pencilbox,
   #sharpener-cloud,
+  #sharpener-cloud-2,
   #sharpener,
   #strength-test,
   #game-stands,
@@ -311,10 +312,15 @@
     bottom: 30vh;
   }
 
-  #sixth #yellow-blue-tent {
+  #sixth #blue-tent {
     height: 60vh;
     width: 60vh;
     left: -30vw;
+  }
+
+  #sixth #bflags {
+    left: 25.3vh;
+    width: 15vw;
   }
 
   #sixth #pencil-bush {
