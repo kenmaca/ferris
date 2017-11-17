@@ -86,5 +86,10 @@
 }
 
 .pricing {
-
+  margin-bottom: 20px;
+}
+@media (min-width: 550px) {
+  .pricing {
+    margin-bottom: 0;
+  }
 }
