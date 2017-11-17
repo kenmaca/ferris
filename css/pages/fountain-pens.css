@@ -82,7 +82,7 @@
 }
 @media (min-width: 550px) {
   .limited-offer.section {
-    background-size: 80%;
+    background-size: 100%;
     background-position: 50% 60%;
   }
 }
