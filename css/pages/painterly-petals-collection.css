@@ -17,7 +17,8 @@ br {
 }
 @media (min-width: 550px) {
   .hero.section {
-    background-size: 70%;
+    background-size: auto 600px;
+    background-position: 50% 60%;
     height: 600px;
   }
   .hero.section .container .row:first-child {
