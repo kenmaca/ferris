@@ -1,5 +1,5 @@
-/* Elements
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Elements */
 .square {
   margin-left: 0;
   width: 37% !important;
@@ -17,8 +17,21 @@
     width: 15% !important;
     padding-bottom: 15%;
   }
+
+  .mobile-hidden {
+    display: block !important;
+  }
+}
+
+.hero.section .container .row:first-child {
+  margin-bottom: 0;
 }
 
 .hero.section .container .row:last-child {
   margin-bottom: 10%;
+}
+
+/* Hide last placeholder square on mobile */
+.mobile-hidden {
+  display: none;
 }
