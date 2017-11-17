@@ -7,7 +7,7 @@
 #cloud-13 {
   position: absolute;
   top: 20vh;
-  left: 0vw;
+  left: 0vw
   width: 40vw;
   z-index: 0;
 }
@@ -21,9 +21,7 @@
 }
 
 #contact-grid {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
+  width: 550px;
   margin-top: 25px;
 }
 
@@ -34,13 +32,17 @@
   margin-top: 25px;
 }
 
-#contact-grid .row .icon {
-  width: 60px;
-  height: 60px;
+#contact-grid .icon {
+  width: 50px;
+  height: 50px;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #contact-grid .row .description {
-  margin-left: 25px;
+  margin-left: 20px;
+  flex: 1;
 }
 
 #contact-grid a {
@@ -55,5 +57,16 @@
     left: inherit;
     bottom: 10vh;
     right: 30vw;
+  }
+
+  #contact-grid .icon {
+    width: 100px;
+    height: 100px;
+  }
+  #contact-grid .row {
+    margin-top: 75px;
+  }
+  #contact-grid .row .description {
+    margin-left: 50px;
   }
 }
