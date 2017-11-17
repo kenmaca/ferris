@@ -18,6 +18,7 @@ br {
 @media (min-width: 550px) {
   .hero.section {
     background-size: 70%;
+    height: 600px;
   }
   .hero.section .container .row:first-child {
     margin-top: 550px !important;
@@ -158,6 +159,8 @@ body.birds-of-paradise .designs.section {
 }
 body.birds-of-paradise .colours.section {
   background-image: url('/images/pages/products/painterly-petals-collection/painterly8-2.png');
+  background-size: auto 90%;
+  background-position: 0% 90%;
 }
 
 /* Georgia's Glory */
@@ -181,7 +184,7 @@ body.georgias-glory .colours.section {
   .designs.section {
     height: 100vh;
     background-size: auto 100%;
-    background-position: 100% 50%;
+    background-position: 150% 50%;
   }
   .designs.section .container .row:first-child {
     margin-top: 15%;
@@ -238,15 +241,14 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
 }
 @media (min-width: 550px) {
   .shapes.section {
-    height: 100vh;
+    height: 500px;
   }
   .shapes.section .container .row:last-child {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 }
 
 .colours.section {
-  background-image: url('/images/pages/products/painterly-petals-collection/painterly8-1.png');
   background-size: 0%;
   background-position: 40% 100%;
   background-repeat: no-repeat;
@@ -269,37 +271,20 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
   }
 }
 
-/* Final collection + shape envelope preview */
-
-/* A9 */
-body.a9.garden-rose .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/a9/GRA9Teal.png');
-}
-body.a9.birds-of-paradise .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/a9/BPA9Orng.png');
-}
-body.a9.georgias-glory .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/a9/GGA9Orng.png');
+.colours.section .slide .image {
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 55% 50%;
+  margin-bottom: 20px;
 }
 
-/* Square */
-body.square.garden-rose .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/square/GRSqTeal.png');
-}
-body.square.birds-of-paradise .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/square/BPSqOrng.png');
-}
-body.square.georgias-glory .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/square/GGSqOrng.png');
+.colours.section .slide {
+  margin-bottom: 20px;
 }
 
-/* No10 */
-body.no10.garden-rose .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/no10/GR10Teal.png');
-}
-body.no10.birds-of-paradise .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/no10/BP10Orng.png');
-}
-body.no10.georgias-glory .colours.section .final-envelope {
-  background-image: url('/images/pages/products/painterly-petals-collection/no10/GG10Orng.png');
+.colours.section button {
+  border-color: #c8b475;
+  color: #c8b475;
 }
