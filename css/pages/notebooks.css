@@ -3,7 +3,7 @@
 .hero.section {
   background-image: url('/images/pages/products/notebooks/hero.png');
   background-size: auto 50%;
-  background-position: 100% 100%;
+  background-position: 100% 120%;
   height: 600px;
 }
 @media (min-width: 550px) {
