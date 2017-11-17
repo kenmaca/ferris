@@ -149,26 +149,15 @@ body.georgias-glory #georgias-glory-description {
 body.garden-rose .designs.section {
   background-image: url('/images/pages/products/painterly-petals-collection/square/GRSqTeal.png');
 }
-body.garden-rose .colours.section {
-  background-image: url('/images/pages/products/painterly-petals-collection/painterly8-1.png');
-}
 
 /* Birds of Pardise */
 body.birds-of-paradise .designs.section {
   background-image: url('/images/pages/products/painterly-petals-collection/square/BPSqTeal.png');
 }
-body.birds-of-paradise .colours.section {
-  background-image: url('/images/pages/products/painterly-petals-collection/painterly8-2.png');
-  background-size: auto 90%;
-  background-position: 0% 90%;
-}
 
 /* Georgia's Glory */
 body.georgias-glory .designs.section {
   background-image: url('/images/pages/products/painterly-petals-collection/square/GGSqTeal.png');
-}
-body.georgias-glory .colours.section {
-  background-image: url('/images/pages/products/painterly-petals-collection/painterly8-3.png');
 }
 
 .designs.section {
@@ -269,6 +258,19 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
   .colours.section .container .row:first-child {
     margin-top: 15%;
   }
+
+  /* left spread only on desktop */
+  body.garden-rose .colours.section {
+    background-image: url('/images/pages/products/painterly-petals-collection/painterly8-1.png');
+  }
+  body.birds-of-paradise .colours.section {
+    background-image: url('/images/pages/products/painterly-petals-collection/painterly8-2.png');
+    background-size: auto 90%;
+    background-position: 0% 90%;
+  }
+  body.georgias-glory .colours.section {
+    background-image: url('/images/pages/products/painterly-petals-collection/painterly8-3.png');
+  }
 }
 
 .colours.section .slide .image {
@@ -279,11 +281,12 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
   background-position: 55% 50%;
   margin-bottom: 20px;
 }
-
 .colours.section .slide {
   margin-bottom: 20px;
 }
-
+.colours.section .slide a {
+  text-decoration: none !important;
+}
 .colours.section button {
   border-color: #c8b475;
   color: #c8b475;
