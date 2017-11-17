@@ -1,3 +1,12 @@
+br {
+  display: none;
+}
+@media (min-width: 550px) {
+  br {
+    display: block;
+  }
+}
+
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero.section {
@@ -101,8 +110,28 @@
     background-position: 10% 70%;
   }
   .prix-fixe.section .container .row:first-child {
-    margin-top: 150px;
+    margin-top: 200px;
   }
+  .prix-fixe.section .container .row:first-child h4 {
+    margin-top: 10px;
+  }
+}
+
+#priceEstimator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#priceEstimator div:first-child {
+  margin-right: 30px;
+}
+
+#priceDropDown {
+  margin-left: 108px;
+  display: none;
+}
+#priceDropDown.visible {
+  display: block;
 }
 
 /* Updates to page-wide images based on class name of body, toggled by click

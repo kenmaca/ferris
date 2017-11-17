@@ -178,6 +178,14 @@ body {
   background-position: 50% 50%;
 }
 
+.dropdown {
+  padding-right: 20px;
+  background-image: url('/images/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 100% 50%;
+}
+
 /* Font Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .uppercased {

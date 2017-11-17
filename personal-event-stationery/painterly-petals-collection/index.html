@@ -153,9 +153,17 @@
         <div class="four columns offset-by-eight">
           <div id="priceEstimator">
             <div class="uppercased option-item">Quantity</div>
-            <div>80</div>
+            <div class="accented dropdown">80</div>
           </div>
-          <h4>$2450</h4>
+          <div id="priceDropDown">
+            <div data-price="2450">80</div>
+            <div data-price="2650">100</div>
+            <div data-price="2850">120</div>
+            <div data-price="3050">140</div>
+            <div data-price="3250">160</div>
+            <div data-price="3450">180</div>
+          </div>
+          <h4 id="price">$2450</h4>
           <p>Our unique Prix Fixe pricing means that any design from any collection is the same price. Spend more time admiring your invitations and less about planning your budget.</p>
         </div>
       </div>
@@ -170,11 +178,11 @@
       <div class="row">
         <div class="five columns">
           <p>Choose from <b>three</b> designs in our Painterly Petals collection: each available in 3 unique shapes and 5 distinct colour palettes to elevate any occasion. Our collection is all original, lovingly illustrated and beautifully hand crafted into thoughtful vignettes by our Canadian artists in house.</p>
-          <div class="uppercased option-item accented" id="selectGardenRose">Garden Rose</div>
+          <div class="uppercased option-item accented dropdown" id="selectGardenRose">Garden Rose</div>
           <p class="description" id="garden-rose-description">Inspired by the beauty of the garden rose. This suite mimics the quiet meandering through gardens. Matching the simplicity of love's first moments, the design is soft and whimsical.</p>
-          <div class="uppercased option-item accented" id="selectBirdsOfParadise">Birds of Paradise</div>
+          <div class="uppercased option-item accented dropdown" id="selectBirdsOfParadise">Birds of Paradise</div>
           <p class="description" id="birds-of-paradise-description">Inspired by the beauty of the garden rose. This suite mimics the quiet meandering through gardens. Matching the simplicity of love's first moments, the design is soft and whimsical.</p>
-          <div class="uppercased option-item accented" id="selectGeorgiasGlory">Georgia's Glory</div>
+          <div class="uppercased option-item accented dropdown" id="selectGeorgiasGlory">Georgia's Glory</div>
           <p class="description" id="georgias-glory-description">Inspired by the beauty of the garden rose. This suite mimics the quiet meandering through gardens. Matching the simplicity of love's first moments, the design is soft and whimsical.</p>
         </div>
       </div>
@@ -246,6 +254,22 @@
     document.getElementById('selectSquare').onclick = function() {setShape('square')};
     document.getElementById('selectA9').onclick = function() {setShape('a9')};
     document.getElementById('selectNo10').onclick = function() {setShape('no10')};
+
+    // handle price changes
+    document.getElementById('priceEstimator').onclick = function() {
+      addClass('visible', '#priceDropDown');
+    }
+    for (let option of document.querySelectorAll('#priceDropDown div')) {
+      option.onclick = function() {
+        removeClass(['visible'], '#priceDropDown');
+
+        // update quantity
+        document.querySelector('#priceEstimator .dropdown').innerHTML = option.innerHTML;
+
+        // update pricing
+        document.getElementById('price').innerHTML = '$' + option.dataset.price;
+      }
+    }
 
   </script>
 </body>
