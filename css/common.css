@@ -1,11 +1,10 @@
-/* Global
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Global */
 body {
   overflow-x: hidden;
 }
 
-/* Navbar
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Navbar */
 .nav {
   width: 100vw;
   padding: 1.2rem 0;
@@ -69,8 +68,7 @@ body {
   }
 }
 
-/* Sections
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Sections */
 .section {
   height: 600px;
   padding: 4rem 0;
@@ -141,8 +139,7 @@ body {
   }
 }
 
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Utilities */
 .u-center-text {
   text-align: center;
 }
@@ -186,8 +183,7 @@ body {
   background-position: 100% 50%;
 }
 
-/* Font Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Font Styles */
 .uppercased {
   text-transform: uppercase;
 }
@@ -206,8 +202,7 @@ a {
   text-decoration: none !important;
 }
 
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Misc */
 .debug {
   background-color: red;
 }
