@@ -1,3 +1,18 @@
+.desktop-only {
+  display: none;
+}
+.mobile-only {
+  display: inline;
+}
+@media (min-width: 550px) {
+  .desktop-only {
+    display: inline;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
 br {
   display: none;
 }
@@ -171,9 +186,8 @@ body.georgias-glory .designs.section {
 }
 @media (min-width: 550px) {
   .designs.section {
-    height: 100vh;
-    background-size: auto 100%;
-    background-position: 150% 50%;
+    background-size: 70%;
+    background-position: 100% 10%;
   }
   .designs.section .container .row:first-child {
     margin-top: 15%;
@@ -186,7 +200,7 @@ body.georgias-glory .designs.section {
 body.a9 .shapes.section .container .row:last-child .columns:nth-child(1),
 body.square .shapes.section .container .row:last-child .columns:nth-child(2),
 body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) {
-  color: #000 !important;
+  color: #c8b475 !important;
 }
 
 /* A9 Open */
@@ -242,36 +256,6 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
   background-position: 40% 100%;
   background-repeat: no-repeat;
 }
-.colours.section .final-envelope {
-  width: 100% !important;
-  height: 0;
-  padding-bottom: 100%;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: 55% 50%;
-}
-@media (min-width: 550px) {
-  .colours.section {
-    background-size: auto 80%;
-    background-position: 10% 100%;
-  }
-  .colours.section .container .row:first-child {
-    margin-top: 15%;
-  }
-
-  /* left spread only on desktop */
-  body.garden-rose .colours.section {
-    background-image: url('/images/pages/products/painterly-petals-collection/painterly8-1.png');
-  }
-  body.birds-of-paradise .colours.section {
-    background-image: url('/images/pages/products/painterly-petals-collection/painterly8-2.png');
-    background-size: auto 90%;
-    background-position: 0% 90%;
-  }
-  body.georgias-glory .colours.section {
-    background-image: url('/images/pages/products/painterly-petals-collection/painterly8-3.png');
-  }
-}
 
 .colours.section .slide .image {
   height: 300px;
@@ -290,4 +274,15 @@ body.no10 .shapes.section .container .row:last-child .columns:nth-child(3) .enve
 .colours.section button {
   border-color: #c8b475;
   color: #c8b475;
+}
+
+@media (min-width: 550px) {
+  .colours.section {
+    background-size: auto 80%;
+    background-position: 10% 100%;
+  }
+  .colours.section .slide .image {
+    height: 600px;
+    background-size: auto 100%;
+  }
 }
