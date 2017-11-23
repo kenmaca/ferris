@@ -47,3 +47,13 @@
     width: 25vw;
   }
 }
+
+@media only screen and (max-device-height: 520px) {
+  #fourth .content {
+    margin-top: 10vh;
+  }
+
+  #cloud-11 {
+    top: 60vh;
+  }
+}

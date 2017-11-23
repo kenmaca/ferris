@@ -231,3 +231,17 @@
     top: 90vh;
   }
 }
+
+@media only screen and (max-device-height: 520px) {
+  #second .content {
+    margin-top: 15vh;
+  }
+
+  #cloud-5 {
+    top: 45vh;
+  }
+
+  #cloud-7 {
+    top: 40vh;
+  }
+}

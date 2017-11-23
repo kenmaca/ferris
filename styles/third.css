@@ -178,3 +178,9 @@
     margin-bottom: 10vh;
   }
 }
+
+@media only screen and (max-device-height: 520px) {
+  #third .content {
+    margin-bottom: 2vh;
+  }
+}
