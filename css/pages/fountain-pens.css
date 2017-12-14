@@ -70,6 +70,9 @@
   .colours.section .container .row:first-child {
     margin-top: 30px;
   }
+  .colours.section .container .dot-row {
+    justify-content: center;
+  }
 
   .colours.section.yellow-selected {
     background-image: url('/images/pages/products/fountain-pens/yellow-pen.png') !important;

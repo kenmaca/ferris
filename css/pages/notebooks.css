@@ -93,6 +93,13 @@
   padding: 5px;
   margin: 8px;
 }
+.colours.section.blue-selected #desktopSelectBlue,
+.colours.section.green-selected #desktopSelectGreen,
+.colours.section.orange-selected #desktopSelectOrange,
+.colours.section.yellow-selected #desktopSelectYellow,
+.colours.section.red-selected #desktopSelectRed {
+  border-color: #000;
+}
 @media (min-width: 550px) {
   .colours.section {
     background-size: auto 70%;
