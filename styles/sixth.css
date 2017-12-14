@@ -78,6 +78,10 @@
   z-index: 1;
 }
 
+#sixth #swings {
+  display: none;
+}
+
 #sixth #gondolas {
   position: absolute;
   width: 60vw;
@@ -293,6 +297,7 @@
   #tent,
   #flags,
   #cat,
+  #swings,
   #sweet-stand,
   #red-tent {
     display: none;
@@ -325,5 +330,14 @@
 
   #sixth #pencil-bush {
     bottom: 10vh;
+  }
+
+  #sixth #swings-mobile {
+    position: absolute;
+    width: 120vh;
+    height: 120vh;
+    bottom: 170vh;
+    left: -8vw;
+    z-index: 1;
   }
 }

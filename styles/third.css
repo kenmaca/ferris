@@ -101,6 +101,10 @@
   transform-origin: 75% 60%;
 }
 
+#third {
+  z-index: 2;
+}
+
 #third .content {
   width: 30vw;
   margin-top: 30vh;
@@ -179,8 +183,13 @@
   }
 }
 
-@media only screen and (max-device-height: 520px) {
+/* shorter devices */
+@media only screen and (max-device-height: 640px) {
+  #hot-air-balloon {
+    bottom: 65vh;
+  }
+
   #third .content {
-    margin-bottom: 2vh;
+    margin-bottom: 15vh;
   }
 }

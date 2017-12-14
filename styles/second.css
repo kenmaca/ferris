@@ -232,7 +232,8 @@
   }
 }
 
-@media only screen and (max-device-height: 520px) {
+/* shorter devices */
+@media only screen and (max-device-height: 640px) {
   #second .content {
     margin-top: 15vh;
   }

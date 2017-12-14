@@ -48,9 +48,13 @@
   }
 }
 
-@media only screen and (max-device-height: 520px) {
+@media only screen and (max-device-height: 640px) {
   #fourth .content {
     margin-top: 10vh;
+  }
+
+  #fourth .content p {
+    width: 80%;
   }
 
   #cloud-11 {

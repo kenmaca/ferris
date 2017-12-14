@@ -17,6 +17,8 @@ loadSvg('sharpener/front-cloud', '#sharpener-cloud-2');
 loadSvg('sharpener/pencil-1', '#pencil-1');
 loadSvg('sharpener/pencil-2', '#pencil-2');
 loadSvg('sharpener/pencilbox', '#pencilbox');
+loadSvg('swings');
+loadSvg('swings-mobile');
 
 // 6.0 additions
 loadSvg('final/goldolas', '#gondolas');
