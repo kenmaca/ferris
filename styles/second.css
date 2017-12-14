@@ -246,3 +246,29 @@
     top: 40vh;
   }
 }
+
+/* landscape */
+@media screen and (max-device-width: 414px) and (orientation: landscape),
+screen and (max-device-height: 414px) {
+  #carousel {
+    width: 50vw;
+    height: 50vw;
+    bottom: -7vh;
+  }
+
+  #second .content {
+    margin-top: 0vh;
+  }
+
+  #cloud-7 {
+    top: 70vh;
+  }
+
+  #cloud-3 {
+    top: 60vh;
+  }
+
+  #cloud-4 {
+    top: 70vh;
+  }
+}

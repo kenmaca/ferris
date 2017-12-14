@@ -78,7 +78,7 @@
   z-index: 1;
 }
 
-#sixth #swings {
+#sixth #swings-mobile {
   display: none;
 }
 
@@ -333,11 +333,70 @@
   }
 
   #sixth #swings-mobile {
+    display: block;
     position: absolute;
     width: 120vh;
     height: 120vh;
     bottom: 170vh;
     left: -8vw;
     z-index: 1;
+  }
+}
+
+/* landscape */
+@media screen and (max-device-width: 414px) and (orientation: landscape),
+screen and (max-device-height: 414px) {
+  #pencilbox,
+  #game-stands,
+  #double-tent,
+  #bear,
+  #rollercoaster,
+  #tent,
+  #flags,
+  #cat,
+  #sweet-stand,
+  #red-tent {
+    display: block;
+  }
+
+  #sixth #swings-mobile {
+    display: block;
+    width: 110vh;
+    height: 110vh;
+    left: -30vw;
+    bottom: 180vh;
+  }
+
+  #sixth #blue-tent {
+    position: absolute;
+    height: 52vh;
+    width: 52vh;
+    left: 10vw;
+    top: 10vh;
+    z-index: 6;
+  }
+
+  #sixth #bflags {
+    position: absolute;
+    top: 0vh;
+    left: 25.4vh;
+    width: 5vw;
+  }
+
+  #sixth #gondolas {
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    left: 22vw;
+    bottom: 15vh;
+  }
+
+  #sixth #rollercoaster {
+    top: 5vh;
+  }
+
+  #sixth #red-tent {
+    right: 36vw;
+    top: 20vh;
   }
 }

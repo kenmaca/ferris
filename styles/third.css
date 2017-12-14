@@ -193,3 +193,35 @@
     margin-bottom: 15vh;
   }
 }
+
+/* landscape */
+@media screen and (max-device-width: 414px) and (orientation: landscape),
+screen and (max-device-height: 414px) {
+  #hot-air-balloon {
+    right: 5vw;
+    bottom: 35vh;
+  }
+
+  #third .content {
+    width: 50vw !important;
+  }
+
+  #third .prominent.center {
+    justify-content: flex-start;
+  }
+
+  #cloud-8 {
+    right: 5vw;
+  }
+
+  #cloud-9 {
+    left: auto;
+    right: 7vw;
+    z-index: 106;
+  }
+
+  #cloud-10 {
+    top: auto;
+    bottom: 10vh;
+  }
+}

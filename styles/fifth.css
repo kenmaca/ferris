@@ -70,3 +70,26 @@
     margin-left: 50px;
   }
 }
+
+/* landscape */
+@media screen and (max-device-width: 414px) and (orientation: landscape),
+screen and (max-device-height: 414px) {
+  #contact-grid .icon {
+    width: 50px;
+    height: 50px;
+  }
+  #contact-grid .row {
+    margin-top: 20px;
+  }
+  #contact-grid .row .description {
+    margin-left: 30px;
+  }
+
+  #fifth .middle {
+    align-items: flex-start;
+  }
+
+  #fifth .content {
+    margin-top: 10vh;
+  }
+}

@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" baseProfile="tiny"
 	 id="tent_large_xA0_Image_1_" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="611.972px"
@@ -21,7 +12,7 @@
 	</foreignObject>
 	<g i:extraneous="self">
 		<g>
-			<polygon fill="#F7D5DA" points="365.111,542.55 352.053,546.086 244.047,543.366 248.128,462.566 298.186,451.684 
+			<polygon fill="#F7D5DA" points="365.111,542.55 352.053,546.086 244.047,543.366 248.128,462.566 298.186,451.684
 				357.766,456.58 			"/>
 			<polygon fill="#765F93" points="325.473,470.932 348.855,546.25 262.424,548.439 290.283,472.373 			"/>
 			<polygon fill="#F7D5DA" points="444.36,455.248 490.352,544.332 414.108,542.25 395.581,447.127 			"/>

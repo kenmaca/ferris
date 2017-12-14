@@ -247,3 +247,40 @@
     display: none;
   }
 }
+
+/* landscape */
+@media screen and (max-device-width: 414px) and (orientation: landscape),
+screen and (max-device-height: 414px) {
+  #ferris {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  #first #banner {
+    width: 30vw !important;
+  }
+
+  #first div.banner {
+    padding-right: 10vw;
+  }
+
+  #first div.banner:first-child {
+    align-items: flex-end;
+  }
+
+  /* clouds */
+  #cloud-1 {
+    top: 60vh;
+    left: -6vw;
+    width: 100vw;
+    z-index: 10;
+  }
+
+  #cloud-2 {
+    position: absolute;
+    top: 55vh;
+    left: -10vw;
+    width: 80vw;
+    z-index: 0;
+  }
+}

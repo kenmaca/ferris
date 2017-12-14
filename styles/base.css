@@ -18,7 +18,7 @@ body {
   right: 2vw;
   height: 600vh;
   background: url('../assets/img/main/bg.png') no-repeat;
-  background-size: auto 100%;
+  background-size: auto 600vh;
 }
 
 /* common blocks */
@@ -160,6 +160,41 @@ body {
   .content .subtitle {
     font-family: 'Old Standard TT', serif;
     font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
+
+/* landscape */
+@media screen and (max-device-width: 414px) and (orientation: landscape),
+screen and (max-device-height: 414px) {
+  .prominent.half {
+    width: 50vw;
+  }
+
+  .prominent.middle {
+    align-items: center;
+  }
+
+  .content {
+    width: 80vw !important;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    padding: 5vw;
+  }
+
+  .content .title {
+    font-family: 'Old Standard TT', serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .content .subtitle {
+    font-family: 'Old Standard TT', serif;
+    font-size: 21px;
     font-weight: 500;
     letter-spacing: 2px;
   }

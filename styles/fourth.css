@@ -48,6 +48,7 @@
   }
 }
 
+/* shorter devices */
 @media only screen and (max-device-height: 640px) {
   #fourth .content {
     margin-top: 10vh;
@@ -59,5 +60,15 @@
 
   #cloud-11 {
     top: 60vh;
+  }
+}
+
+/* landscape */
+@media screen and (max-device-width: 414px) and (orientation: landscape),
+screen and (max-device-height: 414px) {
+  #fourth .fill .content {
+    width: 60vw !important;
+    margin-left: 40vw;
+    margin-top: 0;
   }
 }
